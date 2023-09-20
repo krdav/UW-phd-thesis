@@ -58,13 +58,12 @@
 %
 \Title{Tools to investigate aspartate limited proliferation\\ of cancer cells}
 \Author{Kristian Davidsen}
-\Year{2023}
+\Year{2024}
 \Program{Molecular and cell biology}
 
-\Chair{Name of Chairperson}{Title of Chair}{Department of Chair}
-\Signature{First committee member}
-\Signature{Next committee member}
-\Signature{etc}
+\Chair{Arvind R Subramaniam}{Associate Professor}{Fred Hutch, Biochemistry}
+\Signature{Lucas B Sullivan}
+\Signature{Dana L Miller}
 
 \copyrightpage
 \titlepage  
@@ -75,24 +74,16 @@
 %
 
 
+
+
+
 \setcounter{page}{-1}
 \abstract{%
-This sample dissertation is an aid to students who are attempting
-to format their theses with \LaTeX, a sophisticated
-text formatter widely available at the University of Washington
-and other institutions of higher learning.
- 
-\begin{itemize}
-\item It describes the use of a specialized
-macro package developed specifically for thesis production
-at the University.
-The macros customize \LaTeX\ for the correct thesis style,
-allowing the student to concentrate on the substance of
-his or her text.%
-\item It demonstrates the solutions to a variety of
-formatting challenges found in thesis production.
-\item It serves as a template for a real dissertation.
-\end{itemize}
+Aspartate is a central metabolite for cell mass.
+bla.
+Asp-sensor.
+Bla.
+tRNAseq
 }
  
 %
@@ -102,8 +93,8 @@ formatting challenges found in thesis production.
 \listoffigures
 %\listoftables  % I have no tables
  
-
-\include{sections/glossary.tex}
+% Generally, better to write in a way such that no glossary is necessary
+%\include{sections/glossary.tex}
 
 % end of the preliminary pages
  
@@ -114,11 +105,46 @@ formatting challenges found in thesis production.
 %
 
 \textpages
- 
-\include{sections/chap1.tex}
-\include{sections/chap2.tex}
-\include{sections/chap3.tex}
-\include{sections/chap4.tex}
+
+\include{sections/ackn.tex}
+
+
+%%% Overview:
+% 1. Introduction/background into aspartate metabolism
+% 2. Molecular mechanisms of aspartate limitation
+%%%% This is where I try to structure all the data I have collected
+%%%% on aspartate limitation and get to the conclusion that new tools
+%%%% are necessary
+% 3. Aspartate sensor manuscript
+% 4. Introduction to tRNA biology
+% 5. tRNA-seq manuscript
+% 6. Closing chapter on future directions
+
+
+
+% General introduction to aspartate metabolism,
+% starting with the bascis then moving into aspartate limitation
+% and the relevant papers:
+\include{sections/chap1.tex} % Aspartate in cellular metabolism
+
+% All the negative data collected throughout the years:
+\include{sections/chap2.tex} % Molecular mechanisms of aspartate limitation
+
+% Asp-sensor manuscript:
+\include{sections/chap3.tex} % An engineered biosensor enables dynamic aspartate measurements in living cells
+
+% Describe all things relevant to understand tRNA-Seq method:
+\include{sections/chap4.tex} % Introduction to tRNA biology
+
+% tRNA-Seq manuscript:
+\include{sections/chap5.tex} % Robust method for measuring aminoacylation through tRNA-seq
+
+% Future directions:
+\include{sections/chap6.tex}
+
+
+
+
 
 
  \chapter {Introduction}
