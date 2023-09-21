@@ -48,7 +48,7 @@ Aminoacylation, enzyme specificity and ester bond stability.
          \caption{}
          \label{fig:tRNA_CCAester}
      \end{subfigure}
-        \caption[tRNA structure]{
+        \caption[tRNA structural overview]{
         (a) Three dimensional structure of a tRNA colored by secondary structure elements shown in the insert, (b) secondary structure of a tRNA with names of the structural elements and some common base modifications, (c) the 3' CCA of a tRNA aminoacylated with phenylalanine.
         (a) and (b) from Yikrazuul, \href{https://creativecommons.org/licenses/by-sa/3.0}{CC BY-SA 3.0}, via Wikimedia Commons.
         }
@@ -61,7 +61,10 @@ Aminoacylation, enzyme specificity and ester bond stability.
 \begin{figure}
     \centering
     \includegraphics[width=0.98\textwidth]{figures/chap4/tRNA_dist_hist.pdf}
-    \caption{Histogram of the distances between tRNA transcripts after pairwise Needleman–Wunsch alignment. Distance is counted as the number of mismatches and gaps. The top row shows full sequence transcripts, the bottom row shows the last 25 nt. of each transcript. Distances are broken down by being between transcripts of the same codon or not, and same amino acid or not. Source: krdav Github \href{https://github.com/krdav/thesis_plotting/blob/main/tRNA_stats/plot_data.ipynb}{thesis\_plotting/tRNA\_stats}}
+    \caption[Pairwise tRNA distance histogram]{Histogram of the distances between tRNA transcripts after pairwise Needleman–Wunsch alignment.
+    Distance is counted as the number of mismatches and gaps.
+    The top row shows full sequence transcripts, the bottom row shows the last 25 nt. of each transcript.
+    Distances are broken down by being between transcripts of the same codon or not, and same amino acid or not. Source: krdav Github \href{https://github.com/krdav/thesis_plotting/blob/main/tRNA_stats/plot_data.ipynb}{thesis\_plotting/tRNA\_stats}}
     \label{fig:dist_hist}
 \end{figure}
 
@@ -72,23 +75,23 @@ Aminoacylation, enzyme specificity and ester bond stability.
 \begin{tabular}{|l|p{0.85\textwidth}|}
 \hline
 Length & tRNAs \\ \hline
-62     & m-Ser-AGC \\ \hline
-68     & m-Arg-CGA \\ \hline
-69     & m-Cys-UGC, m-Thr-ACA, m-Tyr-UAC \\ \hline
-71     & m-Met-AUG, m-Trp-UGA, m-Pro-CCA, m-Gly-GGA, m-Asp-GAC \\ \hline
-72     & m-Ser-UCA, m-Val-GUA, m-His-CAC, m-Ile-AUC, m-Glu-GAA, m-Ala-GCA \\ \hline
-73     & c-Cys-UGC, m-Lys-AAA \\ \hline
-74     & m-Phe-UUC, c-Gly-GGC, m-Leu-CUA, c-Ala-GCA, c-Gly-GGG \\ \hline
-75     & c-Gln-CAG, c-Tyr-UAC, c-Ala-GCG, c-Ala-GCA, c-Gly-GGA, c-Pro-CCA,   c-Gln-CAA, c-Glu-GAG, c-Pro-CCU, c-Thr-ACA, c-Val-GUU, m-Gln-CAA, c-Asp-GAC,   c-Ala-GCU, c-Pro-CCG, c-Thr-ACG, c-His-CAC, c-Glu-GAA, c-Cys-UGC, c-Trp-UGG,   c-iMet-AUG \\ \hline
-76     & c-Val-GUA, c-Arg-AGG, c-Tyr-UAU, c-Val-GUG, c-Ala-GCU, c-Tyr-UAC,   c-Arg-CGG, c-Met-AUG, m-Asn-AAC, c-Cys-UGC, c-Lys-AAG, c-Val-GUU, c-Arg-CGU,   c-Arg-CGA, c-Lys-AAA, c-Thr-ACA, c-Arg-AGA, c-Phe-UUC \\ \hline
-77     & c-Thr-ACU, c-Ile-AUU, c-Ile-AUC, c-Lys-AAG, c-Asn-AAC, c-Leu-UUG,   c-Thr-ACA, c-Thr-ACG, c-Arg-AGA, c-Phe-UUC, c-Ile-AUA \\ \hline
-78     & m-Leu-UUA, c-Asn-AAC \\ \hline
-85     & c-Ser-UCG, c-Leu-CUU, c-Ser-AGC, c-Ser-UCU, c-Leu-CUA, c-Ser-UCA \\ \hline
-86     & c-Leu-UUA, c-Leu-UUG, c-Leu-CUG \\ \hline
-87     & c-Ser-AGC, c-Leu-UUG \\ \hline
-90     & c-SeC-UGA \\ \hline
+62     & m\=/Ser\=/AGC \\ \hline
+68     & m\=/Arg\=/CGA \\ \hline
+69     & m\=/Cys\=/UGC, m\=/Thr\=/ACA, m\=/Tyr\=/UAC \\ \hline
+71     & m\=/Met\=/AUG, m\=/Trp\=/UGA, m\=/Pro\=/CCA, m\=/Gly\=/GGA, m\=/Asp\=/GAC \\ \hline
+72     & m\=/Ser\=/UCA, m\=/Val\=/GUA, m\=/His\=/CAC, m\=/Ile\=/AUC, m\=/Glu\=/GAA, m\=/Ala\=/GCA \\ \hline
+73     & c\=/Cys\=/UGC, m\=/Lys\=/AAA \\ \hline
+74     & m\=/Phe\=/UUC, c\=/Gly\=/GGC, m\=/Leu\=/CUA, c\=/Ala\=/GCA, c\=/Gly\=/GGG \\ \hline
+75     & c\=/Gln\=/CAG, c\=/Tyr\=/UAC, c\=/Ala\=/GCG, c\=/Ala\=/GCA, c\=/Gly\=/GGA, c\=/Pro\=/CCA,   c\=/Gln\=/CAA, c\=/Glu\=/GAG, c\=/Pro\=/CCU, c\=/Thr\=/ACA, c\=/Val\=/GUU, m\=/Gln\=/CAA, c\=/Asp\=/GAC,   c\=/Ala\=/GCU, c\=/Pro\=/CCG, c\=/Thr\=/ACG, c\=/His\=/CAC, c\=/Glu\=/GAA, c\=/Cys\=/UGC, c\=/Trp\=/UGG,   c\=/iMet\=/AUG \\ \hline
+76     & c\=/Val\=/GUA, c\=/Arg\=/AGG, c\=/Tyr\=/UAU, c\=/Val\=/GUG, c\=/Ala\=/GCU, c\=/Tyr\=/UAC,   c\=/Arg\=/CGG, c\=/Met\=/AUG, m\=/Asn\=/AAC, c\=/Cys\=/UGC, c\=/Lys\=/AAG, c\=/Val\=/GUU, c\=/Arg\=/CGU,   c\=/Arg\=/CGA, c\=/Lys\=/AAA, c\=/Thr\=/ACA, c\=/Arg\=/AGA, c\=/Phe\=/UUC \\ \hline
+77     & c\=/Thr\=/ACU, c\=/Ile\=/AUU, c\=/Ile\=/AUC, c\=/Lys\=/AAG, c\=/Asn\=/AAC, c\=/Leu\=/UUG,   c\=/Thr\=/ACA, c\=/Thr\=/ACG, c\=/Arg\=/AGA, c\=/Phe\=/UUC, c\=/Ile\=/AUA \\ \hline
+78     & m\=/Leu\=/UUA, c\=/Asn\=/AAC \\ \hline
+85     & c\=/Ser\=/UCG, c\=/Leu\=/CUU, c\=/Ser\=/AGC, c\=/Ser\=/UCU, c\=/Leu\=/CUA, c\=/Ser\=/UCA \\ \hline
+86     & c\=/Leu\=/UUA, c\=/Leu\=/UUG, c\=/Leu\=/CUG \\ \hline
+87     & c\=/Ser\=/AGC, c\=/Leu\=/UUG \\ \hline
+90     & c\=/SeC\=/UGA \\ \hline
 \end{tabular}
-\caption{Mature human tRNA transcript lengths and the distribution among amino acids and codons. The tRNA column is populated with entries formatted as [cyto/mito]-[amino acid]-[codon] with [cyto/mito] indicated by c/m, [amino acid] indicated by the three letter amino acid code. Source: krdav Github \href{https://github.com/krdav/thesis_plotting/blob/main/tRNA_stats/plot_data.ipynb}{thesis\_plotting/tRNA\_stats}}
+\caption[Length distribution of tRNAs]{Mature human tRNA transcript lengths and the distribution among amino acids and codons. The tRNA column is populated with entries formatted as [cyto/mito]-[amino acid]-[codon] with [cyto/mito] indicated by c/m, [amino acid] indicated by the three letter amino acid code. Source: krdav Github \href{https://github.com/krdav/thesis_plotting/blob/main/tRNA_stats/plot_data.ipynb}{thesis\_plotting/tRNA\_stats}}
 \end{table}
 
 
