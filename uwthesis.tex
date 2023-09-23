@@ -8,6 +8,22 @@
 \usepackage{blindtext}
 \usepackage{hyperref}
 \usepackage[shortcuts]{extdash} % for dash without line break
+% Setup fnsymbols with both numbers and symbols for author list footnotes:
+\usepackage[symbol*]{footmisc}
+\DefineFNsymbolsTM{author_list}{
+  1 1
+  2 2
+  3 3
+  \textdagger    \dagger
+  \textasteriskcentered *
+  \textdaggerdbl \ddagger
+  \textsection   \mathsection
+  \textbardbl    \|%
+  \textparagraph \mathparagraph
+}
+\setfnsymbol{author_list}
+
+
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
