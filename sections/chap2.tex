@@ -27,15 +27,16 @@ qwerty1
          \caption{Media uptake 143B WT}
          \label{fig:tcc_143wt}
      \end{subfigure}
-     %\hfill
      \begin{subfigure}[b]{0.7\textwidth}
          \centering
          \includegraphics[width=\textwidth]{figures/chap2/tcc_143dko.pdf}
          \caption{Media uptake 143B GOT DKO}
          \label{fig:tcc_143dko}
      \end{subfigure}
-        \caption[fff]{
-        (a) hhhh, (b) gggg.
+        \caption[Media amino acid uptake]{
+        Amino acid uptake from DMEM.
+        For 143B WT in (a), media was spiked with U-13C Asn to measure asparagine uptake which, taken together with the labelling fraction, was used to calculate the net asparagine consumption, noted on the figure as *Asn.
+        For 143B GOT DKO in (b), cell expressed Glu/Asp transporter SLC1A3 and media was spiked with aspartate to measure its uptake.
         }
 \end{figure}
 
@@ -199,6 +200,98 @@ Tubes were centrifuged (17,000g, 15 mins, 4°C) and a fraction of the supernatan
 The fraction of supernatant transferred was adjusted to correspond to that extracted from a 1 µL cell volume e.g. 50\% was transferred if the total cell volume extracted from was 2 µL.
 The total cell volume extracted from was determined by counting cells on a parallel plate using a coulter counter.
 Dried samples were reconstituted with 40 µL 80\% HPLC grade methanol, containing internal standards if appropriate, and transferred to vials for measurement by LCMS.
+
+
+
+
+\subsection{Absolute quantification by isotope dilution}
+
+
+
+\subsection{Media uptake flux}
+
+# 13C4 Asn uptake in 143B cells
+In this notebook I will process and plot data from an experiment were I quantified amino acid uptake from media over time to determine the total aspartate consumption flux.
+
+
+
+### How to calculate flux
+For cell count ($y$), the cell counts over time is defined as an exponential function ($y(t)$) with proliferation rate $K$ and cell count at $t=0$ being $y_0$:
+$$
+y(t) = y_0 2^{K t}
+$$
+
+If we assume that amino acid uptake into a cell is constant, the uptake rate (also called influx) can be defined as the total molar uptake over at time range divided by the total area under the cell count curve over the same time range.
+
+Formally, with $F_i$ being the influx and $n(t)$ being the molar quantity of a compound $i$, and $t_1$ and $t_2$ first and second timepoint, respectively, defining the time range:
+$$
+F_i = \frac{n_i(t_1) - n_i(t_2)}{\int_{t_1}^{t_2} y(t) dt}
+$$
+
+Using $\Delta$ to indicate we can simplify the above:
+$$
+F_i = \frac{\Delta n_i}{\int_{t_1}^{t_2} y(t) dt} = \frac{\Delta n_i}{\frac{y_0 2^{K t_2}}{K\ \text{ln}(2)} - \frac{y_0 2^{K t_1}}{K\ \text{ln}(2)}} = \frac{\Delta n_i}{\frac{y_0 (2^{K t_2} - 2^{K t_1})}{K\ \text{ln}(2)}}
+$$
+The denominator is equal to the area under the cell count curve over the same time range ($t_1$ to $t_2$), this is sometimes referred to as "cell hours" becuase of its unit is time, typically in hours.
+
+Using cell hours it is possible to calculate the molar quantity taken up per cell per hour, typically as: $\frac{\text{fmol}}{\text{cell}\times h}$.
+However, this makes it hard to compare accross cell lines because of variability in cell size. To fix this, simply redefine the problem from integrating the area under the cell count curve to the area under the volumne increase curve.
+This is trivial using a volume per cell multiplier ($V_c$):
+$$
+V(t) = y(t) V_c = V_c y_0 2^{t K}
+$$
+
+Since $V_c$ is indenpendent of time, it is not integrated and we get:
+$$
+F_i = \frac{\Delta n_i}{\frac{V_c y_0 (2^{K t_2} - 2^{K t_1})}{K\ \text{ln}(2)}}
+$$
+
+Since $V_c$ is a volume, we have a denominator with typical unit of $\frac{L}{h}$.
+We could call this "volume hours", and dividing the molar quantity onto this we get the typical unit of $\frac{\text{mM}}{h}$ which is comparable accross cell lines with different sizes.
+
+Sometimes it can be usefull to convert the influx of a compound to the intracellular concentration of the compound.
+In doing this we assume that the influxed compound is passively accumulating inside the cell and this can be a reasonable assumption when looking at for instance essential amino acids.
+For example take leucine, by adding the amount of free leucine with that bound in protein it should correspond to that being taken up through influx as it is neither synthesized nor broken down.
+To convert flux to cell concentration for compound $i$ observe the following rearrangement of above:
+$$
+F_i = K\ \text{ln}(2) \frac{\Delta n_i}{V_c y_0 (2^{K t_2} - 2^{K t_1})}
+$$
+
+The fraction is the molar quantity of consumed compound $i$ divided by the accumulation of cell volume i.e. the intracellular concentration of compound $i$ ($C_i$).
+Thus we have:
+$$
+F_i = K\ \text{ln}(2) C_i => C_i = \frac{F_i}{K\ \text{ln}(2)}
+$$
+
+
+
+
+
+
+
+
+
+
+\subsection{Net asparagine consumption}
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.70\textwidth]{figures/chap2/asn_Jprot.pdf}
+    \caption[Asparagine consumption fluxes]{
+    Diagram of asparagine fluxes.
+    Net influx of U-13C labelled Asn ($J_{\text{in}}$), net efflux of unlabelled Asn ($J_{\text{out}}$), net deposition of Asn into protein ($J_{\text{prot}}$) and Asn synthesis from Asp ($J_{\text{syn}}$).
+    }
+    \label{fig:ch2:asn_Jprot}
+\end{figure}
+
+
+
+
+
+
+
 
 \subsection{Intracellular amino acid concentration measurements by isotope dilution}
 Dried samples were reconstituted with 40 µL 80\% HPLC grade methanol containing 5 µM U-13C, U-15N labelled canonical amino acid mix (Cambridge Isotope Laboratories, MSK-CAA-1) and transferred to vials for measurement by LCMS.
