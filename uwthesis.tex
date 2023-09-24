@@ -7,6 +7,7 @@
 \usepackage{subcaption}
 \usepackage{blindtext}
 \usepackage{hyperref}
+\usepackage{amsmath} % for better math
 \usepackage[shortcuts]{extdash} % for dash without line break
 % Setup fnsymbols with both numbers and symbols for author list footnotes:
 \usepackage[symbol*]{footmisc}
@@ -33,8 +34,6 @@
 }
 
 
-
-
 \setcounter{tocdepth}{1}  % Print the chapter and sections to the toc
  
 
@@ -57,6 +56,27 @@
 % \font\mffont=logosl10 scaled\magstep1
 \let\mffont=\sf
 % --- end-of-sample-stuff ---
+
+
+
+
+
+%%%% Shortcuts %%%%%
+
+\newcommand{\natlog}{\text{ln}}
+\newcommand{\Asn}{\text{Asn}}
+\newcommand{\UAsn}{\text{U-\textsuperscript{13}C Asn}}
+\newcommand{\Flin}{J_{\text{in}}}
+\newcommand{\Flout}{J_{\text{out}}}
+\newcommand{\Flsyn}{J_{\text{syn}}}
+\newcommand{\Flprot}{J_{\text{prot}}}
+\newcommand{\hCi}{\textsuperscript{13}C}
+\newcommand{\hNi}{\textsuperscript{15}N}
+
+
+
+
+
  
 
 
@@ -313,36 +333,7 @@ of many add-on macro packages.
 Although unnecessary for thesis writers, the \textsl{\TeX book}
 is the primary reference for \TeX sperts worldwide.
  
-\section{Mathematics}
- 
-The thesis class does not expand on \TeX's
-or \LaTeX's
-comprehensive treatment of mathematical equation printing.%
-\label{c2note}\footnote{%
-% a long footnote indeed.
- Although many \TeX-formatted documents contain no
- mathematics except the page numbers, it seems appropriate
- that this paper, which is in some sense about \TeX,
- ought to demonstrate an equation or two.  Here then, is a statement 
- of the {\it Nonsense Theorem}.
- 
- \smallskip
- \def\RR{{\cal R\kern-.15em R}}
- {\narrower\hangindent\parindent Assume a universe $E$ and a symmetric function
-  $\$$ defined on $E$, such that for each $\$^{yy}$ there exists a
-  $\$^{\overline{yy}}$, where $\$^{yy} = \$^{\overline{yy}}$.
-  For each element $i$ of $E$ define
-  ${\cal S}(i)=\sum_i \$^{yy}+\$^{\overline{yy}}+0$.
-  Then if $\RR$ is that subset of $E$ where $1+1=3$,
-  for each $i$
-  $$\lim_{\$\to\infty}\int {\cal S}di =
-      \cases{0,&if $i\not\in\RR$;\cr
-             \infty,&if $i\in\RR$.\cr}$$
-  \par}} % end of the footnote
-%
-The {\it\TeX book}\cite{book}, {\it \LaTeX\ User's Guide}\cite{Lbook},
-and {\it The \LaTeX\ Companion}\cite{companion}
-thoroughly cover this topic.
+
  
  
 \section{Languages other than English}
