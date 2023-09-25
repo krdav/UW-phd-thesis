@@ -21,13 +21,13 @@ qwerty1
 
 \begin{figure}
      \centering
-     \begin{subfigure}[b]{0.7\textwidth}
+     \begin{subfigure}[b]{0.75\textwidth}
          \centering
          \includegraphics[width=\textwidth]{figures/chap2/flux_143wt.pdf}
          \caption{Media uptake 143B WT}
          \label{fig:ch2:flux_143wt}
      \end{subfigure}
-     \begin{subfigure}[b]{0.7\textwidth}
+     \begin{subfigure}[b]{0.75\textwidth}
          \centering
          \includegraphics[width=\textwidth]{figures/chap2/flux_143dko.pdf}
          \caption{Media uptake 143B GOT DKO}
@@ -45,28 +45,55 @@ qwerty1
 
 \begin{figure}
      \centering
-     \begin{subfigure}[b]{0.7\textwidth}
+     \hspace{0.05\textwidth}
+     \begin{subfigure}[b]{0.35\textwidth}
          \centering
-         \includegraphics[width=0.35\textwidth]{figures/chap2/asn_Jprot.pdf}
+         \includegraphics[width=\textwidth]{figures/chap2/asn_Jprot.pdf}
          \caption{Flux diagram}
          \label{fig:ch2:asn_Jprot}
      \end{subfigure}
-     \begin{subfigure}[b]{0.7\textwidth}
+     \hfill
+     \begin{subfigure}[b]{0.4\textwidth}
          \centering
          \includegraphics[width=\textwidth]{figures/chap2/Asn_flux.pdf}
          \caption{Asn consumption}
          \label{fig:ch2:Asn_flux}
      \end{subfigure}
+     \hspace{0.05\textwidth}
         \caption[Asparagine consumption fluxes]{
         (a) Diagram of asparagine fluxes in a cell.
         Net influx of U-\hCi{} labelled Asn ($\Flin$), net efflux of unlabelled Asn ($\Flout$), net deposition of Asn into protein ($\Flprot$) and Asn synthesis from Asp ($\Flsyn$).
         Asn symbolized by green and U-\hCi{} Asn symbolized by blue.
         (b) Measured asparagine consumption fluxes in 143B cells using the media uptake data from figure \ref{fig:ch2:flux_143wt}.
-        Asn is consumed into protein synthesis (Protein) and leakage into the media (Efflux) assuming no Asn is provided to the media.
+        Asn is consumed into protein synthesis (Protein) and leaked into the media (Efflux), assuming no Asn is provided in the media.
         }
 \end{figure}
 
 
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{figures/chap2/ah_cell_comp.pdf}
+    \caption[gggg]{
+    gggg
+    }
+    \label{fig:ch2:ah_cell_comp}
+\end{figure}
+
+
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.35\textwidth]{figures/chap2/asp_fate.pdf}
+    \caption[gggg]{
+    gggg
+    }
+    \label{fig:ch2:asp_fate}
+\end{figure}
 
 
 
@@ -223,6 +250,8 @@ The total cell volume extracted from was determined by counting cells on a paral
 Dried samples were reconstituted with 40 µL 80\% HPLC grade methanol, containing internal standards if appropriate, and transferred to vials for measurement by LCMS.
 
 
+\subsection{Media metabolite extraction}
+
 
 
 \subsection{Absolute quantification by isotope dilution}
@@ -297,7 +326,7 @@ Thus we have:
 
 \subsection{Net asparagine consumption}
 Human cells do not have any appreciable asparagine deaminase activity \cite{Sullivan2018-gz} and thus asparagine is a terminal metabolite that does not get converted or used as a substrate in other metabolic reactions.
-The explicit assumption is that asparagine can be generated from synthesis using aspartate but not recycled back and this makes the asparagine fluxes suitable for isotope tracing.
+This makes the asparagine fluxes suitable for isotope tracing if we make the explicit assumption is that asparagine can be generated from synthesis using aspartate but not recycled back.
 Figure \ref{fig:ch2:asn_Jprot} shows the net asparagine fluxes when U-\hCi{} labelled Asn is added to the media.
 Each net flux is the sum of fluxes in both directions e.g. U-\hCi{} Asn is net influxed because it is consumed while unlabelled Asn is net effluxed because it is absent from media at the initial conditions.
 
@@ -329,28 +358,17 @@ Simplify:
 \label{eq:ch2:Jprot}
 \end{equation}
 
-
-%\begin{figure}[h]
-%    \centering
-%    \includegraphics[width=0.35\textwidth]{figures/chap2/asn_Jprot.pdf}
-%    \caption[Asparagine consumption fluxes]{
-%    Diagram of asparagine fluxes in a cell.
-%    Net influx of U-\hCi{} labelled Asn ($\Flin$), net efflux of unlabelled Asn ($\Flout$), net deposition of Asn into protein ($\Flprot$) and Asn synthesis from Asp ($\Flsyn$).
-%    Asn symbolized by green and U-\hCi{} Asn symbolized by blue.
-%    }
-%    \label{fig:ch2:asn_Jprot}
-%\end{figure}
+Using the above scheme, asparagine fluxes were determined in 143B cells expressing a nuclear RFP for cell counting.
+The cells were first passaged in DMEM with dialyzed FBS and 100 µM U-\hCi{} Asn to achieve a steady-state label fraction in the proteome.
+To start the experiment, cells were seeded on six well dishes at 1e5 cells/well in passage media.
+On the next day fresh media (same as for passage) was added and t=0 media samples were collected.
+Then cell counts were monitored using an Incucyte to count cell nuclei and media samples were collected at 10 and 24 hours.
+After the last media collection, intracellular metabolites were collected to determine the labelling ratio.
+Two dishes were run in parallel and used for counting and cell volume measurement using a coulter counter.
 
 
 
 
-
-
-%%%%%%%%%%
-%%% Check above equations
-%%% Reform the Jupyter notebook to same format
-%%% Report Jprot and Jsyn separately on the barchart (use * and #)
-%%%%%%%%%%%
 
 
 
