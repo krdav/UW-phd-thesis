@@ -4,19 +4,18 @@ blaa
 \section{Introduction}
 More blaa
 
-\subsection{Intro subject 1}
-qwerty
 
-\subsection{Intro subject 2}
-qwerty
-\subsection{Details}
-qwerty1
+
+
+\section{Mitochondrial inhibition induces a stable relationship between aspartate levels and proliferation rate}
+%%% Experiments with H1299 and count/metabolites per day
+
+
 
 
 
 
 \section{Quantifying the metabolic fates of aspartate}
-
 
 
 \begin{figure}
@@ -71,13 +70,14 @@ qwerty1
 
 
 
-
+Most of cellular biomass is amino acids \cite{Hosios2016-us}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.75\textwidth]{figures/chap2/ah_cell_comp.pdf}
-    \caption[gggg]{
-    gggg
+    \includegraphics[width=0.80\textwidth]{figures/chap2/ah_cell_comp.pdf}
+    \caption[Amino acid and pyrimidine total cell concentration]{
+    Total amino acids and pyrimidines liberated by acid hydrolysis of 143B and H1299 cells, normalized by total cell volume (Total cell conc.).
+    Gln and Asn is converted during acid hydrolysis to Glu and Asp respectively.
     }
     \label{fig:ch2:ah_cell_comp}
 \end{figure}
@@ -88,9 +88,11 @@ qwerty1
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.35\textwidth]{figures/chap2/asp_fate.pdf}
-    \caption[gggg]{
-    gggg
+    \includegraphics[width=0.4\textwidth]{figures/chap2/asp_fate.pdf}
+    \caption[Relative consumption towards each fate of aspartate]{
+    Relative consumption towards each fate of aspartate estimated using best estimates from figure \ref{fig:ch2:Asn_flux} and \ref{fig:ch2:ah_cell_comp}.
+    Aspartate consumption towards purines was estimated equal to consumption towards pyrimidines.
+    Results either with or without Asn efflux.
     }
     \label{fig:ch2:asp_fate}
 \end{figure}
@@ -125,7 +127,14 @@ metabolic fates of aspartate i.e. aspartate conversion
     \centering
     \includegraphics[width=0.95\textwidth]{figures/chap2/gln_lab_tranfr.pdf}
     \caption[Gln amide to alpha \hNi{} transfer]{
-    ggg
+    Gln \hNi{} on the amide nitrogen can transfer to the alpha nitrogen in H1299 cells but not in 143B cells.
+    Upper left diagram shows how Gln amide and alpha nitrogen labels can transfer.
+    Transfer of amide labelled nitrogen can be achieved by glutaminase catalyzed release of labelled ammonia and its subsequent use as a substrate in the conversion of alpha-ketoglutarate (aKG) to Glu alpha-\hNi by glutamate dehydrogenase.
+    The signature of glutamine synthetase activity is the appearance of doubly labelled Gln.
+    Upper right diagram shows how Gln amide and alpha nitrogen labels are transferred to downstream metabolites Glu, Asp and Asn.
+    Lower panel shows the nitrogen isotopologue distribution of Gln, Glu, Asp and Asn in 143B and H1299 at steady-state.
+    The alpha nitrogen label is frequently lost in Glu and downstream, presumably due to transaminase catalyzed exchange with unlabelled amino groups on amino acids such as leucine, isoleucine, valine etc.
+    The amide nitrogen label is partially transferred to the alpha position in H1299, but not in 143B, also indicated by the doubly labelled Asn.
     }
     \label{fig:ch2:gln_lab_tranfr}
 \end{figure}
@@ -162,11 +171,22 @@ metabolic fates of aspartate i.e. aspartate conversion
     \centering
     \includegraphics[width=0.95\textwidth]{figures/chap2/sal_frac_conc.pdf}
     \caption[Salvage as a function of Urd/Hpx concentration]{
-    Fraction of purines (GDP, GMP, ADP and AMP) and pyrimidines (UDP, UMP, CDP and CMP) derived from salvage when cells are cultured in increasing concentrations of uridine/hypoxanthine.
+    Fraction of purines (GDP, GMP, ADP and AMP) and pyrimidines (UDP, UMP, CDP and CMP) derived from salvage when 143B or H1299 cells are cultured in increasing concentrations of uridine/hypoxanthine.
     }
     \label{fig:ch2:sal_frac_conc}
 \end{figure}
 
+
+
+
+
+\section{Aspartate to proliferation curves}
+%%% Experiments with H1299 (Metformin and Rotenone) and HT1080
+
+
+
+
+\section{Integrated stress response}
 
 
 
@@ -185,6 +205,12 @@ Cell lines were acquired from ATCC (143B, H1299, HT1080) and tested to be free f
 Cells were maintained in Dulbecco’s Modified Eagle’s Medium (DMEM) (Gibco, 50-003-PB) supplemented with 3.7 g/L sodium bicarbonate (Sigma-Aldrich, S6297), 10\% fetal bovine serum (FBS) (Gibco, 26140079) and 1\% penicillin-streptomycin solution (Sigma-Aldrich, P4333).
 Cells were incubated in a humidified incubator at 37°C with 5\% CO2.
 
+
+\subsection{Western blots}
+Licor, antibodies (primaries) etc.
+
+
+
 \subsection{Proliferation assays}
 Cells were trypsinized (Corning, 25,051 CI), resuspended in seeding media, counted (Beckman Coulter Counter Multisizer 4) and seeded overnight onto 6/12/24-well dishes (Corning, 3516;3513:3524) with an initial seeding density of 10,000 cells/mL and a volume of 4, 2 and 1 mL, respectively.
 After overnight incubation, 3–6 wells were counted for a starting cell count at the time of treatment.
@@ -195,34 +221,31 @@ Cells were incubated in a humidified incubator at 37°C with 5\% CO2, then count
 Proliferation rate was reported as doublings per day and determined using the time and fold count difference between the starting and final counts and assuming a constant proliferation rate throughout the assay.
 
 
-
-
 \subsection{Generation of nuclear RFP cell lines}
 Nuclear RFP cell lines were generated using 1e5 transducing units of EF1A-nuclear RFP lentivirus (Cellomics Technology, PLV-10205-50) by spinfection.
-Cells were seeded at 50\% confluency in 6 well dishes, lentivirus was added to fresh media with 8 µg/µL polybrene, then added to cells and followed by centrifugation (900g, 90 mins, 30°C).
+Cells were seeded at 50\% confluency on 6 well dishes, lentivirus was added to fresh media with 8 µg/µL polybrene, then added to cells and followed by centrifugation (900g, 90 mins, 30°C).
 Two days after infection, cells were sorted for high RFP expression using fluorescence-activated cell sorting (FACS).
 High RFP cells were then expanded and single-cell cloned by limiting dilution, plating 0.5 cells/well on a 96 well plate.
 Plates were then screened for RFP expression and localization using Incucyte S3 (Sartorius) and a suitable clone chosen, expanded, and used for all subsequent experiments.
 
+
 \subsection{Lentiviral production and stable cell line generation}
-jAspSnFR3 and jAspSnFR3-mRuby3 were first cloned into entry vector pENTR1A (Fisher, A10462) using NEBuilder HiFI DNA Assembly Cloning Kit (New England BioLabs, E2621).
-These donor constructs were then used to transfer their insert into destination vectors: pLX304-CMV-Blast (Addgene, 25890), pLenti-CMV-Hygro (w117-1) (Addgene, 17454 a gift from Eric Campeau \& Paul Kaufman), or pLX304-CAG-Blast using LR Clonase II (Fisher, 11791100).
-pLX304-CAG-Blast was generated in house by swapping the CMV promoter region of pLX304-CMV-Blast with a CAG promoter provided on synthetic DNA (Integrated DNA Technologies).
+Genes (SLC1A3, gpASNase, eGFP, ASNS, ATF4 reporter) were first cloned into entry vector pENTR1A (Fisher, A10462) using NEBuilder HiFI DNA Assembly Cloning Kit (New England BioLabs, E2621).
+These donor constructs were then used to transfer their insert into destination vectors: pLX304-CMV-Blast (Addgene, 25890) or pLenti-CMV-Hygro (w117-1) (Addgene, 17454 a gift from Eric Campeau \& Paul Kaufman) using LR Clonase II (Fisher, 11791100).
 Each plasmid sequence was verified by whole plasmid sequencing (Plasmidsaurus).
 Lentivirus was generated by co-transfection of HEK293T cells with destination vector plasmid DNA and the packaging plasmids pMDLg/pRRE (Addgene, 12251), pRSV-Rev, (Addgene, 12253) and pMD2.G (Addgene, 12259) using FuGENE transfection reagent (Fisher, PRE2693) in DMEM (Fisher, MT10017CV) without FBS or penicillin-streptomycin.
 The supernatant containing lentiviral particles was filtered through a 0.45 µM membrane (Fisher, 9720514) and was supplemented with 8 µg/µL polybrene (Sigma, TR-1003-G) prior to infection.
 For infection, cells were seeded at 50\% confluency in 6 well dishes and centrifuged with lentivirus (900g, 90 mins, 30°C).
 After 24 hours the media was replaced with fresh media and after 48 hours cells were treated with either 1 µg/mL blasticidin (Fisher, R21001) or 150 µg/mL hygromycin (Sigma-Aldrich, H7772-1G) and maintained in selection media until all uninfected control cells died.
-After selection, cells were expanded and single-cell cloned by limiting dilution, plating 0.5 cells/well using 2-3 96 well plates.
-These clones were incubated until 10-30\% confluency and screened for high GFP and RFP signal using Incucyte S3 (Sartorius).
-The highest expressing monoclonal cells were selected and further expanded on 6 well plates and again screened for fluorescence using the Incucyte.
+After selection, cells were expanded and single-cell cloned by limiting dilution, plating 0.5 cells/well using 96 well plates.
+These clones were expanded and screened by either western blot or presence of GFP or RFP signal using Incucyte S3 (Sartorius) to validate expression.
 From this a single clone was chosen, expanded and used for all subsequent experiments.
-Different cell lines received different vector-sensor combinations: HEK293T cells were infected with pLX304-CAG-jAspSnFR3-mRuby3 (blasticidin), HT1080 with pLenti-jAspSnFR3-mRuby3 (hygromycin) and HT1080, H1299 and H1299 GOT1/2 DKO cells expressing nuclear RFP were infected with pLenti-jAspSnFR3 (hygromycin).
 
-\subsection{Generation of GOT1/2 double knockout (DKO) cells}
+
+\subsection{Generation of knockout cells}
 Protocol and guide RNA generation was identical to that described in Hart et al. \cite{Hart2023-gp}.
-Briefly, three chemically synthesized 2'-O-methyl 3’phosphorothioate-modified single guide RNA (sgRNA) sequences targeting GOT1 and GOT2 were purchased (Synthego; table \ref{tab:ch2:guides}).
-A pool of all six sgRNAs for GOT1 and GOT2 were resuspended in nuclease-free water, combined with SF buffer (Lonza, V4XC-2032), and sNLS-spCas9 (Aldevron, 9212).
+Briefly, three chemically synthesized 2'-O-methyl 3’phosphorothioate-modified single guide RNA (sgRNA) sequences targeting the gene of interest were purchased (Synthego; table \ref{tab:ch2:guides}).
+A pool of all three sgRNAs (or all six for GOT1/GOT2 double knockout) were resuspended in nuclease-free water, combined with SF buffer (Lonza, V4XC-2032), and sNLS-spCas9 (Aldevron, 9212).
 200,000 H1299 cells were resuspended in the resulting solution containing ribonucleoprotein complexes (RNPs) and electroporated using a 4D-Nucleofector (Amaxa, Lonza).
 Nucleofected cells were then expanded and single-cell cloned by limiting dilution by plating 0.5 cells/well in a 96 well plate.
 Gene knockout was confirmed using western blots.
@@ -237,6 +260,14 @@ GOT1 & \begin{tabular}[c]{@{}l@{}}\texttt{CAGUCAUCCGUGCGAUAUGC}\\\texttt{GCACGGA
 \hline
 GOT2 & \begin{tabular}[c]{@{}l@{}}\texttt{UUUCUCAUUUCAGCUCCUGG}\\\texttt{CGGACGCUAGGCAGAACGUA}\\\texttt{UCCUUCCACUGUUCCGGACG}\end{tabular} \\
 \hline
+OMA1 & \begin{tabular}[c]{@{}l@{}}\texttt{ACACAUUAGCAUCCACCUCA}\\\texttt{GAGUAAAUCAGUGUGACAGG}\\\texttt{GCCAACCCAAGAUGCCAGAA}\end{tabular} \\
+\hline
+HRI & \begin{tabular}[c]{@{}l@{}}\texttt{GUUUGCAACUGCAAAAGGGA}\\\texttt{UGAUGUUCCAGCAGAAAUCC}\\\texttt{CCAGCACCUUCACUUCCCGU}\end{tabular} \\
+\hline
+GCN2 & \begin{tabular}[c]{@{}l@{}}\texttt{AAAACUAAAUUGAUUUCAGG}\\\texttt{AGCUCGGUCAUCCUUGGCCA}\\\texttt{GAACUGGCCAAGAAACACUG}\end{tabular} \\
+\hline
+SLC25A10 & \begin{tabular}[c]{@{}l@{}}\texttt{GCAUCUGCAGACGCAGCAGG}\\\texttt{GCAACACCUUCUCGUGGAAG}\\\texttt{GAAGCUGCGCAUGACGGGCA}\end{tabular} \\
+\hline
 \end{tabular}
 \end{table}
 
@@ -249,82 +280,100 @@ The fraction of supernatant transferred was adjusted to correspond to that extra
 The total cell volume extracted from was determined by counting cells on a parallel plate using a coulter counter.
 Dried samples were reconstituted with 40 µL 80\% HPLC grade methanol, containing internal standards if appropriate, and transferred to vials for measurement by LCMS.
 
-
 \subsection{Media metabolite extraction}
-
+For media metabolite extraction, 10 µL media was sampled, added to 990 µL 80\% HPLC grade methanol in HPLC grade water and incubated at -20°C for 30 min or until ready.
+Tubes were centrifuged (17,000g, 15 mins, 4°C) and 400 µL of the supernatant containing media metabolites was transferred to a new centrifuge tube and placed in a centrivap until dry.
+Dried samples were reconstituted with 40 µL 80\% HPLC grade methanol, containing internal standards if appropriate, and transferred to vials for measurement by LCMS.
 
 
 \subsection{Absolute quantification by isotope dilution}
+Dried samples were reconstituted with 40 µL 80\% HPLC grade methanol containing 5 µM U-\hCi, U-\hNi{} labelled canonical amino acid mix (Cambridge Isotope Laboratories, MSK-CAA-1) and transferred to vials for measurement by LCMS.
+For pyrimidine nucleobase/nucleoside quantification a U-\hCi{} internal standard was made by partial hydrolysis (12 h in 6 M HCl at 90°C) of U-\hCi{} spirulina whole cells lyophilized powder (Cambridge Isotope Laboratories, CLM-8400-PK).
+The peak area for each compound was divided by its labelled standard to derive the response ratio.
+The response ratio was then mapped to a calibration curve to infer the compound concentration in the vial.
+The sample concentration was calculated by correcting for each step introducing a dilution, for the intracellular concentrations this included using of the total cell volume.
+To make the calibration curves a non-labelled amino acid mixture was made from an analytical amino acid standard without glutamine and asparagine (Sigma-Aldrich, A9906-1ML) and added glutamine (Sigma-Aldrich, 76523-100MG) and asparagine (Sigma-Aldrich, 51363-100MG) to match the concentration of the other amino acids.
+For pyrimidine nucleobase/nucleoside quantification this pool was also mixed with equimolar uracil (Sigma-Aldrich, U1128), uridine (Sigma-Aldrich, U3003), 2′-deoxyuridine (Sigma-Aldrich, D5412), thymine (Sigma-Aldrich, T0376), cytosine (Sigma-Aldrich, C3506) and cytidine (Cayman Chemical, 29602).
+Using this mix, three replicates of a 12 point 2-fold dilution series was made with a max concentration of 500 µM and a volume per dilution of 40 µL.
+These were placed in a centrivap until dry and reconstituted with 40 µL 80\% HPLC grade methanol containing the appropriate isotopic internal standard and transferred to vials for measurement by LCMS.
+The peak area for each compound was divided by its labelled standard to derive the response ratio, then the best fitting calibration curves for each compound were chosen among either linear, power or a second-degree polynomial.
+Each calibration curve was manually inspected for proper fit and measurements below or above the concentration range of the dilution series were discarded.
+
+
+\subsection{Liquid Chromatography-Mass Spectrometry (LCMS)}
+Metabolite quantitation was performed using a Q Exactive HF-X Hybrid Quadrupole-Orbitrap Mass Spectrometer equipped with an Ion Max API source and H-ESI II probe, coupled to a Vanquish Flex Binary UHPLC system (Thermo Scientific).
+Mass calibrations were completed at a minimum of every 5 days in both the positive and negative polarity modes using LTQ Velos ESI Calibration Solution (Pierce).
+Polar Samples were chromatographically separated by injecting a sample volume of 1 µL into a SeQuant ZIC-pHILIC Polymeric column (2.1 x 150 mm 5 mM, EMD Millipore).
+The flow rate was set to 150 mL/min, autosampler temperature set to 10°C, and column temperature set to 30°C.
+Mobile Phase A consisted of 20 mM ammonium carbonate and 0.1\% (v/v) ammonium hydroxide, and Mobile Phase B consisted of 100\% acetonitrile.
+The sample was gradient eluted (\%B) from the column as follows: 0-20 min.: linear gradient from 85\% to 20\% B; 20-24 min.: hold at 20\% B; 24-24.5 min.: linear gradient from 20\% to 85\% B; 24.5 min.-end: hold at 85\% B until equilibrated with ten column volumes.
+Mobile Phase was directed into the ion source with the following parameters: sheath gas = 45, auxiliary gas = 15, sweep gas = 2, spray voltage = 2.9 kV in the negative mode or 3.5 kV in the positive mode, capillary temperature = 300°C, RF level = 40\%, auxiliary gas heater temperature = 325°C.
+Mass detection was conducted with a resolution of 240,000 in full scan mode, with an AGC target of 3,000,000 and maximum injection time of 250 msec.
+Metabolites were detected over a mass range of 70-850 m/z.
+Quantitation of all metabolites was performed using Tracefinder 4.1 (Thermo Scientific) referencing an in-house metabolite standards library using ≤5 ppm mass error.
+For samples subjected to stable isotope tracing, peak areas were natural abundance corrected with IsoCor \cite{Millard2019-hv}, using experimentally determined tracer purity values.
 
 
 
 \subsection{Media uptake flux}
+The cells were first passaged in DMEM with dialyzed FBS and the tracer and/or metabolites used during the uptake experiment.
+For 143B GOT DKO cells expressing SLC1A3, 500 µM sodium aspartate was added to adjust intracellular aspartate levels.
+For 143B WT cells, 100 µM U-\hCi{} Asn was added to achieve a steady-state label fraction in the proteome.
+To start the experiment, cells were seeded on six well dishes at 1e5 cells/well.
+On the next day fresh media was added and t=0 media samples were collected.
+Then cells were incubated and subsequent media samples collected.
+After the last media collection the residual media volume was quantified to correct for evaporation
+For U-\hCi{} Asn tracing the labelling ratio was determined by extracting intracellular metabolites after the last media collection.
+Two dishes were run in parallel and used for counting to determine proliferation rates and cell volume measurement using a coulter counter.
 
-13C4 Asn uptake in 143B cells
-In this notebook I will process and plot data from an experiment were I quantified amino acid uptake from media over time to determine the total aspartate consumption flux.
-
-
-
-How to calculate flux
-For cell count ($y$), the cell counts over time is defined as an exponential function ($y(t)$) with proliferation rate $K$ and cell count at $t=0$ being $y_0$:
+\subsubsection{Flux calculation}
+Cell counts over time is assumed an exponential function ($y(t)$) with proliferation rate $K$ and cell count at $t=0$ being $y_0$:
 \begin{equation}
     y(t) = y_0 2^{K t}
 \end{equation}
 
-If we assume that amino acid uptake into a cell is constant, the uptake rate (also called influx) can be defined as the total molar uptake over at time range divided by the total area under the cell count curve over the same time range.
-
-Formally, with $F_i$ being the influx and $n(t)$ being the molar quantity of a compound $i$, and $t_1$ and $t_2$ first and second timepoint, respectively, defining the time range:
+Assuming amino acid uptake into a cell is constant, the uptake rate (also called influx) can be defined as the total molar uptake over a time range divided by the total area under the cell count curve of the same time range.
+Formally, the flux of a compound $i$ is:
 \begin{equation}
     F_i = \frac{n_i(t_1) - n_i(t_2)}{\int_{t_1}^{t_2} y(t) dt}
 \end{equation}
+With $F_i$ being the flux, $n_i(t)$ being the molar quantity of a compound $i$, and $t_1$ and $t_2$ being the first and second timepoint, respectively.
 
-Using $\Delta$ to indicate we can simplify the above:
+Using $\Delta$ to indicate the difference between $t_1$ and $t_2$, we can simplify the above:
 \begin{equation}
     F_i = \frac{\Delta n_i}{\int_{t_1}^{t_2} y(t) dt} = \frac{\Delta n_i}{\frac{y_0 2^{K t_2}}{K\ \natlog(2)} - \frac{y_0 2^{K t_1}}{K\ \natlog(2)}} = \frac{\Delta n_i}{\frac{y_0 (2^{K t_2} - 2^{K t_1})}{K\ \natlog(2)}}
 \end{equation}
-The denominator is equal to the area under the cell count curve over the same time range ($t_1$ to $t_2$), this is sometimes referred to as "cell hours" becuase of its unit is time, typically in hours.
+The denominator is the area under the cell count curve from $t_1$ to $t_2$ and is sometimes referred to as ``cell hours'' because of its unit is time, typically hours.
 
 Using cell hours it is possible to calculate the molar quantity taken up per cell per hour, typically as: $\frac{\text{fmol}}{\text{cell}\times h}$.
-However, this makes it hard to compare accross cell lines because of variability in cell size. To fix this, simply redefine the problem from integrating the area under the cell count curve to the area under the volumne increase curve.
-This is trivial using a volume per cell multiplier ($V_c$):
+However, this makes it hard to compare across cell lines because of variability in cell size.
+To fix this, simply redefine the problem from integrating the area under the cell count curve to the area under the cell volume curve.
+The cell volume curve is defined using a volume per cell multiplier ($V_c$):
 \begin{equation}
     V(t) = y(t) V_c = V_c y_0 2^{t K}
 \end{equation}
 
-Since $V_c$ is independent of time, it is not integrated and we get:
+Assuming cell volume is unchanged throughout the experiment, $V_c$ is a constant that is not integrated and we get:
 \begin{equation}
     F_i = \frac{\Delta n_i}{\frac{V_c y_0 (2^{K t_2} - 2^{K t_1})}{K\ \natlog(2)}}
+\label{eq:ch2:fl_vh}
 \end{equation}
+Since $V_c$ is a volume, we have a denominator with a typical unit of $\frac{L}{h}$.
+We could call this ``volume hours'', and dividing a molar quantity onto this we typical get a unit of $\frac{\text{mM}}{h}$, which is comparable across cell lines with different sizes.
 
-
-Since $V_c$ is a volume, we have a denominator with typical unit of $\frac{L}{h}$.
-We could call this "volume hours", and dividing the molar quantity onto this we get the typical unit of $\frac{\text{mM}}{h}$ which is comparable accross cell lines with different sizes.
-
-Sometimes it can be usefull to convert the influx of a compound to the intracellular concentration of the compound.
-In doing this we assume that the influxed compound is passively accumulating inside the cell and this can be a reasonable assumption when looking at for instance essential amino acids.
-For example take leucine, by adding the amount of free leucine with that bound in protein it should correspond to that being taken up through influx as it is neither synthesized nor broken down.
-To convert flux to cell concentration for compound $i$ observe the following rearrangement of above:
+Sometimes it can be useful to convert the influx of a compound to its accumulated intracellular concentration, also referred to as total cell concentration.
+The accumulated intracellular concentration of a compound can be understood intuitively as the total molar uptake divided by the total increase in cell volume.
+To convert flux to total cell concentration for compound $i$ ($C_i$) observe the following rearrangement of equation \ref{eq:ch2:fl_vh}:
 \begin{equation}
     F_i = K\ \natlog(2) \frac{\Delta n_i}{V_c y_0 (2^{K t_2} - 2^{K t_1})}
 \end{equation}
-
-The fraction is the molar quantity of consumed compound $i$ divided by the accumulation of cell volume i.e. the intracellular concentration of compound $i$ ($C_i$).
-Thus we have:
+The fraction is the total cell concentration for compound $i$ and thus we have:
 \begin{equation}
     F_i = K\ \natlog(2) C_i => C_i = \frac{F_i}{K\ \natlog(2)}
 \end{equation}
 
 
-
-
-
-
-
-
-
-
-
-\subsection{Net asparagine consumption}
+\subsubsection{Net asparagine consumption}
 Human cells do not have any appreciable asparagine deaminase activity \cite{Sullivan2018-gz} and thus asparagine is a terminal metabolite that does not get converted or used as a substrate in other metabolic reactions.
 This makes the asparagine fluxes suitable for isotope tracing if we make the explicit assumption is that asparagine can be generated from synthesis using aspartate but not recycled back.
 Figure \ref{fig:ch2:asn_Jprot} shows the net asparagine fluxes when U-\hCi{} labelled Asn is added to the media.
@@ -358,46 +407,31 @@ Simplify:
 \label{eq:ch2:Jprot}
 \end{equation}
 
-Using the above scheme, asparagine fluxes were determined in 143B cells expressing a nuclear RFP for cell counting.
-The cells were first passaged in DMEM with dialyzed FBS and 100 µM U-\hCi{} Asn to achieve a steady-state label fraction in the proteome.
-To start the experiment, cells were seeded on six well dishes at 1e5 cells/well in passage media.
-On the next day fresh media (same as for passage) was added and t=0 media samples were collected.
-Then cell counts were monitored using an Incucyte to count cell nuclei and media samples were collected at 10 and 24 hours.
-After the last media collection, intracellular metabolites were collected to determine the labelling ratio.
-Two dishes were run in parallel and used for counting and cell volume measurement using a coulter counter.
 
 
 
 
 
+\subsection{Acid hydrolysis}
 
 
 
 
 
+Two 12W plates seeded in parallel (DMEM dia. FBS)
+At 40-90\% confluency harvest by washing four times with saline
+Count one plate
+On the other plate add 1 mL 6M HCl to 5 wells, seal the plate and perform acid hydrolysis at 90C in incubator for 20h
+Move hydrolysate to 2 mL tubes then wash the well thrice with 1 mL water and collect it in the same tube
+Dry the hydrolysate
+Add 0.5 mL 6M HCl to each tube and incubate another 48h at 90C, then dry
+Reconstitute in 0.5 mL 6M HCl and aliquot 2 tubes with 10k cells and 2 tubes with 40k cells and dry.
+Reconstitute the two 10k tubes with 1 mL water, move to a fresh tube, dry and reconstitute these with 40 uL SE+CAAv2 and run standard LCMS
+Water reconstitution is an attempt to get rid of the plastic/glue soluble in HCl
+Using uracil as a control (should be in the same range regardless of scraping or on plate hydrolysis)
 
-\subsection{Intracellular amino acid concentration measurements by isotope dilution}
-Dried samples were reconstituted with 40 µL 80\% HPLC grade methanol containing 5 µM U-\hCi, U-\hNi{} labelled canonical amino acid mix (Cambridge Isotope Laboratories, MSK-CAA-1) and transferred to vials for measurement by LCMS.
-The peak area for each amino acid was divided by its labelled standard to derive the response ratio.
-The response ratio was then mapped to a calibration curve to infer the amino acid concentration and finally the intracellular concentration was calculated by correcting for each step introducing a dilution, including the use of the total cell volume.
-To make the calibration curves a non-labelled amino acid mixture was made from an analytical amino acid standard without glutamine and asparagine (Sigma-Aldrich, A9906-1ML) and added glutamine (Sigma-Aldrich, 76523-100MG) and asparagine (Sigma-Aldrich, 51363-100MG) to match the concentration of the other amino acids.
-Using this mix, three replicates of a 12 point 2-fold dilution series was made with a max concentration of 500 µM and a volume per dilution of 40 µL.
-These were placed in a centrivap until dry and reconstituted with 40 µL 80\% HPLC grade methanol containing 5 µM U-\hCi, U-\hNi{} labelled canonical amino acid mix (Cambridge Isotope Laboratories, MSK-CAA-1) and transferred to vials for measurement by LCMS.
-The peak area for each amino acid was divided by its labelled standard to derive the response ratio, then the best fitting calibration curves for each amino acid were chosen among either linear, power or a second-degree polynomial.
-Each calibration curve was manually inspected for proper fit and measurements below or above the concentration range of the dilution series were discarded.
 
-\subsection{Liquid Chromatography-Mass Spectrometry (LCMS)}
-Metabolite quantitation was performed using a Q Exactive HF-X Hybrid Quadrupole-Orbitrap Mass Spectrometer equipped with an Ion Max API source and H-ESI II probe, coupled to a Vanquish Flex Binary UHPLC system (Thermo Scientific).
-Mass calibrations were completed at a minimum of every 5 days in both the positive and negative polarity modes using LTQ Velos ESI Calibration Solution (Pierce).
-Polar Samples were chromatographically separated by injecting a sample volume of 1 µL into a SeQuant ZIC-pHILIC Polymeric column (2.1 x 150 mm 5 mM, EMD Millipore).
-The flow rate was set to 150 mL/min, autosampler temperature set to 10°C, and column temperature set to 30°C.
-Mobile Phase A consisted of 20 mM ammonium carbonate and 0.1\% (v/v) ammonium hydroxide, and Mobile Phase B consisted of 100\% acetonitrile.
-The sample was gradient eluted (\%B) from the column as follows: 0-20 min.: linear gradient from 85\% to 20\% B; 20-24 min.: hold at 20\% B; 24-24.5 min.: linear gradient from 20\% to 85\% B; 24.5 min.-end: hold at 85\% B until equilibrated with ten column volumes.
-Mobile Phase was directed into the ion source with the following parameters: sheath gas = 45, auxiliary gas = 15, sweep gas = 2, spray voltage = 2.9 kV in the negative mode or 3.5 kV in the positive mode, capillary temperature = 300°C, RF level = 40\%, auxiliary gas heater temperature = 325°C.
-Mass detection was conducted with a resolution of 240,000 in full scan mode, with an AGC target of 3,000,000 and maximum injection time of 250 msec.
-Metabolites were detected over a mass range of 70-850 m/z.
-Quantitation of all metabolites was performed using Tracefinder 4.1 (Thermo Scientific) referencing an in-house metabolite standards library using ≤5 ppm mass error.
-For samples subjected to stable isotope tracing, peak areas were natural abundance corrected with IsoCor \cite{Millard2019-hv}, using experimentally determined tracer purity values.
+
 
 
 
