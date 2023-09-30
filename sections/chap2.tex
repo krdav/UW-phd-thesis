@@ -90,16 +90,17 @@ Most of cellular biomass is amino acids \cite{Hosios2016-us}
 
 
 
-The total Asp consumption flux expected in DMEM i.e. with Arg but without Asn, is estimated to be 9.25 mM/h.
-This is close to Asp uptake in 143B GOT DKO which was measured at 11.43 mM/h (figure \ref{fig:ch2:flux_143dko}).
+The total Asp consumption flux expected in DMEM i.e. with Arg but without Asn, is estimated to be 9.9 mM/h.
+This is close to Asp uptake in 143B GOT DKO which was measured at 11.4 mM/h (figure \ref{fig:ch2:flux_143dko}).
 The difference is directionally as would be expected because total pyrimidine/purine levels underestimate synthesis flux by discounting recycling (figure ]\ref{fig:ch2:pur_tr_ov}) and because 143B GOT DKO maintain a higher intracellular concentration of aspartate due to expression of Glu/Asp transporter SLC1A3.
 \begin{figure}
     \centering
     \includegraphics[width=0.36\textwidth]{figures/chap2/asp_fate.pdf}
     \caption[Relative consumption towards each fate of aspartate]{
     Relative consumption towards each fate of aspartate estimated using best estimates from figure \ref{fig:ch2:Asn_flux} and \ref{fig:ch2:ah_cell_comp}.
-    Aspartate consumption towards purines was estimated equal to consumption towards pyrimidines.
+    Aspartate consumption towards purines was estimated 1.5 times the consumption towards pyrimidines.
     * Asn efflux is calculated based on the assumption that cells are grown in asparagine free media, prior to substantial media conditioning.
+    Bars colored blue to indicate that the aspartate fate is a nitrogen donation yielding fumarate.
     }
     \label{fig:ch2:asp_fate}
 \end{figure}
@@ -223,13 +224,12 @@ Overlap between perturbations eliciting ISR by GCN2 and HRI \cite{Taniuchi2016-n
          \caption{ggg}
          \label{fig:ch2:143B_Atp_ATF4rep}
      \end{subfigure}
-     \hfill
+     \hspace{0.06\textwidth}
      \begin{subfigure}[b]{0.4\textwidth}
          \includegraphics[width=\textwidth]{figures/chap2/HT1080_GOT_DKO_ETCinhib_ATF4rep.pdf}
          \caption{ggg}
          \label{fig:ch2:HT1080_GOT_DKO_ETCinhib_ATF4rep}
      \end{subfigure}
-     \hfill
         \caption[ggg]{
         gggg
         }
@@ -419,6 +419,23 @@ After the last media collection the residual media volume was quantified to corr
 For U-\hCi{} Asn tracing the labelling ratio was determined by extracting intracellular metabolites after the last media collection.
 Two dishes were run in parallel and used for counting to determine proliferation rates and cell volume measurement using a coulter counter.
 
+\subsection{Acid hydrolysis to measure amino acids and pyrimidines}
+Two 12W plates seeded in parallel (DMEM dia. FBS)
+At 40-90\% confluency harvest by washing four times with saline
+Count one plate
+On the other plate add 1 mL 6M HCl to 5 wells, seal the plate and perform acid hydrolysis at 90C in incubator for 20h
+Move hydrolysate to 2 mL tubes then wash the well thrice with 1 mL water and collect it in the same tube
+Dry the hydrolysate
+Add 0.5 mL 6M HCl to each tube and incubate another 48h at 90C, then dry
+Reconstitute in 0.5 mL 6M HCl and aliquot 2 tubes with 10k cells and 2 tubes with 40k cells and dry.
+Reconstitute the two 10k tubes with 1 mL water, move to a fresh tube, dry and reconstitute these with 40 uL SE+CAAv2 and run standard LCMS
+Water reconstitution is an attempt to get rid of the plastic/glue soluble in HCl
+Using uracil as a control (should be in the same range regardless of scraping or on plate hydrolysis)
+% Sigma	84429-10X2ML	HCl for amino acid analysis
+
+
+
+
 \subsubsection{Flux calculation}
 Cell counts over time is assumed an exponential function ($y(t)$) with proliferation rate $K$ and cell count at $t=0$ being $y_0$:
 \begin{equation}
@@ -502,27 +519,15 @@ Simplify:
 
 
 
+\subsubsection{Aspartate consumption flux}
+% How was it calculated
+%%% purines = pyrimidines plus a 2 fold correction for adenine
+% Table with the raw data values
 
 
 
-\subsection{Acid hydrolysis}
 
 
-
-
-
-Two 12W plates seeded in parallel (DMEM dia. FBS)
-At 40-90\% confluency harvest by washing four times with saline
-Count one plate
-On the other plate add 1 mL 6M HCl to 5 wells, seal the plate and perform acid hydrolysis at 90C in incubator for 20h
-Move hydrolysate to 2 mL tubes then wash the well thrice with 1 mL water and collect it in the same tube
-Dry the hydrolysate
-Add 0.5 mL 6M HCl to each tube and incubate another 48h at 90C, then dry
-Reconstitute in 0.5 mL 6M HCl and aliquot 2 tubes with 10k cells and 2 tubes with 40k cells and dry.
-Reconstitute the two 10k tubes with 1 mL water, move to a fresh tube, dry and reconstitute these with 40 uL SE+CAAv2 and run standard LCMS
-Water reconstitution is an attempt to get rid of the plastic/glue soluble in HCl
-Using uracil as a control (should be in the same range regardless of scraping or on plate hydrolysis)
-% Sigma	84429-10X2ML	HCl for amino acid analysis
 
 
 
@@ -543,6 +548,13 @@ Upon reaching confluency, polar metabolites were extracted and submitted to LCMS
 Seeded H1299 and 143B cells at 5,000 and 10,000 cells/well on a 6-well dish in DMEM containing Gln amide\=/\hNi{} as described above.
 Then added an equimolar mix of hypoxanthine and uridine from a 40x stock to a final concentration of 10, 20, 30, 40, 50, 60 µM in each of the 6 wells.
 Fresh media was then added every four days and upon reaching confluency, polar metabolites were extracted and submitted to LCMS with the above described technique.
+
+
+
+
+
+
+\subsection{ATF4 reporter measurements}
 
 
 
