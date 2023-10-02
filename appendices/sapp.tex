@@ -63,7 +63,7 @@ Here, inhibition of GCN2 ablates ATF4 expression while mitochondrial respiration
          \caption{Intracellular Asp}
          \label{fig:sapp:ISR:143B_GOT_DKO_ISR_Asp_conc}
      \end{subfigure}
-     \hfill
+     \hspace{0.02\textwidth}
      \begin{subfigure}[b]{0.35\textwidth}
          \includegraphics[width=\textwidth]{figures/sapp/ISR/143B_GOT_DKO_ISR_Asn_conc.pdf}
          \caption{Intracellular Asn}
@@ -134,7 +134,7 @@ Aspartate depletion would prevent the malate-aspartate from shuttling electrons 
 Aspartate is exported out of the mitochondria using the membrane potential i.e. one aspartate out for one glutamate and a proton in.
 Thus, depleting cytoplasmic aspartate might alter the membrane potential in unpredictable ways and indeed there appears to be a small increase in mitochondrial membrane potential in HT1080 GOT DKO cells as aspartate is progressively depleted from the media (figure \ref{fig:sapp:ISR:HT1080_GOT_DKO_TMRE}).
 
-\begin{figure}
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.95\textwidth]{figures/sapp/ISR/HT1080_DKO_KO_ISR.pdf}
     \caption[ATF4 post Asp depl. OMA1/HRI KO, western]{
@@ -146,7 +146,7 @@ Thus, depleting cytoplasmic aspartate might alter the membrane potential in unpr
     \label{fig:sapp:ISR:HT1080_DKO_KO_ISR}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[ht]
      \centering
      \begin{subfigure}[b]{0.49\textwidth}
          \includegraphics[width=\textwidth]{figures/sapp/ISR/HT1080_GOT_DKO_HRI_KO.jpeg}
@@ -169,13 +169,13 @@ Thus, depleting cytoplasmic aspartate might alter the membrane potential in unpr
 
 \begin{figure}[!ht]
      \centering
-     \begin{subfigure}[b]{0.65\textwidth}
+     \begin{subfigure}[b]{0.6\textwidth}
          \includegraphics[width=\textwidth]{figures/sapp/ISR/HT1080_GOT_DKO_TMRA_BAM15tit.pdf}
          \caption{BAM15, mito membrane potential}
          \label{fig:sapp:ISR:HT1080_GOT_DKO_TMRA_BAM15tit}
      \end{subfigure}
      \hfill
-     \begin{subfigure}[b]{0.8\textwidth}
+     \begin{subfigure}[b]{0.85\textwidth}
          \includegraphics[width=\textwidth]{figures/sapp/ISR/HT1080_GOT_DKO_TMRA_ASPtit.pdf}
          \caption{Asp depletion, mito membrane potential}
          \label{fig:sapp:ISR:HT1080_GOT_DKO_TMRA_ASPtit}
@@ -205,7 +205,7 @@ Using the HT1080 ATF4 reporter cells (low baseline clone) ASNS and eGFP (control
 The polyclonal population that grew out after selection was tested for ATF4 upregulation using reporter assay and western blot.
 Generally, ASNS over-expression diminish ATF4 upregulation, but strangely, in this background, adding additional asparagine increase ATF4.
 
-\begin{figure}
+\begin{figure}[ht]
      \centering
      \begin{subfigure}[b]{0.49\textwidth}
          \includegraphics[width=\textwidth]{figures/sapp/ISR/HT1080_ATF4rep_eGFP_OE.pdf}
@@ -253,6 +253,96 @@ Strangely, ISR in 293T cells was not reverted well with Asp/Asn, but even more s
     }
     \label{fig:sapp:ISR:293T_GCN2_ISR}
 \end{figure}
+
+
+
+
+
+\FloatBarrier
+\section{Metabolic changes post aspartate depletion in GOT DKO}
+
+
+
+\begin{figure}[!ht]
+     \centering
+     \begin{subfigure}[b]{0.6\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_DKO_AA.pdf}
+         \caption{Amino acids}
+         \label{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_AA}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.4\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_DKO_rd.pdf}
+         \caption{Redox metabolites}
+         \label{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_rd}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.8\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_DKO_tca.pdf}
+         \caption{TCA metabolites}
+         \label{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_tca}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.8\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_DKO_pyr.pdf}
+         \caption{Pyrimidine metabolites}
+         \label{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_pyr}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.4\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_DKO_pur.pdf}
+         \caption{Purine metabolites}
+         \label{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_pur}
+     \end{subfigure}
+     \hfill
+        \caption[Metabolic changes in 143B after Asp depl.]{
+        Metabolic changes in 143B GOT DKO after aspartate depletion.
+        Fold change compared to time zero 2 hours after media switch with/without aspartate.
+        }
+        \label{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_metab}
+\end{figure}
+
+
+\begin{figure}[!ht]
+     \centering
+     \begin{subfigure}[b]{0.6\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_AA.pdf}
+         \caption{Amino acids}
+         \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_AA}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.4\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_rd.pdf}
+         \caption{Redox metabolites}
+         \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_rd}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.8\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_tca.pdf}
+         \caption{TCA metabolites}
+         \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_tca}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.8\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_pyr.pdf}
+         \caption{Pyrimidine metabolites}
+         \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_pyr}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.4\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_pur.pdf}
+         \caption{Purine metabolites}
+         \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_pur}
+     \end{subfigure}
+     \hfill
+        \caption[Metabolic changes in HT1080 after Asp depl.]{
+        Metabolic changes in HT1080 GOT DKO after aspartate depletion.
+        Time-series of fold changes, normalized to vehicle at time zero.
+        Condition with salvage mix (SM) contain: 1 mM Asn/Urd, 0.5 mM Hpx, 20 µM adenine and 10 µM adenosine.
+        }
+        \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_metab}
+\end{figure}
+
 
 
 
