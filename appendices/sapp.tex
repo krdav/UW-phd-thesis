@@ -8,7 +8,7 @@ A place hosting information classified due to reasons such as: high variance, un
 
 \subsection{Aspartate depletion induced ISR}
 Aspartate depletion is achieved in GOT DKO cells and shown to cause integrated stress response (ISR) both through eIF2a phosphorylation and ATF4 upregulation.
-Media swapping induces a quick depletion of both Asp and Asn.
+Media swapping induces a quick depletion of both Asp and Asn (figure \ref{fig:sapp:ISR:143B_GOT_DKO_ISR_conc}).
 Asn efflux is likely more quick due to better permeability.
 Upon Asn depletion the ISR cascade starts and can maintain high expression of ATF4 due to the continued Asn synthesis from Asp.
 On the other hand, if Asp is depleted to the point of protein synthesis inhibition no signal might be detected when probing ATF4 as Asp levels will not recover.
@@ -54,6 +54,26 @@ Here, inhibition of GCN2 ablates ATF4 expression while mitochondrial respiration
     Aspartate depletion in 143B GOT DKO, SLC1A3 cells initiated by media swapping.
     }
     \label{fig:sapp:ISR:143B_DKO_ISR}
+\end{figure}
+
+\begin{figure}[!ht]
+     \centering
+     \begin{subfigure}[b]{0.35\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/ISR/143B_GOT_DKO_ISR_Asp_conc.pdf}
+         \caption{Intracellular Asp}
+         \label{fig:sapp:ISR:143B_GOT_DKO_ISR_Asp_conc}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.35\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/ISR/143B_GOT_DKO_ISR_Asn_conc.pdf}
+         \caption{Intracellular Asn}
+         \label{fig:sapp:ISR:143B_GOT_DKO_ISR_Asn_conc}
+     \end{subfigure}
+     \hfill
+        \caption[Intracellular Asp/Asn at ISR in GOT DKO]{
+        Intracellular concentration of aspartate and asparagine before and 2 hours after media switch with/without aspartate for 143B GOT DKO cells, similar to figure \ref{fig:sapp:ISR:143B_DKO_ISR} (second panel from the top).
+        }
+        \label{fig:sapp:ISR:143B_GOT_DKO_ISR_conc}
 \end{figure}
 
 
@@ -107,7 +127,12 @@ This could be due to pleiotropic effect of FCCP e.g. its is also depolarizing th
 \FloatBarrier
 \subsection{OMA1/HRI relation to asp depletion induced ISR}
 OMA1 KO appears on western blot to ablate ATF4 upregulation in response to aspartate depletion; however, HRI does not.
-Another experiment, exclusively with OMA1, shows that it is not required for ATF4 upregulation after aspartate depletion while GCN2 is.
+Another experiment, exclusively with OMA1, shows that it is not required for ATF4 upregulation after aspartate depletion, on the other hand GCN2 appears to be required.
+
+If OMA1/HRI is involved with aspartate depletion induced ISR it could be through altering the mitochondrial membrane potential.
+Aspartate depletion would prevent the malate-aspartate from shuttling electrons into the inner mitochondria, a process which is, presumably, still active in GOT DKO cells.
+Aspartate is exported out of the mitochondria using the membrane potential i.e. one aspartate out for one glutamate and a proton in.
+Thus, depleting cytoplasmic aspartate might alter the membrane potential in unpredictable ways and indeed there appears to be a small increase in mitochondrial membrane potential in HT1080 GOT DKO cells as aspartate is progressively depleted from the media (figure \ref{fig:sapp:ISR:HT1080_GOT_DKO_TMRE}).
 
 \begin{figure}
     \centering
@@ -141,6 +166,33 @@ Another experiment, exclusively with OMA1, shows that it is not required for ATF
         }
         \label{fig:sapp:ISR:OMA1_HRI_DARS2_val}
 \end{figure}
+
+\begin{figure}[!ht]
+     \centering
+     \begin{subfigure}[b]{0.65\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/ISR/HT1080_GOT_DKO_TMRA_BAM15tit.pdf}
+         \caption{BAM15, mito membrane potential}
+         \label{fig:sapp:ISR:HT1080_GOT_DKO_TMRA_BAM15tit}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.8\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/ISR/HT1080_GOT_DKO_TMRA_ASPtit.pdf}
+         \caption{Asp depletion, mito membrane potential}
+         \label{fig:sapp:ISR:HT1080_GOT_DKO_TMRA_ASPtit}
+     \end{subfigure}
+     \hfill
+        \caption[Mito membrane potential in GOT DKO]{
+        Mitochondrial membrane potential increases slightly during aspartate depletion in HT1080 GOT DKO.
+        Measured on an Incucyte using the TMRE dye.
+        }
+        \label{fig:sapp:ISR:HT1080_GOT_DKO_TMRE}
+\end{figure}
+
+
+
+
+
+
 
 
 
