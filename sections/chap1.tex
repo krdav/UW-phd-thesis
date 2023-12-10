@@ -37,6 +37,7 @@ Therefore, it is unclear if the proteome allocation hypothesis even apply to can
 
 Rather than being ATP limited, cancer cells appear to be oversupplied with ATP \cite{Scholnick1973-wx}.
 High ATP shifts the balance between ATP and AMP which inhibits the glycolytic enzyme phosphofructokinase (PFK) \cite{Dunaway1983-ee}.
+Conversely, limiting ATP synthesis from ATPase using oligomycin leads to lower ATP/ADP, resulting in enhanced forward driving force of glycolysis \cite{Park2019-cg}.
 Tumor up-regulated genes leading to increased ATP consumption through ER UDPase relieves the cell of high ATP and increase both glycolysis and proliferation \cite{Fang2010-mj, Israelsen2010-ke}.
 It has also been shown that when pyruvate oxidation is pharmacologically induced in cancer cells it leads to lower \NAD/NADH levels, increased mitochondrial membrane potential and lower proliferation that can all be reversed by uncoupling the mitochondrial membrane potential using an ionophore \cite{Luengo2021-kb}.
 The proposed mechanism is that the ATP/ADP (or ATP/AMP) ratio is high at baseline and that more mitochondrial NADH and proton pumping leads to higher membrane potential because ATPase is substrate limited because of low ADP supply.
@@ -193,15 +194,15 @@ $$
 $$
 The synthesis flux is defined as: $F_{syn} = [B] r_{AB}$ and controls the time before half of the pool is labelled:
 $$
-t_{1/2} = \frac{B}{F_{syn}} \ln(2)
+t_{1/2} = \frac{[B]}{F_{syn}} \ln(2)
 $$
 A detailed treatment of this example can be found in appendix \ref{chap1_app}.
 
 In these simple flux measurements it is assumed that the reaction is irreversible but it is trivial to extend the mathematical model to a reversible reaction; however, it is not always trivial to measure the flux of such reversible reactions.
 Unfortunately, this is the case for the fates of aspartate which has a number of challenges.
 Firstly, the impermeability makes it impractical to use aspartate directly as a tracer, and secondly, aspartate fates both involve carbon and nitrogen.
-Potentially, both of these issues could be solved using U-\hCi{}, U-\hNi{} glutamine but the number of reaction rates is still very large (figure \ref{fig:ch1:asp_fluxes}) and to solve such system it would be necessary to measure protein, DNA and RNA abundance and breakdown rates.
-This makes aspartate fate flux measurements very difficult to measure directly using time-series of isotopic labelling and therefore were not attempted.
+Potentially, both of these issues could be solved using U-\hCi{}, U-\hNi{} glutamine but the number of reaction rates is very large (figure \ref{fig:ch1:asp_fluxes}) and to solve such system it would be necessary to measure protein, DNA and RNA abundance and breakdown rates.
+This makes aspartate fate flux very difficult to measure directly using time-series of isotopic labelling and therefore were not attempted.
 Instead, fluxes were estimated using measurements of total amino acids and nucleotides at a steady-state proliferation rate (detailed in chapter \ref{chap2}).
 
 \begin{figure}
@@ -219,21 +220,17 @@ Instead, fluxes were estimated using measurements of total amino acids and nucle
 
 
 
-
-
-
-
-
-
-
-
-
 \section{Which aspartate fate controls proliferation}
+Based on the fates of aspartate it can be speculated which of these, if any, is ``the first degree effect'' responsible for the relationship between aspartate and proliferation.
+As tumor growth is aspartate limited is seems likely that tumors are also experiencing the first degree effect aspartate limitation, whatever it may be.
+Several of the metabolic fates of aspartate can be salvaged from the environment e.g. asparagine, uridine, hypoxanthine and adenine to complement asparagine, pyrimidine IMP and AMP synthesis, respectively.
+And thus, if depletion of any one of the salvageable aspartate fates is the first degree effect of aspartate limitation, then it can be added to the media to either rescue proliferation or induce a further aspartate depletion resulting in a ``second degree effect'' that then controls proliferation.
+In both cases the aspartate to proliferation rate correlation would be shifted to reflect that proliferation is no longer mediated by the first degree effect.
 
-
-
-
-
+Initially, the effect of all salvageable fates of aspartate can be tested with a ``Salvage mix'' containing these at a sufficient concentration.
+This tests the hypothesis that posits that some fate of aspartate is the first degree effect of aspartate limitation and thus if this fate is scavenged through salvage mix supplementation it enables proliferation at lower a aspartate concentration (figure \ref{fig:ch1:asp_fates_suppl_hypo}).
+If true, this fate can by isolated by attempting proliferation rescue with single components from the salvage mix.
+If false, none of the salvageable fates is the first degree effect of aspartate limitation, leaving aspartate consumption protein 
 
 \begin{figure}
     \centering
