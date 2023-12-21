@@ -7,7 +7,7 @@ A place hosting information classified due to reasons such as: high variance, un
 \section{Integrated stress response}
 
 \subsection{Aspartate depletion induced ISR}
-Aspartate depletion is achieved in GOT DKO cells and shown to cause integrated stress response (ISR) both through eIF2a phosphorylation and ATF4 upregulation.
+Aspartate depletion is achieved in GOT DKO cells and shown to cause integrated stress response (ISR) both through eIF2alpha phosphorylation and ATF4 upregulation.
 Media swapping induces a quick depletion of both Asp and Asn (figure \ref{fig:sapp:ISR:143B_GOT_DKO_ISR_conc}).
 Asn efflux is likely more quick due to better permeability.
 Upon Asn depletion the ISR cascade starts and can maintain high expression of ATF4 due to the continued Asn synthesis from Asp.
@@ -71,7 +71,7 @@ Here, inhibition of GCN2 ablates ATF4 expression while mitochondrial respiration
      \end{subfigure}
      \hfill
         \caption[Intracellular Asp/Asn at ISR in GOT DKO]{
-        Intracellular concentration of aspartate and asparagine before and 2 hours after media switch with/without aspartate for 143B GOT DKO cells, similar to figure \ref{fig:sapp:ISR:143B_DKO_ISR} (second panel from the top).
+        Intracellular concentration of aspartate and asparagine before and 2 hours after media switch with/without aspartate for 143B GOT DKO cells, similar conditions as figure \ref{fig:sapp:ISR:143B_DKO_ISR} (second panel from the top).
         }
         \label{fig:sapp:ISR:143B_GOT_DKO_ISR_conc}
 \end{figure}
@@ -83,7 +83,7 @@ Here, inhibition of GCN2 ablates ATF4 expression while mitochondrial respiration
 \FloatBarrier
 \subsection{OMA1/HRI relation to rotenone/antimycin induced ISR}
 According Fessler et al. and Guo et al. \cite{Fessler2020-zk, Guo2020-ia} OMA1/HRI is required for FCCP induced ISR.
-Guo et al. also shows OMA1/HRI is required for rotenone/antimycin induced ISR (suppl. of Guo et al.).
+Guo et al. also show OMA1/HRI is required for rotenone/antimycin induced ISR (suppl. of Guo et al.).
 
 We have pooled knockout cells (parental HT1080 ATF4 reporter low clone) of OMA1 and HRI.
 These appear to ablate rotenone/antimycin induced ISR but strangely not FCCP induced ISR.
@@ -125,7 +125,7 @@ This could be due to pleiotropic effect of FCCP e.g. its is also depolarizing th
 
 
 \FloatBarrier
-\subsection{OMA1/HRI relation to asp depletion induced ISR}
+\subsection{OMA1/HRI relation to asp depletion induced ISR (GOT DKO)}
 OMA1 KO appears on western blot to ablate ATF4 upregulation in response to aspartate depletion; however, HRI does not.
 Another experiment, exclusively with OMA1, shows that it is not required for ATF4 upregulation after aspartate depletion, on the other hand GCN2 appears to be required.
 
@@ -184,6 +184,7 @@ Thus, depleting cytoplasmic aspartate might alter the membrane potential in unpr
         \caption[Mito membrane potential in GOT DKO]{
         Mitochondrial membrane potential increases slightly during aspartate depletion in HT1080 GOT DKO.
         Measured on an Incucyte using the TMRE dye.
+        Data processing documented on Github \href{https://github.com/krdav/IncuCyte_TMRE-assay}{link}.
         }
         \label{fig:sapp:ISR:HT1080_GOT_DKO_TMRE}
 \end{figure}
@@ -193,15 +194,10 @@ Thus, depleting cytoplasmic aspartate might alter the membrane potential in unpr
 
 
 
-
-
-
-
-
 \FloatBarrier
 \subsection{ASNS over-expression to ablate rotenone/antimycin induced ISR}
 If asparagine depletion is the main reason for rotenone/antimycin induced ISR maybe over-expression of ASNS would mitigate it?
-Using the HT1080 ATF4 reporter cells (low baseline clone) ASNS and eGFP (control) was over-expressed using lentiviral infection.
+Using the HT1080 ATF4 reporter cells (low baseline clone) ASNS and eGFP (control) were each over-expressed using lentiviral infection.
 The polyclonal population that grew out after selection was tested for ATF4 upregulation using reporter assay and western blot.
 Generally, ASNS over-expression diminish ATF4 upregulation, but strangely, in this background, adding additional asparagine increase ATF4.
 
@@ -227,7 +223,7 @@ Generally, ASNS over-expression diminish ATF4 upregulation, but strangely, in th
      \end{subfigure}
         \caption[ASNS OE, rotenone/antimycin induced ISR]{
         Effect of ASNS over-expression (eGFP control) on ATF4 reporter assay of ETC inhibitor induced ISR (parental HT1080 low baseline clone).
-        For ATF4 reporter treatments was initiated by 10x spike-in, for western blot fresh media was added with drug at time zero.
+        For ATF4 reporter treatments were initiated by 10x spike-in, for western blot fresh media was added with drug at time zero.
         Using 100 nM rotenone and 1 µM antimycin.
         }
         \label{fig:sapp:ISR:ASNS_ISR}
@@ -243,21 +239,21 @@ Generally, ASNS over-expression diminish ATF4 upregulation, but strangely, in th
 \subsection{GCN2 relation to rotenone/antimycin induced ISR}
 Now, one would think that ETC inhibitor induced ISR is induced through Asp/Asn depletion and thus mediated by GCN2 and thus a GCN2 knockout should not upregulate ATF4.
 This model is what is proposed by Mick et al. \cite{Mick2020-kf} but it is only supported by one western blot showing GCN2 phosphorylation and a few experiment showing ablation of ATF4 induction when co-treating with 500 nM GCN2iB (Takeda \cite{Nakamura2018-mt}).
-GCN2iB, is an ATP analog and there is conflicting evidence of its off-target tendencies.
+GCN2iB, is an ATP analog and there is conflicting evidence regarding its off-target tendencies.
 The inventors, Nakamura et al. \cite{Nakamura2018-mt}, screens for off-target kinase inhibition but does not report specifically on related kinase HRI, PKR and PERK.
 However, an AACR poster [\href{https://rapt.com/wp-content/uploads/2019/04/FLX-Bio-GCN2-poster-AACR-2019.pdf}{link}], from a competing group with their own drug \cite{Jackson2022-wv}, suggests that this and other GCN2 inhibitors have off-target effects on HRI with IC50 in the 10-500 nM range.
-Thus, using 500 nM GCN2i as in Mick et al., and 2000 nM as we have done, could lead to robust GCN2 and HRI dual inhibition and mask any effect from HRI.
+Thus, using 500 nM GCN2i as in Mick et al., and 2000 nM as we have done, could lead to robust GCN2, HRI dual inhibition and mask any effect from HRI.
 A GCN2 knockout would be a better way to differentiate the two.
 
-We only have a confirmed GCN2 knockout in 293T cells and therefore tried with these.
-Strangely, ISR in 293T cells was not reverted well with Asp/Asn, but even more strange the GCN2 KO cells did not have ablated ATF4.
+We only have a confirmed GCN2 knockout in 293T cells and therefore I tried experimenting with these.
+Strangely, ISR in 293T cells was not reverted well with Asp/Asn, but even more strange the GCN2 KO cells still had robust ATF4 induction.
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.70\textwidth]{figures/sapp/ISR/293T_GCN2_ISR.pdf}
     \caption[ATF4 post mito inhib. GCN2 KO, western]{
     Rotenone treatment was initiated by adding fresh media with 100 nM rotenone at time zero.
-    Rescue conditions: Asn (500 µM), Asp (30 mM) or Pyr (2 mM) was also added to media >1 h before time zero.
+    Rescue conditions: Asn (500 µM), Asp (30 mM) or Pyr (2 mM) were also added to media >1 h before time zero.
     Top, WT with different rescues.
     Bottom WT vs. GCN2 KO.
     }
@@ -267,7 +263,7 @@ Strangely, ISR in 293T cells was not reverted well with Asp/Asn, but even more s
 
 \FloatBarrier
 We have pooled knockout cells (parental 143B ATF4 reporter high clone) of GCN2 that also maintain Asn rescuable ATF4 induction upon rotenone/antimycin treatment.
-Monoclonal knockouts were never isolated due to the difficulty of GCN2 detection on western blots; however, the knockout protocol is typically very efficient.
+Here, a monoclonal knockout would have been optimal but these were never isolated due to the difficulty of GCN2 detection on western blots; however, the knockout protocol is typically very efficient.
 Taking these data at face value, GCN2 is not required for rotenone/antimycin induced ISR.
 
 \begin{figure}[ht]
@@ -287,27 +283,21 @@ Taking these data at face value, GCN2 is not required for rotenone/antimycin ind
 \FloatBarrier
 \section{tRNA charge changes}
 Supposedly, GCN2 phosphorylation is stimulated by uncharged tRNAs \cite{Wek1989-yw, Dong2000-si}, or ribosome collisions \cite{Harding2019-kb, Wu2020-lq, Yan2021-yv}, the latter explaining GCN2 activation upon UV radiation.
-Measuring the tRNA charge effect of ISR inducing, aspartate depleting treatments, such as electron chain inhibitors, would be a good confirmation of whether ISR is driven by GCN2.
+Measuring the tRNA charge effect of ISR inducing aspartate depleting treatments, such as electron chain inhibitors, would be a good confirmation of whether ISR is driven by GCN2.
 
-First, in 143B cell a high dose antimycin is spiked-in and tRNA charge followed over time (figure \ref{fig:sapp:tRNA:143B_Anti_time}).
-Cytoplasmic tRNA\textsuperscript{Asp} remain charged throughout the time-course, but cytoplasmic tRNA\textsuperscript{Asn} starts to decrease after $\sim$9 hours.
-Of note, the discontinuity of cyto-tRNA\textsuperscript{Asn} charge between 12 and 15 hours is likely due to sampling artifacts.
+First, in 143B cell a high dose antimycin was spiked-in and tRNA charge followed over time (figure \ref{fig:sapp:tRNA:143B_Anti_time}).
+Cyto-tRNA\textsuperscript{Asp} remain charged throughout the time-course, but cyto-tRNA\textsuperscript{Asn} starts to decrease after $\sim$9 hours.
+Of note, the discontinuity of cyto-tRNA\textsuperscript{Asn} charge between 12 and 15 hours is likely due to a sampling artifact.
 For practical reasons the 12 hour timepoint was spiked at 8:00 and harvested at 20:00 whereas the 15 hour timepoint was spiked at 19:00 and harvested the next day at 10:00.
 This time difference would likely lead to higher media asparagine concentration due to cellular efflux, which would would then buffer the decrease in cyto-tRNA\textsuperscript{Asn} charge.
 Regardless, mito-tRNA\textsuperscript{Asn} charge is rapidly decreasing in a timeframe that is compatible with the induction of ISR that happens within 1-2 hours.
-Decreased charge of cyto-tRNA\textsuperscript{Asn} is not compatible with the early induction of ISR but it is with a later induction.
-Thus, ISR may be induced two-fold - first an early GCN2 independent induction, and then a GCN2 dependent induction caused by uncharged cyto-tRNA\textsuperscript{Asn}.
+The timing of the decreased in cyto-tRNA\textsuperscript{Asn} charge is not compatible with the early induction of ISR but is with a later induction.
+Thus, ISR may be induced two-fold: first an early GCN2 independent induction, and then a GCN2 dependent induction caused by uncharged cyto-tRNA\textsuperscript{Asn}.
 
-
-
-
-
-The resulting eIF2alpha phosphorylation causes a global decrease in protein synthesis
-Glu codon
-.
-
-
-
+The resulting eIF2alpha phosphorylation causes a global decrease in protein synthesis which appear to correlate with the increase in cyto-tRNA\textsuperscript{Glu} UUC anticodon charge.
+We have previously made this observation in in many of the amino acid starvation conditions, made in several cell lines, by Alicia Darnell.
+Therefore, cyto-tRNA\textsuperscript{Glu} UUC anticodon charge appear to be a marker inversely correlated with translation.
+How this works is unknown but maybe it is related to the ribosome dwell time which has been reported particularly high in mouse embryonic stem cells and mouse liver \cite{Ingolia2011-kj, Gobet2020-sl}.
 
 \begin{figure}[!ht]
      \centering
@@ -322,14 +312,16 @@ Glu codon
         \caption[Antimycin time-series in 143B, effect on tRNA charge]{
         tRNA charge as a function of time after antimycin treatment (1 µM spike-in) of 143B cells in DMEM, without pyruvate, with dialyzed FBS and 200 µM uridine.
         Top panel, effect on aspartate and asparagine tRNA charge.
-        Bottom panel, effect on cytoplasmic glutamate codons with TTC charge being a potential marker inversely correlated with translation.
+        Bottom panel, effect on cyto-tRNA\textsuperscript{Glu} charge, with the UUC anticodon charge being a potential marker inversely correlated with translation.
         For other tRNAs (cytoplasmic as well as mitochondrial) antimycin inhibitors had little or insignificant effect on charge.
         }
         \label{fig:sapp:tRNA:143B_Anti_time}
 \end{figure}
 
 
-
+\FloatBarrier
+Looking at the steady-state tRNA charge data for 143B and H1299 cells treated with a panel of ETC inhibitors (figure \ref{fig:sapp:tRNA:143B_ETCinhib} and \ref{fig:sapp:tRNA:H1299_ETCinhib}), we see that the response is dependent on both the drug and the cell line.
+However, in both cases uncharged tRNAs accumulate in the mitochondria, with a surprising decrease of mito-tRNA\textsuperscript{Pro} charge.
 
 \begin{figure}[!ht]
      \centering
@@ -350,10 +342,6 @@ Glu codon
         }
         \label{fig:sapp:tRNA:143B_ETCinhib}
 \end{figure}
-
-
-
-
 
 \begin{figure}[!ht]
      \centering
@@ -376,14 +364,9 @@ Glu codon
 \end{figure}
 
 
-
-
-
-
-
-
-
-
+\FloatBarrier
+For GOT DKO cells, we observed a strong effect on mito-tRNA\textsuperscript{Asp} in all three cell lines tested (figure \ref{fig:sapp:tRNA:DKO_Asp-Asn}).
+This is consistent with previous observations in 143B GOT DKO cells expressing SLC1A3 when using UCPH titration to limit aspartate (using the old tRNAseq protocol).
 
 \begin{figure}[!ht]
      \centering
@@ -400,7 +383,7 @@ Glu codon
      \end{subfigure}
      \hfill
         \caption[tRNA charge in GOT DKO Asp-tit]{
-        tRNA charge as a function of media aspartate concentration.
+        tRNA charge in GOT DKO cells (no SLC1A3) as a function of media aspartate concentration.
         Conditions with salvage mix (SM) contain: 500 µM asparagine, 200 µM uridine and 100 µM adenine.
         For other tRNAs (cytoplasmic as well as mitochondrial) aspartate titration had insignificant effect on charge.
         }
@@ -408,34 +391,85 @@ Glu codon
 \end{figure}
 
 
-Put proliferation data here.
+
+\FloatBarrier
+The reason for uncharged mito-tRNA\textsuperscript{Asp} in GOT DKO cells may be that with no synthesis any aspartate must come from the cytoplasm and thus must push the aspartate-glutamate carrier in reverse.
+This presumably requires a large gradient because aspartate mitochondrial aspartate export is driven by the membrane potential (figure \ref{fig:sapp:tRNA:mito_asp_export}).
+Similarly, ETC inhibition will shut down most, but probably not all, aspartate synthesis and thereby decrease mitochondrial aspartate levels disproportionately compared to the whole cell (figure \ref{fig:sapp:tRNA:mito_asp_levels}).
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/sapp/tRNA/mito_asp_export.pdf}
+    \caption[Model of mitochondrial aspartate export]{
+    Mitochondrial aspartate export is driven by the membrane potential by coupling glutamate import with a proton.
+    }
+    \label{fig:sapp:tRNA:mito_asp_export}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.70\textwidth]{figures/sapp/tRNA/mito_asp_levels.pdf}
+    \caption[Mitochondrial aspartate levels upon ETC inhibition]{
+    Mitochondrial aspartate concentration before and after piericidin (complex I inhibitor) and antimycin (complex III inhibitor).
+    Data from Chen et al. \cite{Chen2016-mf}.
+    }
+    \label{fig:sapp:tRNA:mito_asp_levels}
+\end{figure}
 
 
 
+
+\FloatBarrier
+Proliferation data in GOT DKO cells show that media aspartate concentrations used for tRNAseq conditions, sample a wide range of proliferation rates.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/sapp/tRNA/143B_DKO_asp-titr.pdf}
+    \caption[Asp titration in 143B GOT DKO]{
+    Proliferation assay with 143B GOT DKO cells (no SLC1A3).
+    }
+    \label{fig:sapp:tRNA:143B_DKO_asp_prlfr}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/sapp/tRNA/H1299_DKO_asp-titr.pdf}
+    \caption[Asp titration in H1299 GOT DKO]{
+    Proliferation assay with H1299 GOT DKO cells.
+    Conditions with salvage mix (SM) contain: 500 µM asparagine, 200 µM uridine and 100 µM adenine.
+    }
+    \label{fig:sapp:tRNA:H1299_DKO_prlfr1}
+\end{figure}
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.65\textwidth]{figures/sapp/tRNA/H1299_GOT-DKO_prlfr.pdf}
     \caption[Asp titration in H1299 GOT DKO]{
     Proliferation assay with H1299 GOT DKO cells.
-    Conditions with salvage mix (SM) contain: 500 µM asparagine, 200 µM uridine and 100 µM adenine.
+    Condition with salvage mix (SM) contains: 1 mM asparagine/uridine, 0.5 mM hypoxanthine, 20 µM adenine and 10 µM adenosine.
     }
-    \label{fig:sapp:ISR:H1299_DKO_prlfr}
+    \label{fig:sapp:tRNA:H1299_DKO_prlfr2}
 \end{figure}
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/sapp/tRNA/HT1080_DKO_asp-titr.pdf}
+    \caption[Asp titration in H1080 GOT DKO]{
+    Proliferation assay with HT1080 GOT DKO cells.
+    }
+    \label{fig:sapp:tRNA:HT1080_DKO_prlfr1}
+\end{figure}
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.65\textwidth]{figures/sapp/tRNA/HT1080_GOT-DKO_prlfr.pdf}
     \caption[Asp titration in H1080 GOT DKO]{
     Proliferation assay with HT1080 GOT DKO cells.
-    Conditions with salvage mix (SM) contain: 500 µM asparagine, 200 µM uridine and 100 µM adenine.
+    Condition with salvage mix (SM) contains: 1 mM asparagine/uridine, 0.5 mM hypoxanthine, 20 µM adenine and 10 µM adenosine.
     Made by David Sokolov.
     }
-    \label{fig:sapp:ISR:HT1080_DKO_prlfr}
+    \label{fig:sapp:tRNA:HT1080_DKO_prlfr2}
 \end{figure}
-
-
 
 \begin{figure}[ht]
     \centering
@@ -453,90 +487,168 @@ Put proliferation data here.
 
 \FloatBarrier
 \section{Metabolic changes post aspartate depletion in GOT DKO}
-To get insights into what else is going on during aspartate depletion in GOT DKO metabolites were extracted post aspartate depletion for 143B (figure \ref{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_metab}) and HT1080 (figure \ref{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_metab}).
-Some metabolic changes are readily explained: intracellular aspartate decrease drastically and rapidly.
-This is also the case for asparagine in 143B cells but in HT1080 cells asparagine only decreases 50 percent.
-Fumarate and malate are decreased, probably due to lower asp consumption in purine synthesis and thus lower fumarate production.
-Similarly, the IMP to AMP ratio is increased in both cell lines, probably due to low aspartate preventing IMP to AMP synthesis.
+To get insights into what else is going on during aspartate depletion in GOT DKO cells metabolites were extracted post aspartate depletion for 143B GOT DKO, SLC1A3 (figure \ref{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_metab}) and HT1080 GOT DKO (figure \ref{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_metab}).
+Some metabolic changes are readily explained: intracellular aspartate decrease drastically and rapidly which is similar for asparagine in 143B cells but in HT1080 cells asparagine only decreases 50 percent.
+Fumarate and malate are decreased, probably due to lower aspartate consumption in purine synthesis and thus lower fumarate production.
+Similarly, the IMP to AMP ratio is increased in both cell lines, probably due to low aspartate preventing IMP conversion to AMP.
 For 143B the pyrimidines metabolites decrease as expected during aspartate shortage; however, strangely pyrimidines metabolites increase in HT1080.
-Similarly, differential effect is seen for succinate and glycerol 3-phosphate.
+Similarly, opposite effect is seen for succinate and glycerol 3-phosphate.
 
 \begin{figure}[!ht]
-     \centering
-     \begin{subfigure}[b]{0.45\textwidth}
-         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_DKO_AA.pdf}
-         \caption{Amino acids}
-         \label{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_AA}
-     \end{subfigure}
-     \hspace{0.1\textwidth}
-     \begin{subfigure}[b]{0.3\textwidth}
-         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_DKO_rd.pdf}
-         \caption{Redox metabolites}
-         \label{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_rd}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.6\textwidth}
-         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_DKO_tca.pdf}
-         \caption{TCA metabolites}
-         \label{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_tca}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.6\textwidth}
-         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_DKO_pyr.pdf}
-         \caption{Pyrimidine metabolites}
-         \label{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_pyr}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.3\textwidth}
-         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_DKO_pur.pdf}
-         \caption{Purine metabolites}
-         \label{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_pur}
-     \end{subfigure}
-     \hfill
+    \captionsetup{labelformat=empty}
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_GOT_AA.pdf}
+        \caption{Amino acids}
+        \label{fig:sapp:143B_GOT_AA}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.30\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_GOT_rd.pdf}
+        \caption{Redox metabolites}
+        \label{fig:sapp:143B_GOT_rd}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.6\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_GOT_tca.pdf}
+        \caption{TCA metabolites}
+        \label{fig:sapp:143B_GOT_tca}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_GOT_pyr.pdf}
+        \caption{Pyrimidine metabolites}
+        \label{fig:sapp:143B_GOT_pyr}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.6\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_GOT_pur.pdf}
+        \caption{Purine ratios}
+        \label{fig:sapp:143B_GOT_pur}
+    \end{subfigure}
+    \hfill
+    \caption{}
+\end{figure}
+
+\begin{figure}[!ht]
+    % \captionsetup{labelformat=empty}
+    \ContinuedFloat
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_GOT_dntps.pdf}
+        \caption{dNTPs}
+        \label{fig:sapp:143B_GOT_dntps}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_GOT_axp.pdf}
+        \caption{AXPs}
+        \label{fig:sapp:143B_GOT_axp}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_GOT_gxp.pdf}
+        \caption{GXPs}
+        \label{fig:sapp:143B_GOT_gxp}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_GOT_uxp.pdf}
+        \caption{UXPs}
+        \label{fig:sapp:143B_GOT_uxp}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/143B_GOT_cxp.pdf}
+        \caption{CXPs}
+        \label{fig:sapp:143B_GOT_cxp}
+    \end{subfigure}
+    \hfill
         \caption[Metabolic changes in 143B after Asp depl.]{
-        Metabolic changes in 143B GOT DKO after aspartate depletion.
+        Metabolic changes in 143B GOT DKO, SLC1A3 after aspartate depletion.
         Fold change compared to time zero 2 hours after media switch with/without aspartate.
         }
         \label{fig:sapp:GOT_DKO_Asp_depl:143B_DKO_metab}
 \end{figure}
 
 
+
+
+
 \begin{figure}[!ht]
-     \centering
-     \begin{subfigure}[b]{0.68\textwidth}
-         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_AA.pdf}
-         \caption{Amino acids}
-         \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_AA}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.45\textwidth}
-         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_rd.pdf}
-         \caption{Redox metabolites}
-         \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_rd}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.9\textwidth}
-         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_tca.pdf}
-         \caption{TCA metabolites}
-         \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_tca}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.9\textwidth}
-         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_pyr.pdf}
-         \caption{Pyrimidine metabolites}
-         \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_pyr}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.68\textwidth}
-         \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_pur.pdf}
-         \caption{Purine metabolites (and dTTP)}
-         \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_pur}
-     \end{subfigure}
-     \hfill
+    \captionsetup{labelformat=empty}
+    \centering
+    \begin{subfigure}[b]{0.68\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_AA.pdf}
+        \caption{Amino acids}
+        \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_AA}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_rd.pdf}
+        \caption{Redox metabolites}
+        \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_rd}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.9\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_tca.pdf}
+        \caption{TCA metabolites}
+        \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_tca}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.68\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_pyr.pdf}
+        \caption{Pyrimidine metabolites}
+        \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_pyr}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.9\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_pur.pdf}
+        \caption{Purine ratios}
+        \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_pur}
+    \end{subfigure}
+    \hfill
+    \caption{}
+\end{figure}
+
+\begin{figure}[!ht]
+    % \captionsetup{labelformat=empty}
+    \ContinuedFloat
+    \centering
+    \begin{subfigure}[b]{0.68\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_dntps.pdf}
+        \caption{dNTPs}
+        \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_dntps}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.68\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_axp.pdf}
+        \caption{AXPs}
+        \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_axp}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.68\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_gxp.pdf}
+        \caption{GXPs}
+        \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_gxp}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.68\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_uxp.pdf}
+        \caption{UXPs}
+        \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_uxp}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.68\textwidth}
+        \includegraphics[width=\textwidth]{figures/sapp/GOT_DKO_Asp_depl/HT1080_DKO_cxp.pdf}
+        \caption{CXPs}
+        \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_cxp}
+    \end{subfigure}
+    \hfill
         \caption[Metabolic changes in HT1080 after Asp depl.]{
         Metabolic changes in HT1080 GOT DKO after aspartate depletion.
         Time-series of fold changes, normalized to vehicle at time zero.
-        Condition with salvage mix (SM) contains: 1 mM Asn/Urd, 0.5 mM Hpx, 20 µM adenine and 10 µM adenosine.
+        Condition with salvage mix (SM) contains: 1 mM asparagine/uridine, 0.5 mM hypoxanthine, 20 µM adenine and 10 µM adenosine.
         }
         \label{fig:sapp:GOT_DKO_Asp_depl:HT1080_DKO_metab}
 \end{figure}
@@ -551,15 +663,16 @@ General observation regarding the ISR experiments:
 \begin{itemize}
     \item Using multiple cell lines (143B, HT1080, H1299, 293T) appear to confuse the conclusion, but it also reveals that ISR activation has a cell line dependent component.
     An example of this would be the difference between 143B and H1299 in their tRNA charge response after ETC inhibitor treatment (figure \ref{fig:sapp:tRNA:143B_ETCinhib} and \ref{fig:sapp:tRNA:H1299_ETCinhib}).
+    Another example is asparagine ablation of ETC inhibitor induced ISR which is robust for HT1080 cells but less prominent for 293T cells.
     \item The GCN2iB inhibitor is likely having an off-target effect on HRI which affects the conclusion from Mick et al. \cite{Mick2020-kf} and a few of our own western blots.
     Using lower a concentration may mitigate this, although care must be taken not to use a concentration so low that it causes an unintended GCN2 activation as described by Carlson et al. \cite{Carlson2023-zh}.
-    \item Aspartate limitation induced by mitochondrial inhibitors in WT cell is difficult to compare to aspartate limitation in GOT DKO cells.
+    \item Aspartate limitation induced by mitochondrial inhibitors in WT cells is difficult to compare to aspartate limitation in GOT DKO cells.
     This is particularly evident when looking at tRNA charge, but it has also been observed on western blots were asparagine rescues ETC inhibitor induced ISR in WT cell but not aspartate depletion induced ISR in GOT DKO cells.
     \item ETC inhibitor induced ISR is very sensitive to media conditions e.g. media change will increase the asparagine depletion by efflux.
     Media change can also by itself cause ATF4 induction which is reversible with media asparagine (figure \ref{fig:app_ch2:sal_frac_conc}).    
     \item Time scale is an important factor to consider in a model over the observations e.g. mito-tRNA\textsuperscript{Asn} becomes uncharged before cyto-tRNA\textsuperscript{Asn} in 143B cells treated with antimycin (figure \ref{fig:sapp:tRNA:143B_Anti_time}).
     \item Proline is also a redox active amino acid and mito-tRNA\textsuperscript{Pro} charge is severely affected by some ETC inhibitors.
-    This is concordant with very low mitochondrial proline concentrations, $\sim$10 µM reported by Chen et al. \cite{Chen2016-mf}.
+    This is consistent with very low mitochondrial proline concentrations, $\sim$10 µM reported by Chen et al. \cite{Chen2016-mf}.
     \item Asparagine supplementation, in the form of salvage mix, rescues mito-tRNA\textsuperscript{Asp} charge to a different extend in different cell lines e.g. compared 143B and HT1080 in figure \ref{fig:sapp:tRNA:DKO_Asp-Asn}.
     Besides offsetting aspartate consumption, asparagine could be deaminated by glutaminase, possibly explaining the difference in charge rescue.
 \end{itemize}
@@ -572,12 +685,12 @@ For 143B and HT1080 cells the induction of ISR can be ablated with asparagine an
 Meanwhile, mito-tRNA\textsuperscript{Asn} becomes substantially uncharged after just 30 minutes while cyto-tRNA\textsuperscript{Asn} maintains full charge for 7 hours.
 Therefore, I hypothesize the following:
 Treatment with ETC inhibitors induces ISR through uncharged mitochondrial tRNAs of either mito-tRNA\textsuperscript{Asp}, mito-tRNA\textsuperscript{Asn} and/or mito-tRNA\textsuperscript{Pro}.
-The resulting eIF2alpha phosphorylation causes a global decrease in protein synthesis and for some cell line/drug combination this fully prevents accumulation of uncharged cytoplasmic tRNAs (H1299) whereas for other cell line/drug combinations this only delays the aspartate/asparagine depletion, sparing cyto-tRNA\textsuperscript{Asp}, cyto-tRNA\textsuperscript{Asn} charge for some time before eventual depletion and a secondary GCN2 mediated ISR.
-This leads to a testable predictions regarding cell line specific observations and the timing of ISR vs. uncharged tRNA.
+The resulting eIF2alpha phosphorylation causes a global decrease in protein synthesis and for some cell line/drug combination this fully prevents accumulation of uncharged cytoplasmic tRNAs (e.g. for H1299) whereas for other cell line/drug combinations this only delays the aspartate/asparagine depletion, sparing cyto-tRNA\textsuperscript{Asp}, cyto-tRNA\textsuperscript{Asn} charge for some time before eventual depletion and a secondary GCN2 mediated ISR.
+This leads to testable predictions regarding cell line specific observations and the timing of ISR vs. uncharged tRNA.
 For example OMA1/HRI knockout ablates ETC inhibitor induced ISR in HT1080, and thus these cells should harbour no uncharged cytoplasmic tRNA, while on the other hand since we know that 143B WT cell do eventually accumulate uncharged cytoplasmic tRNA they should have a GCN2 mediated ISR even with OMA1/HRI knockout.
 Another testable prediction would be related to proline and its effect on ISR which could be tested by proline supplementation.
 
-For all GOT DKO cell lines mito-tRNA\textsuperscript{Asp} charge decreases as a function of aspartate; however, we know from DARS2 KO and rho0 cells of multiple cell lines that neither mito-tRNA\textsuperscript{Asp} charge nor indeed any mitochondrial tRNAs are necessary for aspartate depletion induced ISR.
+For all GOT DKO cell lines mito-tRNA\textsuperscript{Asp} charge decreases as a function of aspartate; however, we know from DARS2 KO and rho0 cells of multiple cell lines that neither mito-tRNA\textsuperscript{Asp} charge nor any mitochondrial tRNAs are necessary for aspartate depletion induced ISR.
 Therefore, I hypothesize the following:
 Decreasing media aspartate to a level still compatible with cell proliferation induces ISR through uncharged mito-tRNA\textsuperscript{Asp}, the resulting eIF2alpha phosphorylation causes a global decrease in protein synthesis and therefore cyto-tRNA\textsuperscript{Asp} remains charged (figure \ref{fig:sapp:tRNA:DKO_Asp-Asn}).
 Complete aspartate removal leads to the above but then shortly after cyto-tRNA\textsuperscript{Asp} becomes uncharged due to insufficient aspartate (supported by data in figure \ref{fig:sapp:ISR:HT1080_DKO_ASPtit_time}).
@@ -596,27 +709,123 @@ They showed that over-expression induced mitochondrial proteotoxic stress induce
 
 
 
+\FloatBarrier
+\section{GOT DKO characterization}
+\subsection{143B GOT DKO (with SLC1A3)}
+Our 143B GOT DKO cells were characterized in various ways.
+Starting out with two clones \#7 and \#10, eventually clone \#7 was used exclusively.
+These cells grow normally with 1 mM media aspartate, which is what was used if nothing else is stated.
+
+We started out verifying that no aspartate synthesis was occurring using \hCi{} tracing (figures \ref{fig:sapp:DKO_char:143B_Asp_iso_dist}, \ref{fig:sapp:DKO_char:143B_Asn_iso_dist}, \ref{fig:sapp:DKO_char:143B_CarbAsp_iso_dist} and \ref{fig:sapp:DKO_char:143B_Mal_iso_dist}).
+Since aspartate cannot be synthesized in the mitochondria in these cells and aspartate is typically exported out of the matrix in a process driven by the membrane potential, it was unclear if cells even had any mitochondrial aspartate.
+We reasoned that some mitochondrial aspartate would be necessary for a minimum of translation in the matrix to enable sufficient respiration for pyrimidine synthesis through DHODH.
+This was tested using DHODH inhibitor brequinar and rescue with uridine (figure \ref{fig:sapp:DKO_char:143B_DKO_brequinar}).
+
+Using SLC1A3 inhibitor UCPH and lower media aspartate (300 µM) we were able to titrate intracellular aspartate concentrations which correlated with proliferation (figure \ref{fig:sapp:tRNA:143B_DKO_UCPH_asp_prlfr}).
+A subsequent tRNAseq experiment revealed that uncharged mito-tRNA\textsuperscript{Asp} was accumulating upon aspartate limitation (figure \ref{fig:sapp:DKO_char:143B_DKO_UCPH_tRNA}).
+This prompted us to test if uncharted tRNA\textsuperscript{Asp} had an effect on mitochondrial translation.
+Western blots for mitochondrially encoded proteins never worked; however, complex I activity measurements showed a small decrease in aspartate depleted cells (figure \ref{fig:sapp:DKO_char:143B_DKO_CI}).
 
 
-Way forward:
 
-Use GOT DKO mito vs. rho0 cells to 
-(figure \ref{fig:sapp:ISR:143B_DKO_ISR}, bottom panel)
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/sapp/DKO_char/143B_Asp_iso_dist.pdf}
+    \caption[\hCi{} Gln/Glc, Asp tracing in 143B GOT DKO, Asp]{
+    Steady-state tracing into aspartate with U-\hCi{} Glc/Gln (left) and \hCi{}2 Asp (right) in two 143B GOT DKO clones expressing SLC1A3 (\#7 and \#10).
+    }
+    \label{fig:sapp:DKO_char:143B_Asp_iso_dist}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/sapp/DKO_char/143B_Asn_iso_dist.pdf}
+    \caption[\hCi{} Gln/Glc, Asp tracing in 143B GOT DKO, Asn]{
+    Steady-state tracing into asparagine with U-\hCi{} Glc/Gln (left) and \hCi{}2 Asp (right) in two 143B GOT DKO clones expressing SLC1A3 (\#7 and \#10).
+    }
+    \label{fig:sapp:DKO_char:143B_Asn_iso_dist}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.38\textwidth]{figures/sapp/DKO_char/143B_CarbAsp_iso_dist.pdf}
+    \caption[\hCi{} Asp tracing in 143B GOT DKO, Carbamoyl Asp]{
+    Steady-state tracing into carbamoyl aspartate with \hCi{}2 Asp in two 143B GOT DKO clones expressing SLC1A3 (\#7 and \#10).
+    }
+    \label{fig:sapp:DKO_char:143B_CarbAsp_iso_dist}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/sapp/DKO_char/143B_Mal_iso_dist.pdf}
+    \caption[\hCi{} Gln/Glc, Asp tracing in 143B GOT DKO, Malate]{
+    Steady-state tracing into malate with U-\hCi{} Glc/Gln (left) and \hCi{}2 Asp (right) in two 143B GOT DKO clones expressing SLC1A3 (\#7 and \#10).
+    }
+    \label{fig:sapp:DKO_char:143B_Mal_iso_dist}
+\end{figure}
 
 
-More time points
-Proline
+
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/sapp/DKO_char/143B_DKO_brequinar.pdf}
+    \caption[143B GOT DKO DHODH inhibitor sensitivity]{
+    DHODH activity is still essential for 143B GOT DKO, indicating sufficient respiration and thus mitochondrial translation.
+    Cells grown in DMEM with dialyzed FBS.
+    }
+    \label{fig:sapp:DKO_char:143B_DKO_brequinar}
+\end{figure}
 
 
 
 
 
+\begin{figure}[!ht]
+     \centering
+     \begin{subfigure}[b]{0.4\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/DKO_char/143B_GOT-DKO_UCPH-tit_prlfr.pdf}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.55\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/DKO_char/143B_GOT-DKO_UCPH-tit_asp.pdf}
+     \end{subfigure}
+     \hfill
+        \caption[143B GOT DKO Asp titration using UCPH, proliferation]{
+        Titrating SLC1A3 inhibitor UCPH to induce aspartate limitation in 143B GOT DKO, SLC1A3 vs. WT cells grown in media with 300 µM aspartate.
+        Left, proliferation rate.
+        Right, steady-state intracellular aspartate concentration.
+        No UCPH is set to 0.1 µM to allow log axis on right plot.
+        }
+        \label{fig:sapp:tRNA:143B_DKO_UCPH_asp_prlfr}
+\end{figure}
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/sapp/DKO_char/143B_GOT-DKO_UCPH-tit_tRNA.png}
+    \caption[143B GOT DKO Asp titration using UCPH, tRNA charge]{
+    Steady-state charge of select mitochondrial tRNAs after titrating SLC1A3 inhibitor UCPH to induce aspartate limitation in 143B GOT DKO, SLC1A3 cells grown in media with 300 µM aspartate.
+    Data generated with the old tRNAseq method using blunt-end ligation.
+    }
+    \label{fig:sapp:DKO_char:143B_DKO_UCPH_tRNA}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/sapp/DKO_char/143B_GOT-DKO_CI-activity.pdf}
+    \caption[143B GOT DKO Asp depletion effect on complex I]{
+    Complex I activity in 143B GOT DKO, SLC1A3 cells grown 12 days in media with 300 µM aspartate and plus/minus 5 µM of the SLC1A3 inhibitor UCPH.
+    Media change was done four time throughout the time-course to keep a stable aspartate concentration.
+    Complex I activity was determined using Abcam kit (ab109721).
+    }
+    \label{fig:sapp:DKO_char:143B_DKO_CI}
+\end{figure}
 
 
 
 \FloatBarrier
-\section{GOT DKO characterization}
+Incidentally, having tRNAseq data for both 143B and H1299 WT and GOT DKO cells  it was found that the GOT genotype has a profound effect on tRNA\textsuperscript{Ser} and tRNA\textsuperscript{Thr} charge.
+These tRNAs typically have slightly lower charge than other tRNAs at baseline, see for example Evans et al. \cite{Evans2017-st} and chapter \ref{chap5}; however, nothing like that observed in GOT DKO cells.
 
 
 \begin{figure}[!ht]
@@ -646,14 +855,65 @@ Proline
 
 
 
+\FloatBarrier
+\subsection{HT1080 GOT DKO}
+Similar to 143B the HT1080 GOT DKO cells were characterized in multiple ways.
+Most of this data is placed in an appropriate context, here the \hCi{} tracing is presented.
+These cells grow normally with 20 mM media aspartate, which is what was used if nothing else is stated.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/sapp/DKO_char/HT1080_Asp_iso_dist.pdf}
+    \caption[\hCi{} Gln/Glc, Asp tracing in HT1080 GOT DKO, Asp]{
+    Steady-state tracing into aspartate with U-\hCi{} Glc/Gln (left) and \hCi{}2 Asp (right) in HT1080 GOT DKO cells.
+    }
+    \label{fig:sapp:DKO_char:HT1080_Asp_iso_dist}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/sapp/DKO_char/HT1080_Asn_iso_dist.pdf}
+    \caption[\hCi{} Gln/Glc, Asp tracing in HT1080 GOT DKO, Asn]{
+    Steady-state tracing into asparagine with U-\hCi{} Glc/Gln (left) and \hCi{}2 Asp (right) in HT1080 GOT DKO cells.
+    }
+    \label{fig:sapp:DKO_char:HT1080_Asn_iso_dist}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/sapp/DKO_char/HT1080_CarbAsp_iso_dist.pdf}
+    \caption[\hCi{} Gln/Glc, Asp tracing in HT1080 GOT DKO, Carbamoyl Asp]{
+    Steady-state tracing into carbamoyl aspartate with U-\hCi{} Glc/Gln (left) and \hCi{}2 Asp (right) in HT1080 GOT DKO cells.
+    }
+    \label{fig:sapp:DKO_char:HT1080_CarbAsp_iso_dist}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/sapp/DKO_char/HT1080_Mal_iso_dist.pdf}
+    \caption[\hCi{} Gln/Glc, Asp tracing in HT1080 GOT DKO, Malate]{
+    Steady-state tracing into malate with U-\hCi{} Glc/Gln (left) and \hCi{}2 Asp (right) in HT1080 GOT DKO cells.
+    }
+    \label{fig:sapp:DKO_char:HT1080_Mal_iso_dist}
+\end{figure}
 
 
 
 
+\FloatBarrier
+\section{Nucleotide analog potency under aspartate limitation}
+One would think that aspartate limitation would increase the cell's reliance on nucleotide salvage and thus increase the potency of nucleotide analogs.
+However, no such evidence could be found in 143B cells (figure \ref{fig:sapp:random:nucleotide_analogs}).
 
-
-
-
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.98\textwidth]{figures/sapp/random/nucleotide_analogs.pdf}
+    \caption[Asp limitation does not increase nucleotide analog potency.]{
+    Aspartate limitation does not increase nucleotide analog potency.
+    Experiment done with 143B Nuc-RFP cells using IncuCyte based nuclei counts to calculate proliferation.
+    }
+    \label{fig:sapp:random:nucleotide_analogs}
+\end{figure}
 
 
 

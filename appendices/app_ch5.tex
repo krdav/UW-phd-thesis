@@ -1,4 +1,259 @@
 \chapter{tRNA-Seq supplementary figures}
 
-cccccc
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.95\linewidth]{figures/chap5/Fig1S1.pdf}}
+    \caption[Whitfeld reaction scheme.]{
+    Schematic of the Whitfeld reaction with acylated and deacylated tRNA leading to generation of CCA and CC-ending tRNAs.
+    For deacylated tRNA, 3′ adenosine is oxidized by periodate and then cleaved off by lysine induced β-elimination \cite{Rammler1971-mt, uziel1973periodate}.
+    Acylated tRNA is protected from periodate oxidation but will be deacylated in the subsequent incubation with lysine.
+    }
+    \label{ch5:figsupp:f1S1}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.57\linewidth]{figures/chap5/Fig2S1.pdf}}
+    \caption[Optimizing lysine induced cleavage.]{
+    Optimizing lysine induced cleavage for the charge tRNA-Seq method.
+    \textbf{(A)} Aminoacylation remaining after 5, 30, 90 and 270 min of deacylation in 1 M lysine pH=8 at 45°C.
+    After deacylation, RNA was purified and submitted to the Whitfeld reaction using lysine cleavage at pH=9.5 for 90 min at 45°C to ensure complete deacylation.
+    The RNA was then processed using the described charge tRNA-Seq method.
+    \textbf{(B)} RNA stability over time for lysine cleavage at pH=8 and borax cleavage at pH=9.5.
+    \textbf{(C)} Lysine reacts with dialdehydes forming from quencher oxidation.
+    One-pot Whitfeld reactions were performed at pH=8 and pH=9.5 and quenched with either water (MQ), ethylene glycol (Egl), glycerol (Gly), glucose (Glc) or ribose (Rib).
+    Pictures taken before (0 h) and after (4 h) the lysine cleavage step indicate side product formation consistent with lysine reacting with dialdehydes formed during the periodate quenching \cite{Saraiva2006-gw}.
+    This side product causes problems in the later purification step.
+    }
+    \label{ch5:figsupp:f2S1}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.8\linewidth]{figures/chap5/Fig2S2.pdf}}
+    \caption[Measurement bias in charge tRNA-Seq using blunt-end ligation.]{
+    Measurement bias in charge tRNA-Seq using blunt-end ligation.
+    \textbf{(A)} Measured charge of a E.coli tRNA-Lys oligo control spiked into samples processed with four different pre-adenylated adapters using the method described by Behrens et al. \cite{Behrens2021-gb}.
+    The control was made using a mix of 50\% E.coli tRNA-Lys-CCA and 50\% E.coli tRNA-Lys-CC and thus simulating 50\% charge.
+    Each dot represents a single charge tRNA-Seq sample.
+    \textbf{(B)} Distribution of charge differences at the transcript level among samples with two barcode replicates, comparing adapters l1 vs. l2, l2 vs. l3 and l3 vs. l4.
+    Deviation is reported as percentage point differences and the kernel density estimate (KDE) is overlaid.
+    }
+    \label{ch5:figsupp:f2S2}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.85\linewidth]{figures/chap5/Fig2S3.pdf}}
+    \caption[tRNA-adapter blunt-end ligation attempted optimization.]{
+    Despite optimization attempts, high ligation efficiency could not be achieved for blunt-end ligation. 
+    \textbf{(A)} Effect of incubation temperature, time and addition of a phosphatase (rSAP).
+    Using deacylated and gel purified human tRNA as substrate and pre-adenylated l3N as adapter, otherwise following the method in Behrens et al. \cite{Behrens2021-gb}.
+    \textbf{(B)} Effect of additives and higher adapter concentration.
+    Using deacylated and gel purified human tRNA as substrate, pre-adenylated l2N as adapter and 4°C, 24 h incubation.
+    An irrelevant well has been crossed out to avoid image splicing.
+    \textbf{(C)} Effect of ligase type.
+    Using the E.coli tRNA-Lys-CCA oligo as substrate, pre-adenylated l1N as adapter and 4°C, 24 h incubation with 20\% DMSO.
+    Wells with "+l1N" were added additional none pre-adenylated adapter.
+    Rnl2tr KQ (T4 RNA Ligase 2, truncated KQ) is the standard ligase used for pre-adenylated adapters whereas Rnl2 (T4 RNA Ligase 2) does not require pre-adenylation of adapters.
+    }
+    \label{ch5:figsupp:f2S3}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.7\linewidth]{figures/chap5/Fig2S4.pdf}}
+    \caption[Splint assisted ligation is highly efficient.]{
+    Ligation efficiency of all the barcoded adapters is high and depends on splint complementarity.
+    \textbf{(A)} Ligation reactions using deacylated purified human tRNA as substrate.
+    \textbf{(B)} Ligation reactions using E.coli tRNA-Lys-CC oligo as substrate.
+    \textbf{(C)} Comparing ligation using a tRNA-end complementary splint (l1Sp lane) vs. a non-complementary splint (NCMPL lane).
+    For both ligations the l1Sp adapter was used.
+    For the non-complementary splint ligation the two standard TGGN and GGN overhang generating splints were swapped by two splints generating CAAC and AAC overhangs.
+    }
+    \label{ch5:figsupp:f2S4}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.75\linewidth]{figures/chap5/Fig2S5.pdf}}
+    \caption[Ligation tests, related to panel E.]{
+    \textbf{(A)} Ligation test comparing the effect of RNA processing.
+    Similar to figure \ref{ch5:fig:Fig2}), panel E but with two different adapters.
+    \textbf{(B)} The unligated tRNA that appears after tRNA is oxidized with periodate in panel A is refractory to further ligation.
+    The unligated tRNA was gel purified from enough ligation reactions as shown in panel A to setup two new ligation reactions using either l1N pre-adenylated adapter for blunt end ligation or l6Sp for splint assisted ligation.
+    For l1N, ligation was setup with 35 ng tRNA, 20 pmol adapter, 17.5\% PEG-8000, 20\% DMSO, 1xT4 RNA ligase buffer, 1 μL T4 RNA ligase 2 (truncated KQ) and 1 μL SuperaseIn.
+    For l6Sp, the ligation was setup as described in the charge tRNA-Seq protocol.
+    }
+    \label{ch5:figsupp:f2S5}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.99\linewidth]{figures/chap5/Fig2S6.pdf}}
+    \caption[RT readthrough comparing TGIRT to Maxima.]{
+    \textbf{(A)} The Maxima RT polymerase produces similar levels of full size cDNA as TGIRT-III under the standard (Std) tRNA-Seq RT-PCR conditions (42°C, 16 h, suggested by Behrens et al. \cite{Behrens2021-gb}).
+    For Maxima, other incubation conditions tested are: 1 h at 60°C (similar to Lucas et al. \cite{Lucas2023-vm}), 3 h at 60°C and 1 h at 60°C followed by 15 h at 42°C (1h+).
+    After RT-PCR, the RNA template was removed by NaOH hydrolysis, liberating the DNA adapter annotated on the gel.
+    \textbf{(B)} Coverage plots for cytoplasmic tRNA transcripts grouped by cognate amino acid, comparing samples prepared with TGIRT-III or Maxima using standard incubation (42°C, 16 h).
+    \textbf{(C)} Percentage of full length transcripts grouped by cognate amino acid (i.e. left side of plots in panel B).
+    Errorbars are bootstrapped 95\% confidence interval of the mean over the 7 individual samples barcoded, pooled and used for RT-PCR template with both TGIRT-III and Maxima.
+    }
+    \label{ch5:figsupp:f2S6}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.7\linewidth]{figures/chap5/Fig2S7.pdf}}
+    \caption[Sequenced controls.]{
+    Charge tRNA-Seq control samples and spike-ins validate the method.
+    \textbf{(A)} Cleavage of the 3′ adenosine on spike-in oligo is near complete and similarly measured across adapters.
+    Using the E.coli tRNA-Lys-CCA oligo as a spike-in control to monitor completion of the Whitfeld reaction.
+    If complete, 100\% E.coli tRNA-Lys-CC should be produced and thus appearing as 0\% charged.
+    Each dot represents one sample spiked with E.coli tRNA-Lys-CCA oligo before the Whitfeld reaction and processed using the charge tRNA-Seq processing described in the method section.
+    \textbf{(B)} Aminoacylation level of human tRNA transcripts after undergoing deacylation by incubation at 45°C for 4 h in 1 M lysine (pH=8).
+    Mitochondrial tRNA\textsuperscript{fMet} was excluded because formylated amino acids are known to be highly resistant towards deacylation \cite{Schofield1968-qn}.
+    \textbf{(C)} Aminoacylation level of tRNA transcripts from four samples receiving sham oxidation (NaCl) during the Whitfeld reaction.
+    }
+    \label{ch5:figsupp:f2S7}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.5\linewidth]{figures/chap5/Fig2S8.pdf}}
+    \caption[tRNA homology requires careful PCR conditions.]{
+    \textbf{(A)} The specificity of the final library PCR step (attaching Illumina P7 and P5 sequences) deteriorates with increasing product-to-primer ratios, probably due to high tRNA homology and PCR crossover \cite{Holcomb2014-vz}.
+    \textbf{(B)} tRNA-Seq DNA library reannealing is inhibited by high salt concentrations.
+    A gel purified charge tRNA-Seq DNA library was resuspended in TBE buffer and incubated 30 min at different temperatures with or without 1 M NaCl.
+    }
+    \label{ch5:figsupp:f2S8}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.85\linewidth]{figures/chap5/Fig3S1.pdf}}
+    \caption[Reference masking effect on RPM and charge levels.]{
+    \textbf{(A)} Reference masking effect on RPM levels per transcript (left) and per codon (right).
+    Transcripts showing $>3$, and codons showing $>1.4$, fold increase or decrease upon reference masking are colored orange and annotated on the right side of the plot.
+    \textbf{(B)} Reference masking effect on charge levels per transcript (left) and per codon (right).
+    Transcripts/codons showing $>1.05$ fold increase or decrease upon reference masking are colored orange and annotated on the right side of the plot.
+    }
+    \label{ch5:figsupp:f3S1}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.55\linewidth]{figures/chap5/Fig3S2.pdf}}
+    \caption[Anticodon modification mcm5s2U is detected in periodate oxidized samples.]{
+    Mismatch frequency, gap frequency and RT stop percentage is increased upon periodate oxidation for transcripts known to be 5-methoxycarbonylmethyl-2-thiouridine (mcm5s2U) modified.
+    The mcm5s2U modification has been shown to be present on the first anticodon nucleoside (position 34) in human tRNA Lys-UUU, Gln-UUG, Glu-UUC and Arg-UCU, while absent in the similar tRNA Arg-UCG \cite{Lentini2018-xs}.
+    }
+    \label{ch5:figsupp:f3S2}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.62\linewidth]{figures/chap5/Fig4S1.pdf}}
+    \caption[Charge and RPM deviation at the transcript level.]{
+    Similar to figure \ref{ch5:fig:Fig4}), but at the transcript level.
+    }
+    \label{ch5:figsupp:f4S1}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=.98\linewidth]{figures/chap5/Fig4S2.pdf}}
+    \caption[Best and worst barcode replicates.]{
+    Best and worst pairwise comparisons between barcode replicates.
+    Sorting pairwise comparisons between barcode replicates according to the sum of squared differences and showing the best and worst either at the transcript or codon level.
+    \textbf{(A)} For charge levels, adapter l4Sp tends to overestimate charge.
+    \textbf{(B)} For RPM levels.
+    For all plots the red line is proportionality.
+    }
+    \label{ch5:figsupp:f4S2}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.7\linewidth]{figures/chap5/Fig5S1.pdf}}
+    \caption[Best and worst fitting transcripts for charge titration.]{
+    The best and worst transcript when ranked based on the sum of squared differences between the measured and predicted charge.
+    Related to the representative (i.e. ranked as the median) transcript shown in figure \ref{ch5:fig:Fig5}), panel B.
+    }
+    \label{ch5:figsupp:f5S1}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.65\linewidth]{figures/chap5/Fig5S2.pdf}}
+    \caption[Error binned by sequencing run and titration sample.]{
+    Charge titration prediction error binned by sequencing run and titration sample.
+    \textbf{(A)} Run-to-run bias of two sequencing libraries independently prepared and sequenced on different days.
+    \textbf{(B)} Error distribution binned by titration sample.
+    In both panels, error is the percentage point difference between the measured vs. predicted charge for all transcripts in the bin.
+    }
+    \label{ch5:figsupp:f5S2}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.85\linewidth]{figures/chap5/Fig5S3.pdf}}
+    \caption[Spike-in control for 50\% charge.]{
+    Spike-in control for 50\% charge using the E.coli tRNA-Thr-CGT oligo.
+    \textbf{(A)} Ligation between E.coli tRNA-Thr-CCA-Phos and l8Sp is completely blocked indicating $\sim$100\% 3′ phosphorylation.
+    CCA-P, E.coli tRNA-Thr-CCA-Phos.
+    CCA, E.coli tRNA-Thr-CCA.
+    50/50, equal mix of CCA-p and CCA.
+    \textbf{(B)} E.coli tRNA-Thr spike-in charge measured for samples prepared with an equimolar mix of E.coli tRNA-Thr-CCA-Phos and E.coli tRNA-Thr-CCA.
+    Each dot represents a single charge tRNA-Seq sample.
+    The red dashed line indicates 50\% charge.
+    }
+    \label{ch5:figsupp:f5S3}
+\end{figure}
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.8\linewidth]{figures/chap5/Fig6S1.pdf}}
+    \caption[RNA integrity and comparison to previous half-life values.]{
+    \textbf{(A)} RNA integrity after the last sample was taken (40 h) for the four replicates in the aminoacylation half-life experiment.
+    \textbf{(B)} Comparison between aminoacylation half-life estimates grouped by amino acid from this study (tRNAseq) and measurements by Peacock et al. \cite{Peacock2014-wk} (radiolabeling).
+    Errorbars are +/- standard deviations.
+    A linear regression line is shown as a red line.
+    }
+    \label{ch5:figsupp:f6S1}
+\end{figure}
+
+
+
+
+
+
+
+
+\begin{figure}[ht]
+    \centering
+    \fbox{\includegraphics[width=0.8\linewidth]{figures/chap5/Fig6S2.pdf}}
+    \caption[Best and worst transcript half-life estimates.]{
+    The best and worst transcript half-life estimates, ranked based on the sum of squared differences between the fitted decay function and the mean charge of the replicates.
+    Related to the representative (i.e. ranked as the median) transcript shown in figure \ref{ch5:fig:Fig6}), panel A.
+    }
+    \label{ch5:figsupp:f6S2}
+\end{figure}
 
