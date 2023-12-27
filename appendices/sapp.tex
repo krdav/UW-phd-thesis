@@ -276,7 +276,30 @@ Taking these data at face value, GCN2 is not required for rotenone/antimycin ind
 \end{figure}
 
 
-
+\begin{spacing}{1}
+\begin{table}[ht]
+\caption{\label{tab:sapp:guides}CRISPR guides used in the over mentioned knockouts.}
+\begin{tabular}{|l|l|}
+\hline
+Gene & sgRNA   sequence (5’-3’) \\
+\hline
+GOT1 & \begin{tabular}[c]{@{}l@{}}\texttt{CAGUCAUCCGUGCGAUAUGC}\\\texttt{GCACGGAUGACUGCCAUCCC}\\\texttt{CGAUCUUCUCCAUCUGGGAA}\end{tabular} \\
+\hline
+GOT2 & \begin{tabular}[c]{@{}l@{}}\texttt{UUUCUCAUUUCAGCUCCUGG}\\\texttt{CGGACGCUAGGCAGAACGUA}\\\texttt{UCCUUCCACUGUUCCGGACG}\end{tabular} \\
+\hline
+OMA1 & \begin{tabular}[c]{@{}l@{}}\texttt{ACACAUUAGCAUCCACCUCA}\\\texttt{GAGUAAAUCAGUGUGACAGG}\\\texttt{GCCAACCCAAGAUGCCAGAA}\end{tabular} \\
+\hline
+HRI & \begin{tabular}[c]{@{}l@{}}\texttt{GUUUGCAACUGCAAAAGGGA}\\\texttt{UGAUGUUCCAGCAGAAAUCC}\\\texttt{CCAGCACCUUCACUUCCCGU}\end{tabular} \\
+\hline
+GCN2 & \begin{tabular}[c]{@{}l@{}}\texttt{AAAACUAAAUUGAUUUCAGG}\\\texttt{AGCUCGGUCAUCCUUGGCCA}\\\texttt{GAACUGGCCAAGAAACACUG}\end{tabular} \\
+\hline
+SLC25A10 & \begin{tabular}[c]{@{}l@{}}\texttt{GCAUCUGCAGACGCAGCAGG}\\\texttt{GCAACACCUUCUCGUGGAAG}\\\texttt{GAAGCUGCGCAUGACGGGCA}\end{tabular} \\
+\hline
+DARS2 & \begin{tabular}[c]{@{}l@{}}\texttt{ACAUAAAAUCUUCUUCACAG}\\\texttt{UGGUUAAGUCAGCUGUACAG}\\\texttt{GUGGAUGGAUUCAGUACCGA}\end{tabular} \\
+\hline
+\end{tabular}
+\end{table}
+\end{spacing}
 
 
 
@@ -918,6 +941,68 @@ However, no such evidence could be found in 143B cells (figure \ref{fig:sapp:ran
 
 
 
+\FloatBarrier
+\section{Contrasting cell count to Incucyte nuclei count}
+\begin{figure}[ht]
+     \centering
+     \begin{subfigure}[b]{0.3\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/IC/143B-Nuc_RFP.jpg}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.3\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/IC/143B-Nuc_RFP_count.jpg}
+     \end{subfigure}
+        \caption[Incucyte RFP nuclei count in 143B.]{
+        Left, 143B cells with nuclear RFP imaged on the Incucyte S3 using a 20x objective.
+        Right, RFP stained nuclei are masked with blue using the Incucyte software.
+        Each separate blue mask is counted and used for cell counts.
+        }
+        \label{fig:sapp:IC:143B_Nuc_RFP_ICimg}
+\end{figure}
+
+\begin{figure}[ht]
+     \centering
+     \begin{subfigure}[b]{0.3\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/IC/H1299-Nuc_RFP.jpg}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.3\textwidth}
+         \includegraphics[width=\textwidth]{figures/sapp/IC/H1299-Nuc_RFP_count.jpg}
+     \end{subfigure}
+        \caption[Incucyte RFP nuclei count in H1299.]{
+        Left, H1299 cells with nuclear RFP imaged on the Incucyte S3 using a 20x objective.
+        Right, RFP stained nuclei are masked with blue using the Incucyte software.
+        Each separate blue mask is counted and used for cell counts.
+        }
+        \label{fig:sapp:IC:H1299_Nuc_RFP_ICimg}
+\end{figure}
+
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/sapp/IC/prlfr_ICvsCC-rep1-byday.pdf}
+    \caption[Coulter counter vs. Incucyte proliferation rate, replicate 1.]{
+    gfds
+    }
+    \label{fig:sapp:IC:ICvsCC1}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/sapp/IC/prlfr_ICvsCC-rep2-byday.pdf}
+    \caption[Coulter counter vs. Incucyte proliferation rate, replicate 2.]{
+    gfds
+    }
+    \label{fig:sapp:IC:ICvsCC2}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/sapp/IC/prlfr_CCvsCC-byday.pdf}
+    \caption[Coulter counter proliferation rate, replicate 1 vs. 2.]{
+    gfds
+    }
+    \label{fig:sapp:IC:CCvsCC2}
+\end{figure}
 
 
 

@@ -4,23 +4,79 @@
 
 
 \section{Introduction}
-More blaa
+Cells require aspartate as a metabolic substrate and for protein synthesis to fuel proliferation.
+However, unlike most amino acids, aspartate levels are dictated by cellular metabolism and are influenced by many perturbations that alter said metabolism.
+Metabolic perturbations leading to a small decrease in aspartate synthesis capacity does not result in full aspartate depletion; rather, it results in a downwards adjustment of the aspartate level as well as cell proliferation.
+This aspartate to proliferation correlation has been observed in many cell lines using various ways of constraining aspartate synthesis and while many of these constraints also result in decreased \NAD{}/NADH ratio, these have been uncoupled to show a causal link between aspartate levels and cell proliferation.
+
+Interestingly, aspartate levels are not only related to cell proliferation but has also been associated with modifications to cell function in multiple biological processes, including stem cells \cite{Tournaire2022-ut, Arnold2022-ft}, immune cells \cite{Bailis2019-mf}, endothelial cells \cite{Diebold2019-hh}, and cancer \cite{Helenius2021-ht}.
+The sum of these observations provide impetus for studying the underlying reasons for the ability of aspartate levels to ``control'' proliferation rate.
+Aspartate's role as a substrate for asparagine and nucleotide synthesis is known, its requirement for protein synthesis is self-evident and simultaneously it is cycled between the cytoplasm and the mitochondrial matrix to transfer electrons into the matrix via. the malate-aspartate shuttle.
+It is unknown if these roles of aspartate are involved in its coupling to proliferation but this knowledge would be useful to establish the mechanism of aspartate limitation.
+
+In this chapter the concept of aspartate limitation is investigated.
+A stable correlation between intracellular aspartate levels and proliferation is established, the flux towards the various different fates of aspartate is estimated, a mix of salvageable fates of aspartate is characterized and their individual influence on rescuing aspartate limitation is determined.
+Finally, aspartate limitation's effect on tRNA aminoacylation levels is measured and its effect on integrated stress response is surveyed.
 
 
 
 
-\section{Mitochondrial inhibition induces a stable relationship between aspartate levels and proliferation rate}
-%%% Experiments with H1299 and count/metabolites per day
-%% Under ETCinhib_timeseries in lab-work
+\section{Results}
+\subsection{Mitochondrial inhibition induces a titratable aspartate limitation}
+Aspartate limitation was induced with complex I inhibitor rotenone in two experiments measuring intracellular aspartate and the \NAD{}/NADH ratio alongside cell counts to calculate the proliferation rate between time zero and 2, 3, 4 and 5 days (figure \ref{fig:ch2:NAD_Asp_time}).
+Proliferation rate adjusts in accordance with the rotenone dose and can be partially rescued with pyruvate.
+For the highest dose of rotenone, proliferation decreases over time, reflecting the time it takes before steady-state proliferation is reached.
+
+Intracellular aspartate decreases to correlate with proliferation rate (figure \ref{fig:ch2:Asp_by_day}) but then recovers slightly over time, likely due to media conditioning and rotenone breakdown (appendix figure \ref{fig:ch2:app:Rot_by_day}).
+Intracellular asparagine appear to be affected similarly to aspartate (appendix figure \ref{fig:ch2:app:Metab_by_day}).
+Throughout the experiment intracellular aspartate and the \NAD{}/NADH ratio correlate as would be expected.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/chap2/prlfr-asp-NAD-NADH-time_rep1-2.pdf}
+    \caption[Aspartate, \NAD{}/NADH ratio over time after rotenone.]{
+    Rotenone induces aspartate limitation in H1299 cells.
+    In replicate one (left column), proliferation rate and intracellular aspartate concentration were determined over time.
+    In replicate two (right column), proliferation rate and the \NAD{}/NADH ratio were determined over time.
+    For pyruvate 2 mM was added.
+    }
+    \label{fig:ch2:NAD_Asp_time}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.72\textwidth]{figures/chap2/intra-asp-prlfr_rep1-byday.pdf}
+    \caption[Aspartate levels correlates with proliferation rate.]{
+    Correlation between the intracellular aspartate concentration and proliferation rate for data in figure \ref{fig:ch2:NAD_Asp_time}.
+    }
+    \label{fig:ch2:Asp_by_day}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/chap2/NAD-NADH-Asp_rep1-2.pdf}
+    \caption[Aspartate and \NAD{}/NADH ratios are correlated.]{
+    Correlation between the intracellular aspartate concentration and the \NAD{}/NADH ratio for data in figure \ref{fig:ch2:NAD_Asp_time}.
+    }
+    \label{fig:ch2:NAD_Asp_corr}
+\end{figure}
 
 
 
 
+\subsection{Quantifying the metabolic fates of aspartate}
+The relevant metabolic fates of aspartate are: protein, arginine, asparagine pyrimidines and purines.
+It is desirable to know the consumption flux of each aspartate fate as a way of ranking their importance during aspartate limitation.
+First amino acid uptake and release was determined for wildtype (WT) 143B cells and its double knockout of the genes glutamic oxalacetic transaminases 1 and 2 (GOT DKO) (figure \ref{fig:ch2:flux_143wt_dko}).
+The GOT DKO cells have abolished aspartate synthesis, relying on aspartate import via. the SLC1A3 transporter and thus total aspartate consumption can be determine.
+It was observed that highly consumed amino acids like glutamine have high uptake flux while rare amino acids like tryptophan like have low uptake.
+Permeable amino acids not present in DMEM, like asparagine and proline, are released.
+In this experiment, isotopically labelled asparagine was added to the media to quantify its uptake and at the final timepoint intracellular metabolites were extracted to determine the ratio of labelled to unlabelled asparagine inside the cells.
+With the two flux measurements and the labelling ratio the asparagine fluxes from synthesis and into protein (figure \ref{fig:ch2:asn_Jprot}) could be solved by application of flux conservation (see methods for details).
 
-
-
-\section{Quantifying the metabolic fates of aspartate}
-
+Asparagine efflux must be calculated as an initial value because progressive accumulation of asparagine in the media will lead to lower net efflux.
+Thus, the initial efflux of asparagine is close to 2.5 mM/h while asparagine consumption into protein synthesis is 1.5-2 mM/h (figure \ref{fig:ch2:Asn_flux}).
+The measured efflux is in good agreement with asparagine efflux measured in GOT DKO cells with did not receive isotopically labelled asparagine \ref{fig:ch2:flux_143dko}).
 
 \begin{figure}
      \centering
@@ -36,19 +92,17 @@ More blaa
          \caption{Media uptake 143B GOT DKO}
          \label{fig:ch2:flux_143dko}
      \end{subfigure}
-        \caption[Media amino acid uptake]{
-        Amino acid influx/efflux from DMEM.
+        \caption[Media amino acid uptake.]{
+        Amino acid influx/efflux from DMEM media.
         For 143B WT in (a), media was spiked with U-\hCi{} Asn (*Asn in the plot) to measure asparagine uptake which, taken together with the labelling fraction, was used to calculate the net asparagine consumption.
         For 143B GOT DKO in (b), cell expressed Glu/Asp transporter SLC1A3 and media was spiked with aspartate to measure its uptake.
         }
+        \label{fig:ch2:flux_143wt_dko}
 \end{figure}
 
-
-
-Good correspondence between Asn efflux estimated through labelled Asn in 143B WT (figure \ref{fig:ch2:Asn_flux}) and measured Asn efflux in 143B GOT DKO (figure \ref{fig:ch2:flux_143dko}).
-\begin{figure}
+\begin{figure}[ht]
      \centering
-     \hspace{0.05\textwidth}
+     \hspace{0.1\textwidth}
      \begin{subfigure}[b]{0.35\textwidth}
          \centering
          \includegraphics[width=\textwidth]{figures/chap2/asn_Jprot.pdf}
@@ -62,8 +116,8 @@ Good correspondence between Asn efflux estimated through labelled Asn in 143B WT
          \caption{Asn consumption}
          \label{fig:ch2:Asn_flux}
      \end{subfigure}
-     \hspace{0.05\textwidth}
-        \caption[Asparagine consumption fluxes]{
+     \hspace{0.1\textwidth}
+        \caption[Asparagine consumption fluxes.]{
         (a) Diagram of asparagine fluxes in a cell.
         Net influx of U-\hCi{} labelled Asn ($\Flin$), net efflux of unlabelled Asn ($\Flout$), net deposition of Asn into protein ($\Flprot$) and Asn synthesis from Asp ($\Flsyn$).
         Asn symbolized by green and U-\hCi{} Asn symbolized by blue.
@@ -75,32 +129,36 @@ Good correspondence between Asn efflux estimated through labelled Asn in 143B WT
 
 
 
-Most of cellular biomass is amino acids \cite{Hosios2016-us}
+
+To measure aspartate consumption by protein and pyrimidine synthesis, 143B and H1299 cells were hydrolyzed to measure all aspartate, asparagine and arginine bound in protein and all pyrimidines bound in DNA and RNA (figure \ref{fig:ch2:ah_cell_comp}).
+Both cell lines show similar total amino acid concentrations, with 143B cells appearing slightly more dense than H1299.
+Asparagine and glutamine is entirely deaminated to aspartate and glutamate (appendix figure \ref{fig:app_ch2:AA_acid_hydrolysis_stability}) and thus the sum of asparagine and aspartate is measured.
+Similarly, purines are susceptible to acid hydrolysis (appendix figure \ref{fig:app_ch2:nucleobase_hydrolysis_stability}) and therefore cannot be accurately quantified.
+Therefore, the total concentration of purines was estimated equal to that of pyrimidines, in agreement with previous measurements on rat liver RNA \cite{Lipshitz1960-jw}.
+
+Taken together, the flux of each aspartate fate can be inferred (figure \ref{fig:ch2:asp_fate}).
+This shows that protein synthesis is the biggest consumer of aspartate but also that asparagine efflux is a large sink which is dependent on media conditions.
+The total aspartate consumption flux in DMEM, i.e. with Arg but without Asn, is estimated to be 9.9 mM/h.
+This is close to the aspartate uptake in 143B GOT DKO cells which was measured at 11.4 mM/h (figure \ref{fig:ch2:flux_143dko}).
+The difference can be accounted for by considering that total pyrimidine/purine levels underestimate synthesis flux by discounting recycling (figure appendix \ref{fig:app_ch2:pur_tr_ov}) and because 143B GOT DKO cells maintain a higher intracellular concentration of aspartate due to expression of the SLC1A3 aspartate transporter.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.80\textwidth]{figures/chap2/ah_cell_comp.pdf}
-    \caption[Amino acid and pyrimidine total cell concentration]{
+    \caption[Amino acid and pyrimidine total cell concentration.]{
     Total amino acids and pyrimidines liberated by acid hydrolysis of 143B and H1299 cells, normalized by total cell volume (Total cell conc.).
     Gln and Asn is converted during acid hydrolysis to Glu and Asp respectively.
+    Glycine is not shown because it is also produced from purine hydrolysis \cite{Markham1949-qy}.
     }
     \label{fig:ch2:ah_cell_comp}
 \end{figure}
 
-
-
-
-
-
-The total Asp consumption flux expected in DMEM i.e. with Arg but without Asn, is estimated to be 9.9 mM/h.
-This is close to Asp uptake in 143B GOT DKO which was measured at 11.4 mM/h (figure \ref{fig:ch2:flux_143dko}).
-The difference is directionally as would be expected because total pyrimidine/purine levels underestimate synthesis flux by discounting recycling (figure ]\ref{fig:ch2:pur_tr_ov}) and because 143B GOT DKO maintain a higher intracellular concentration of aspartate due to expression of Glu/Asp transporter SLC1A3.
-\begin{figure}
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.36\textwidth]{figures/chap2/asp_fate.pdf}
-    \caption[Relative consumption towards each fate of aspartate]{
+    \caption[Relative consumption towards each fate of aspartate.]{
     Relative consumption towards each fate of aspartate estimated using best estimates from figure \ref{fig:ch2:Asn_flux} and \ref{fig:ch2:ah_cell_comp}.
-    Aspartate consumption towards purines was estimated 1.5 times the consumption towards pyrimidines.
+    Synthesis of purines were assumed equal to pyrimidines and thus aspartate consumption towards purines was estimated 1.5 times the consumption towards pyrimidines to account for two aspartate consumed for AMP and one for GMP (see appendix figure \ref{fig:app_ch2:pur_tr_ov}).
     * Asn efflux is calculated based on the assumption that cells are grown in asparagine free media, prior to substantial media conditioning.
     Bars colored blue to indicate that the aspartate fate is a nitrogen donation yielding fumarate.
     }
@@ -110,71 +168,63 @@ The difference is directionally as would be expected because total pyrimidine/pu
 
 
 
+\subsection{Salvage can fulfill all the non-protein metabolic fates of aspartate}
+Isotope tracing was employed to test the ability of cells to divert consumption of aspartate into its metabolic fates by providing a salvageable alternative.
+Towards this end, steady-state tracing was performed with both Gln amide\=/\hNi{} and Gln alpha\=/\hNi{} to measure the salvage fraction for asparagine, uridine, hypoxanthine, adenine and guanine.
+For purines traced with Gln amide\=/\hNi{}, \textit{de novo} synthesis results in GTP with three label incorporations (\hNi{}3) and ATP with two (\hNi{}2), whereas the number of labels decreases with purine salvage (figure \ref{fig:ch2:sal_frac_pur}).
+The resulting isotopologue distributions for 143B cells show that hypoxanthine salvage is fully substituting \textit{de novo} purine synthesis to the point of IMP.
+A similar results is shown for adenine, likely due to deamination and recycling back to IMP (appendix figure \ref{fig:app_ch2:pur_tr_ov}).
+Guanine is also salvaged into GTP, but less efficiently at around 20\%, and it is only recycled back into IMP at a small degree.
+For H1299, the isotopologue distributions are more complex because of Gln amide to alpha \hNi{} transfer (appendix figure \ref{fig:app_ch2:gln_lab_tranfr}); however, when taking this into account the results are similar to the 143B cells except guanine is salvaged more efficiently at higher than 90\% and it is also recycled back into IMP at a higher degree.
 
-
-\section{Salvage of the metabolic fates of aspartate}
-
-\subsection{Salvage mix fulfills all the metabolic fates of aspartate}
-
-metabolic fates of aspartate i.e. aspartate conversion 
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.95\textwidth]{figures/chap2/purine_tracing_overvew.pdf}
-    \caption[Purine metabolism \hNi-amide Gln tracing overview]{
-    Overview of \hNi-amide Gln label incorporation in \textit{de novo} purine synthesis.
-    Label incorporation can be effected by salvage of unlabelled hypoxanthine or adenine and recycling as it appears on the overview.
-    }
-    \label{fig:ch2:pur_tr_ov}
-\end{figure}
-
-
-
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.95\textwidth]{figures/chap2/gln_lab_tranfr.pdf}
-    \caption[Gln amide to alpha \hNi{} transfer]{
-    Gln \hNi{} on the amide nitrogen can transfer to the alpha nitrogen in H1299 cells but not in 143B cells.
-    Upper left diagram shows how Gln amide and alpha nitrogen labels can transfer.
-    Transfer of amide labelled nitrogen can be achieved by glutaminase catalyzed release of labelled ammonia and its subsequent use as a substrate in the conversion of alpha-ketoglutarate (aKG) to Glu alpha-\hNi by glutamate dehydrogenase.
-    The signature of glutamine synthetase activity is the appearance of doubly labelled Gln.
-    Upper right diagram shows how Gln amide and alpha nitrogen labels are transferred to downstream metabolites Glu, Asp and Asn.
-    Lower panel shows the nitrogen isotopologue distribution of Gln, Glu, Asp and Asn in 143B and H1299 at steady-state.
-    The alpha nitrogen label is frequently lost in Glu and downstream, presumably due to transaminase catalyzed exchange with unlabelled amino groups on amino acids such as leucine, isoleucine, valine etc.
-    The amide nitrogen label is partially transferred to the alpha position in H1299, but not in 143B, also indicated by the doubly labelled Asn.
-    }
-    \label{fig:ch2:gln_lab_tranfr}
-\end{figure}
-
+These results can be summarized by the relative contribution of each synthesis path into ATP and GTP while receiving adenine or guanine, respectively (figure \ref{fig:ch2:sal_frac_pur_paths}).
+In summary, for both 143B and H1299, 100 µM adenine is sufficient to displace aspartate consumption for purine synthesis by salvage of adenine directly into AMP and by its recycling into hypoxanthine/IMP.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.98\textwidth]{figures/chap2/sal_frac_pur.pdf}
-    \caption[Salvage into purines]{
-    ggg
+    \caption[Salvage into purines.]{
+    Salvage into purines.
+    Top diagram shows Gln amide\=/\hNi{} label incorporation into purines and the resulting changes following salvage of hypoxanthine (Hpx), adenine (Ade) or guanine (Gua).
+    Bottom isotopologue distributions show Gln amide\=/\hNi{} label incorporation into GTP and ATP at steady-state for cell lines 143B and H1299 grown in DMEM supplemented with vehicle (Vec) or 100 µM Hpx, Ade or Gua.
     }
     \label{fig:ch2:sal_frac_pur}
 \end{figure}
 
-
 \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{figures/chap2/sal_frac_pur_paths.pdf}
-    \caption[Inferred salvage paths into purines]{
-    ggg
+    \caption[Inferred synthesis paths into purines.]{
+    Inferred synthesis paths into ATP and GTP when cells receive 100 µM adenine or guanine, respectively.
+    ATP and GTP are either derived from \textit{de novo} synthesis or salvage from adenine or guanine, respectively.
+    ATP can be salvaged from adenine directly or through hypoxanthine/IMP as a product of adenine deamination.
     }
     \label{fig:ch2:sal_frac_pur_paths}
 \end{figure}
 
 
+
+
+Salvage of asparagine and pyrimidines can also be measured using Gln amide\=/\hNi{} tracing.
+Asparagine synthesis leads to one label incorporation (15N1) and thus the salvage fraction can be measured by comparing the abundance of unlabelled and 15N1 labelled intracellular asparagine (figure \ref{fig:ch2:sal_frac_pyr-asn}).
+Gln amide to alpha \hNi{} transfer in H1299 causes asparagine to be doubly labelled from both glutamine and partially from aspartate.
+Consistent with the high permeability of asparagine \cite{Sullivan2018-gz}, its salvage fraction is high in both 143B and H1299 when provided at 500 µM in the media.
+A small fraction of unlabelled asparagine persists which indicate continued synthesis; however, uptake is likely sufficient making the residual synthesis non-essential.
+The labelling pattern for UTP synthesis is similar with one label incorporation (15N1) and a possible second label in H1299 cell from aspartate due to Gln amide to alpha \hNi{} transfer.
+Taking this transfer into account, the salvage fraction of 200 µM uridine is around 95\% for both 143B and H1299 (figure \ref{fig:ch2:sal_frac_pyr-asn}).
+
+Taken together, salvage of asparagine and uridine is efficient and using a mixture of adenine, uridine and asparagine should be able to fulfill all the non-protein metabolic fates of aspartate.
+In this, concentrations must be chosen to be low enough to be non-toxic but high enough to avoid insufficient salvage and depletion.
+500 µM asparagine, 200 µM uridine and 100 µM adenine achieve and salvage appear to be efficient even at lower concentrations \ref{fig:app_ch2:sal_frac_conc}).
+Finally, aspartate consumption by arginine synthesis was measured using Gln alpha\=/\hNi{} tracing and found to be non-existing (appendix figure \ref{fig:app_ch2:arg_syn}).
+
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{figures/chap2/sal_frac_pyr-asn.pdf}
-    \caption[Salvage into asparagine and pyrimidines]{
-    ggg
+    \caption[Salvage into asparagine and pyrimidines.]{
+    Salvage into asparagine and pyrimidines.
+    Top diagram shows Gln amide\=/\hNi{} label incorporation into asparagine (left) and pyrimidines (right) and the resulting changes following salvage of asparagine (Asn) and uridine (Urd), respectively.
+    Bottom isotopologue distributions show Gln amide\=/\hNi{} label incorporation into Asn and UTP at steady-state for cell lines 143B and H1299 grown in DMEM supplemented with vehicle (Vec), 500 µM Asn or 200 µM Urd.
     }
     \label{fig:ch2:sal_frac_pyr-asn}
 \end{figure}
@@ -182,27 +232,14 @@ metabolic fates of aspartate i.e. aspartate conversion
 
 
 
-
-
-
-
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.95\textwidth]{figures/chap2/sal_frac_conc.pdf}
-    \caption[Salvage as a function of Urd/Hpx concentration]{
-    Fraction of purines (GDP, GMP, ADP and AMP) and pyrimidines (UDP, UMP, CDP and CMP) derived from salvage when 143B or H1299 cells are cultured in increasing concentrations of uridine/hypoxanthine.
-    }
-    \label{fig:ch2:sal_frac_conc}
-\end{figure}
-
-
-
-
-
-
-
-\section{Aspartate to proliferation curves}
+If any of the metabolic fates of aspartate is the cause of decreased proliferation during aspartate limitation, then adding it back via. salvage could restore proliferation.
+In H1299 cells, aspartate limitation was induced using metformin or rotenone and then rescued using the above established routes for salvage (figure \ref{fig:ch2:ETCrescue}).
+Pyruvate shows a robust rescue as a positive control while each salvaged metabolite shows a small but positive effect.
+The effect of uridine relative to asparagine is consistent with the relative consumption fluxes (figure \ref{fig:ch2:asp_fate}), suggesting that their addition partially rescues proliferation by diverting aspartate consumption.
+It would be tempting to suggest a similar explanation for rescues made with hypoxanthine and adenine; however, aspartate consumption in purine synthesis is only as a nitrogen donor thus yielding fumarate which can readily be recycled back to aspartate with no net consumption of \NAD{}.
+Therefore, the partial rescue of hypoxanthine and adenine is more likely a result of diverting consumption of 10-formyl–THF which is consumed twice during purine synthesis.
+This is because 10-formyl–THF production by the folate cycle consumes \NAD{} thereby enhancing the effect of complex I inhibition \cite{Yang2020-fs}.
+This explanation is consistent with results showing that metformin rescue by hypoxanthine and adenine is blunted in serine free media with sodium formate where the folate cycle no longer consumes \NAD{} (appendix figure \ref{fig:app_ch2:H1299_Met_rescue_noSer}).
 
 \begin{figure}
      \centering
@@ -217,19 +254,42 @@ metabolic fates of aspartate i.e. aspartate conversion
          \caption{}
          \label{fig:ch2:H1299_Rot_rescue}
      \end{subfigure}
-        \caption[hhhh]{
-        hhhh
+        \caption[Rescuing aspartate limitation with aspartate fates.]{
+        Rescuing aspartate limitation with aspartate fates.
+        In (a) inducing aspartate limitation with 6 mM metformin and in (b) with 30 nM rotenone.
+        Rescuing with vehicle (Vec), 200 µM uridine (Urd), 500 µM asparagine (Asn), 100 µM hypoxanthine (Hpx), 100 µM adenine (Ad), salvage mix (SM), 20 mM aspartate (Asp) or 2 mM pyruvate (Pyr).
+        Salvage mix contain: 500 µM asparagine, 200 µM uridine and 100 µM adenine. 
         }
         \label{fig:ch2:ETCrescue}
 \end{figure}
 
 
 
+
+\subsection{Proliferation is not controlled by the non-protein metabolic fates of aspartate}
+The salvageable fates of aspartate partially rescues proliferation, two models can be proposed to explain this:
+Model 1, the decrease in proliferation during aspartate limitation is controlled by the one metabolic fate of aspartate which becomes limiting first.
+When this fates is salvaged, proliferation is partially restored until a second metabolic fate of aspartate becomes limiting etc.
+In this model, providing salvageable metabolites for the metabolic fates of aspartate should partially rescue proliferation and enable cells to maintain proliferation at lower aspartate levels.
+%For model 1, it must be assumed that aspartate consumption directly for prote
+Model 2, the decrease in proliferation during aspartate limitation is not controlled by any of the salvageable fates of aspartate.
+Thus, provided with salvageable fates of aspartate proliferation is partially restored by diverting aspartate consumption, but it does not allow proliferation at lower aspartate levels.
+In model 1, when cells are provided with a ``salvage mix'' to fulfill the metabolic fates of aspartate, the aspartate to proliferation relationship must shift leftwards to reflect proliferation at lower aspartate concentrations.
+For model 2, the aspartate to proliferation relationship should remain, or at least not shift leftwards.
+When performing this experiment in H1299 cells the aspartate to proliferation relationship does not shift leftwards, but slightly rightwards, upon addition of salvage mix (figure \ref{fig:ch2:H1299_Rot_Asp_vs_prlfr}).
+The reason for the rightwards shift is unknown.
+Assuming that tRNA\textsuperscript{Asp} aminoacylation is not limiting, which is explored further below, the results rule out model 1 and it can be concluded that proliferation is not controlled by the non-protein metabolic fates of aspartate.
+
+Interestingly, when cells are supplied with salvage mix, the intracellular aspartate level at 50\% proliferation is stable at 400-600 µM across different complex I inhibitors and cell lines (appendix section \ref{sec:ch2:app:asp_prlfr}).
+In this condition, only aspartate consumption towards protein synthesis should be required and thus 400-600 µM is surprisingly high considering that aspartate-tRNA ligase has a K\textsubscript{M} for aspartate between 16 and 29 µM \cite{Bour2009-fx, Escalante1993-jy, Messmer2009-xm}.
+
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{figures/chap2/H1299_Rot_Asp_vs_prlfr_noPyr.pdf}
-    \caption[ggggg]{
+    \caption[H1299 rotenone titration aspartate to proliferation.]{
+    Aspartate to proliferation relationship for H1299 using rotenone to induce aspartate limitation.
     Aspartate concentration at 50\% proliferation is 430, 570 and 610 µM for Vehicle, Sal. mix and Asp treatments, respectively.
+    Condition with salvage mix (Sal. mix) contains: 1 mM asparagine/uridine, 0.5 mM hypoxanthine, 20 µM adenine and 10 µM adenosine.
     }
     \label{fig:ch2:H1299_Rot_Asp_vs_prlfr}
 \end{figure}
@@ -237,17 +297,56 @@ metabolic fates of aspartate i.e. aspartate conversion
 
 
 
+\subsection{Depleted tRNA charge is not required for aspartate limitation}
+None of the salvageable fates of aspartate could relax the aspartate to proliferation relationship; however, it remains to be tested if proliferation is limited by protein synthesis directly through uncharged tRNA\textsuperscript{Asp}.
+This possibility was tested on H1299 and 143B cells, treated with inhibitors of electron chain complexes I, II, III and V that are known to causes aspartate limitation \cite{Sullivan2015-xf, Hart2023-gp}.
+tRNA charge was determined at steady-state using tRNA-seq (see chapter \ref{chap5}) and inhibitors were used at concentrations that result in very little or no proliferation.
+The resulting tRNA charges show that some inhibitors do indeed cause a decrease in charge, for example antimycin has a strong effect on tRNA charge in 143B cells (figure \ref{fig:ch2:tRNA:H1299_143B_ETCinhib}).
+However, since all the inhibitor treated conditions experience strong aspartate limitation, it can be concluded that depleted tRNA charge is not a defining feature.
+This is clear for H1299 cells treated rotenone, which at 100 nM should have proliferation close to zero (appendix figure \ref{fig:app_ch2:H1299_Rot_Rot_vs_prlfr}), but no substantial decrease in tRNA charge is observed.
+Most inhibitor induced decreases in tRNA charge appear to happen only for mitochondrial tRNAs.
+This also does not support uncharged tRNA being the driver of aspartate limitation because aspartate limited rho0 cells, devoid of any mitochondrial tRNAs, can still be rescued by aspartate \cite{Birsoy2015-pg}.
+The possibility of a transient decrease in tRNA charge was also tested, but it appears that tRNA charge decreases monotonically over time (appendix figure \ref{fig:app_ch2:143B_Anti_time}).
+
+\begin{figure}[!ht]
+     \centering
+     \begin{subfigure}[b]{0.6\textwidth}
+         \includegraphics[width=\textwidth]{figures/chap2/H1299_ETCinhib_Asp-Asn.pdf}
+     \end{subfigure}
+     \begin{subfigure}[b]{0.6\textwidth}
+         \vspace{5pt}
+         \includegraphics[width=\textwidth]{figures/chap2/143B_ETCinhib_Asp-Asn.pdf}
+     \end{subfigure}
+     \hfill
+        \caption[ETC inhibitor in H1299/143B, effect on tRNA charge.]{
+        tRNA charge after 30 hours of drug treatment.
+        (a) H1299 cells treated with vehicle (Vec), rotenone (Rot; 100 nM), atpenin (AA5; 5 µM), antimycin (Anti; 5 µM) or oligomycin (Oligo; 1 µM).
+        (b) 143B cells treated with vehicle (Vec), rotenone (Rot; 50 nM), atpenin (AA5; 5 µM), antimycin (Anti; 0.5 µM) or oligomycin (Oligo; 0.25 µM).
+        For all treatments cells were grown in DMEM, without pyruvate, with dialyzed FBS.
+        For antimycin and oligomycin treatments, 200 µM uridine was added to the media.
+        For the atpenin treatment, 1 mM pyruvate was added to the media.
+        }
+        \label{fig:ch2:tRNA:H1299_143B_ETCinhib}
+\end{figure}
 
 
 
 
+\subsection{Aspartate limitation triggers the integrated stress response through asparagine}
+With no evidence supporting that proliferation is controlled by the metabolic fates of aspartate, and the relatively high aspartate concentrations required for cells to maintain 50\% proliferation rate, it seems more likely that a signalling pathway would limit proliferation.
+The integrated stress response (ISR) is good candidate since it responds to amino acid depletion \cite{Darnell2018-lp} and has more recently been shown activated by mitochondrial inhibitors rotenone, piericidin, antimycin and oligomycin \cite{Guo2020-ia, Mick2020-kf, Condon2021-nz}.
+Canonical ISR signals through the kinases GCN2, HRI, PERK and PKR which phosphorylates eIF2alpha to alter translation.
+The transcription factor ATF4 is a main target and its abundance increase rapidly following ISR.
+Using both standard western blot and an RFP reporter of ATF4, it was found that mitochondrial inhibitors rotenone, metformin and antimycin induce ISR in a dose-responsive way (appendix figures \ref{fig:app_ch2:HT1080_ISR_western} and \ref{fig:app_ch2:atf4_ETCtit}).
+The ISR activation could be prevented by supplementation with exogenous electron acceptors pyruvate and alpha-ketobutyrate (figures \ref{fig:ch2:143B_ETCinhib_ATF4rep_low} and \ref{fig:ch2:HT1080_ETCinhib_ATF4rep_high}).
+Using complex II inhibitor atpenin to generate aspartate limitation, ISR could still be induced without the typical decrease in \NAD{}/NADH ratio (figure \ref{fig:ch2:143B_Atp_ATF4rep}).
+Also in this context, using complex I inhibitor rotenone to increase aspartate levels \cite{Hart2023-gp} causes a reduction in ISR.
+And lastly, mitochondrial inhibitor induced ISR requires aspartate synthesis \ref{fig:ch2:HT1080_GOT_DKO_ETCinhib_ATF4rep}), as would be expected if ISR is induced by aspartate limitation and not other effects of mitochondrial inhibition.
 
-
-\section{Integrated stress response}
-
-Overlap between perturbations eliciting ISR by GCN2 and HRI \cite{Taniuchi2016-nc}
-
-
+In summary, aspartate limitation triggers ISR.
+However, unlike aspartate limitation, the ISR induced by rotenone and antimycin could be completely ablated by asparagine supplementation.
+This is consistent with a recent report using mouse myoblasts which also found that mitochondrial inhibitor induced ISR could be reversed with asparagine \cite{Mick2020-kf}.
+It is also consistent with a rapid drop in intracellular asparagine preceding ATF4 accumulation (figure \ref{fig:ch2:ISR_resc}).
 
 \begin{figure}
      \centering
@@ -276,21 +375,17 @@ Overlap between perturbations eliciting ISR by GCN2 and HRI \cite{Taniuchi2016-n
      \end{subfigure}
         \caption[Mito inhibitor induced ATF4 is rescued by Asn]{
         Mitochondrial inhibitor induced ATF4 reporter expression is prevented by media asparagine.
-        (a) and (b) Data for two clones with low and high reporter expression at baseline.
-        (c) Rotenone can partially prevent ATF4 reporter expression.
-        (d) GOT DKO cells are not responding to mitochondrial inhibitors; however, they do respond to aspartate depletion (figure \ref{fig:app_ch2:HT1080_GOT_DKO_Asp_ATF4rep}).
-        Similar data for other clones in figure \ref{fig:app_ch2:ISR}.
-        For western blot validations see figure \ref{fig:app_ch2:HT1080_ISR_western}.
+        (a) and (b), data for two clones with low and high reporter expression at baseline.
+        FCCP is a membrane potential uncoupler used as a positive control.
+        (c) Rotenone can partially prevent ATF4 reporter expression induced by atpenin.
+        (d) GOT DKO cells are not responding to mitochondrial inhibitors; however, they do respond to aspartate depletion (appendix figure \ref{fig:app_ch2:HT1080_GOT_DKO_Asp_ATF4rep}).
+        Similar data for other clones in appendix figure \ref{fig:app_ch2:ISR}.
+        For western blot validations see appendix figure \ref{fig:app_ch2:HT1080_ISR_western}.
         }
         \label{fig:ch2:ISR}
 \end{figure}
 
-
-
-
-
-
-\begin{figure}
+\begin{figure}[ht]
      \centering
      \begin{subfigure}[b]{0.6\textwidth}
          \includegraphics[width=\textwidth]{figures/chap2/HT1080_Anti_ATF4_western.pdf}
@@ -315,6 +410,16 @@ Overlap between perturbations eliciting ISR by GCN2 and HRI \cite{Taniuchi2016-n
 
 
 
+\section{Discussion}
+
+
+although the metabolic fates can be salvaged it may not provide the right balance e.g. AMP/GMP balance.
+
+Some evidence of nucleotide imbalance after antimycine treatment (appendix figure \ref{fig:app_ch2:HT1080_Anti_metab})
+
+
+
+
 
 
 
@@ -323,7 +428,6 @@ Overlap between perturbations eliciting ISR by GCN2 and HRI \cite{Taniuchi2016-n
 
 
 \section{Methods and Materials}
-
 \subsection{Cell culture}
 Cell lines were acquired from ATCC (143B, H1299, HT1080) and tested to be free from mycoplasma (MycoProbe, R\&D Systems).
 Cells were maintained in Dulbecco’s Modified Eagle’s Medium (DMEM) (Gibco, 50-003-PB) supplemented with 3.7 g/L sodium bicarbonate (Sigma, S6297), 10\% fetal bovine serum (FBS) (Gibco, 26140079) and 1\% penicillin-streptomycin solution (Sigma, P4333).
@@ -389,8 +493,10 @@ Plates were then screened for RFP expression and localization using Incucyte S3 
 
 
 \subsection{Incucyte measurements}
-Proliferation assay using Incucyte
-
+Live cell imaging was performed on the Incucyte S3 using the RFP channel with default exposure time and 20x magnification.
+Cells expressing nuclear RFP was used to estimate cell counts per well by counting the number of nuclear foci in each field of view when scanning in the RFP channel.
+Cell confluency was determined with the phase contrast scans.
+All image analysis was performed using the associated Incucyte software.
 
 
 \subsection{Lentiviral production and stable cell line generation}
@@ -427,19 +533,16 @@ GOT1 & \begin{tabular}[c]{@{}l@{}}\texttt{CAGUCAUCCGUGCGAUAUGC}\\\texttt{GCACGGA
 \hline
 GOT2 & \begin{tabular}[c]{@{}l@{}}\texttt{UUUCUCAUUUCAGCUCCUGG}\\\texttt{CGGACGCUAGGCAGAACGUA}\\\texttt{UCCUUCCACUGUUCCGGACG}\end{tabular} \\
 \hline
-OMA1 & \begin{tabular}[c]{@{}l@{}}\texttt{ACACAUUAGCAUCCACCUCA}\\\texttt{GAGUAAAUCAGUGUGACAGG}\\\texttt{GCCAACCCAAGAUGCCAGAA}\end{tabular} \\
-\hline
-HRI & \begin{tabular}[c]{@{}l@{}}\texttt{GUUUGCAACUGCAAAAGGGA}\\\texttt{UGAUGUUCCAGCAGAAAUCC}\\\texttt{CCAGCACCUUCACUUCCCGU}\end{tabular} \\
-\hline
-GCN2 & \begin{tabular}[c]{@{}l@{}}\texttt{AAAACUAAAUUGAUUUCAGG}\\\texttt{AGCUCGGUCAUCCUUGGCCA}\\\texttt{GAACUGGCCAAGAAACACUG}\end{tabular} \\
-\hline
-SLC25A10 & \begin{tabular}[c]{@{}l@{}}\texttt{GCAUCUGCAGACGCAGCAGG}\\\texttt{GCAACACCUUCUCGUGGAAG}\\\texttt{GAAGCUGCGCAUGACGGGCA}\end{tabular} \\
-\hline
-DARS2 & \begin{tabular}[c]{@{}l@{}}\texttt{ACAUAAAAUCUUCUUCACAG}\\\texttt{UGGUUAAGUCAGCUGUACAG}\\\texttt{GUGGAUGGAUUCAGUACCGA}\end{tabular} \\
-\hline
 \end{tabular}
 \end{table}
 \end{spacing}
+
+
+\subsection{Enzymatic \NAD{}/NADH ratio measurement}
+% KD Blabla like Sullivan 2015
+
+
+
 
 \subsection{Polar metabolite extraction}
 For polar metabolite extraction, a plate was move to ice and the media was thoroughly aspirated.
@@ -449,6 +552,7 @@ The fraction of supernatant transferred was adjusted to correspond to that extra
 The total cell volume extracted from was determined by counting cells and sizes on a parallel plate using a coulter counter.
 This way of determining the total cell volume was found to be superior to packed cell volume (see appendix \ref{app_ch2_cell_vol}).
 Dried samples were reconstituted with 40 µL 80\% HPLC grade methanol, containing internal standards if appropriate, and transferred to vials for measurement by LCMS.
+
 
 \subsection{Media metabolite extraction}
 For media metabolite extraction, 10 µL media was sampled, added to 990 µL 80\% HPLC grade methanol in HPLC grade water and incubated at -20°C for 30 min or until ready.
@@ -484,7 +588,6 @@ Quantitation of all metabolites was performed using Tracefinder 4.1 (Thermo Scie
 For samples subjected to stable isotope tracing, peak areas were natural abundance corrected with IsoCor \cite{Millard2019-hv}, using experimentally determined tracer purity values.
 
 
-
 \subsection{Media uptake flux}
 The cells were first passaged in DMEM with dialyzed FBS and the tracer and/or metabolites used during the uptake experiment.
 For 143B GOT DKO cells expressing SLC1A3, 500 µM sodium aspartate was added to adjust intracellular aspartate levels.
@@ -496,21 +599,19 @@ After the last media collection the residual media volume was quantified to corr
 For U-\hCi{} Asn tracing the labelling ratio was determined by extracting intracellular metabolites after the last media collection.
 Two dishes were run in parallel and used for counting to determine proliferation rates and cell volume measurement using a coulter counter.
 
+
 \subsection{Acid hydrolysis to measure amino acids and pyrimidines}
-Two 12W plates seeded in parallel (DMEM dia. FBS)
-At 40-90\% confluency harvest by washing four times with saline
-Count one plate
-On the other plate add 1 mL 6M HCl to 5 wells, seal the plate and perform acid hydrolysis at 90C in incubator for 20h
-Move hydrolysate to 2 mL tubes then wash the well thrice with 1 mL water and collect it in the same tube
-Dry the hydrolysate
-Add 0.5 mL 6M HCl to each tube and incubate another 48h at 90C, then dry
-Reconstitute in 0.5 mL 6M HCl and aliquot 2 tubes with 10k cells and 2 tubes with 40k cells and dry.
-Reconstitute the two 10k tubes with 1 mL water, move to a fresh tube, dry and reconstitute these with 40 uL SE+CAAv2 and run standard LCMS
-Water reconstitution is an attempt to get rid of the plastic/glue soluble in HCl
-Using uracil as a control (should be in the same range regardless of scraping or on plate hydrolysis)
-% Sigma	84429-10X2ML	HCl for amino acid analysis
+Two 12-well plates were seeded in parallel in DMEM without pyruvate, with dialyzed FBS.
+At 90\% confluency, plates were washed thrice with PBS, then to one plate 1 mL 6 M HCl (Sigma, 84429) was added to each well, the plate was sealed with an adhesive PCR plate seal (ThermoFisher, AB0558) and placed in an incubator at 90°C for 20 hours for hydrolysis.
+Meanwhile, each well on the other plate was trypsinized and counted on a Coulter counter.
+At the end of the 20 hour incubation, the hydrolysate was moved to a tube followed by thrice washing with 1 mL LCMS grade water to collect all material.
+This was dried down, and reconstituted again in 0.5 mL 6 M HCl following another incubation at 90°C for 48 hours to complete hydrolysis.
+Tubes were dried and reconstituted again in 0.5 mL 6 M HCl, then a volume equivalent to 20,000 cells was moved to a fresh tube and dried down.
+To removed water insoluble material, tubes were reconstituted with 1 mL LCMS grade water and centrifuged (17,000g, 15 mins) before moving 0.5 mL to a fresh tube and drying.
+Dried samples were reconstituted with 40 µL 80\% HPLC grade methanol, containing internal standards for both amino acids and nucleotides/nucleobases.
 
-
+To ensure correct quantification, amino acid and nucleobase stability and solubility was tested.
+These tested are documented in appendix section \ref{sec:ch2:app:quant}.
 
 
 \subsubsection{Flux calculation}
@@ -596,7 +697,7 @@ Simplify:
 
 
 
-\subsubsection{Aspartate consumption flux}
+\subsubsection{Aspartate consumption fluxes}
 % How was it calculated
 %%% purines = pyrimidines plus a 2 fold correction for adenine
 % Table with the raw data values
@@ -622,35 +723,68 @@ At the end of the last passage each condition was split into four technical repl
 Upon reaching confluency, polar metabolites were extracted and submitted to LCMS with the above described technique.
 
 The relative contribution of guanine salvage into the GTP pool was determined using the m+0 vs. m+3 GTP isotopologue fractions from the Gln amide\=/\hNi{} labelled samples.
-The relative contribution of both adenine and hypoxanthine salvage into the ATP pool was determined using the m+0 ATP isotopologue fraction from the Gln amide\=/\hNi{} labelled samples and the direct contribution from adenine was determined using the m+1 isotopologue fractions of Asp compared to ATP from the Gln alpha\=/\hNi{} labelled samples.
+The relative contribution of both adenine and hypoxanthine salvage into the ATP pool was determined using the m+0 ATP isotopologue fraction from the Gln amide\=/\hNi{} labelled samples and the direct contribution from adenine was determined using the m+1 isotopologue fractions of aspartate compared to ATP from the Gln alpha\=/\hNi{} labelled samples (see appendix figure \ref{fig:app_ch2:ade_sal}).
 
 
 \subsubsection{Salvage fraction as a function of concentration}
-Seeded H1299 and 143B cells at 5,000 and 10,000 cells/well on a 6-well dish in DMEM containing Gln amide\=/\hNi{} as described above.
+H1299 and 143B cells were seeded at 5,000 and 10,000 cells/well on a 6-well dish in DMEM containing Gln amide\=/\hNi{} as described above.
 Then added an equimolar mix of hypoxanthine and uridine from a 40x stock to a final concentration of 10, 20, 30, 40, 50, 60 µM in each of the 6 wells.
 Fresh media was then added every four days and upon reaching confluency, polar metabolites were extracted and submitted to LCMS with the above described technique.
 
 
-
-
+\subsubsection{Aspartate to proliferation curves}
+Cell seeding on 6-well plates, starting counts and drug treatment was performed as described for proliferation assays.
+A titration of rotenone or metformin was added by media change to each plate and used to induce a wide degree of aspartate depletion.
+Media change was made every 5 days and metabolites were harvested when cells reached near confluency.
+For each plate, three wells were used for metabolite extraction and three wells were used for cell counts to calculate the total cell volume and the proliferation rate.
+Proliferation rate as a function of the intracellular aspartate concentration, $f(c)$, was fitted by an increasing Hill curve:
+$$
+f(c) = t - \frac{t}{1 + (c/m)^s}
+$$
+Whereas the proliferation rate as a function of the drug concentration was fitted by a decreasing Hill curve:
+$$
+f(c) = \frac{t}{1 + (c/m)^s}
+$$
+With $t$ being the top of the curve, describing the upper asymptotes of proliferation rate and fixed at the observed proliferation rate with no drug treatment.
+The curve slope is described by $s$, also known as the Hill coefficient, and the midpoint ($m$) describes the intracellular aspartate concentration at half maximum proliferation rate.
+The curve parameters were fitted to the data using the Broyden–Fletcher–Goldfarb–Shanno (BFGS) algorithm.
 
 
 \subsection{ATF4 reporter measurements}
-
-% GCN2i concentration
-
+First monoclonal cells lines expressing the RFP-based ATF4 reporter described in Guo et al. \cite{Guo2020-ia} were made.
+Clones of high and low basal expression were selected and typically tested in parallel.
+Cells were seeded onto 24-well plates at 50,000 cells per well in 1 mL of DMEM without pyruvate, with dialyzed FBS.
+For GOT DKO cells 20 mM aspartate was added to the seeding media.
+At 70-90\% confluency, drugs were spiked in as a 10x solution as this was found to yield similar reporter measurements as media change (appendix figure \ref{fig:app_ch2:sal_frac_conc}).
+Final drug concentrations were: vehicle (DMSO), 100 nM rotenone, 1 µM antimycin and 10 µM FCCP.
+For experiments with atpenin and/or rotenone atpenin was added to a final concentration of 5 µM and rotenone to 50 nM.
+For aspartate depletion in GOT DKO cells, wells were washed once with aspartate free media before adding media with the reported aspartate concentration and the metabolite rescue.
+For all plates, metabolite rescues were spiked in as a 20x solution, 1-2 hours before adding drugs or media change.
+The final concentration of these were: vehicle (water), 100 µM asparagine, 30 mM aspartate, 2 mM pyruvate and 1 mM alpha-ketobutyrate.
+Reporter expression was measured on the Incucyte S3 using the RFP channel with default exposure time and 20x magnification.
+Using the associated Incucyte software the total RFP signal was extracted and exported.
+Continuous measurements were taken but only a single measurement between 17-21 hours were reported for better clarity.
+Measurements were normalized to the no drug, no rescue condition, or in the case of GOT DKO cells, to the 20 mM aspartate, no rescue condition.
 
 
 \subsection{tRNA aminoacylation levels}
-Cell treated with drugs x,y,z concentration etc.
-Samples processed as described in chapter \ref{chap5}.
-
-
+Aminoacylation levels, referred to as ``charge'', were measured using the method described in chapter \ref{chap5}.
+For antimycin time-series charge, 143B cells were grown to 40\% confluency on 6 cm dishes in DMEM without pyruvate, with dialyzed FBS and 200 µM uridine.
+Treatment was initiated by spiking in 10x antimycin to a final concentration of 1 µM.
+Cells were harvested by moving the dish onto ice, quickly aspirating the media and adding 0.5 mL of Trizol to cover the whole surface.
+Cells were scraped, moved to a tube on ice and frozen in liquid nitrogen.
+Sample tubes were stored in a vapor phase liquid nitrogen freezer until further use.
+For steady-state charge, 143B and H1299 cells grown on 6-well plates in DMEM, without pyruvate, with dialyzed FBS.
+For antimycin and oligomycin treatments, 200 µM uridine was added to the media.
+For the atpenin treatment, 1 mM pyruvate was added to the media.
+At 50\% confluency, cells were treated with drugs in replicates for 30 hours before harvesting, similar to the time-series samples.
+H1299 cells were treated with vehicle (DMSO), rotenone (100 nM), atpenin (5 µM), antimycin (5 µM) or oligomycin (1 µM).
+143B cells were treated with vehicle (DMSO), rotenone (50 nM), atpenin (5 µM), antimycin (0.5 µM) or oligomycin (0.25 µM).
 
 
 \subsection{Plotting and statistics}
-Plots with matplotlib and seaborn.
-Errorbars are bootstrapped 95\% CI and +/- stdev
+Plots were made using matplotlib and/or Seaborn \cite{Waskom2021-ar}.
+Errorbars are either bootstrapped 95\% confidence intervals or +/- standard deviation.
 
 
 
