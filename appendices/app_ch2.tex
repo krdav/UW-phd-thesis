@@ -34,16 +34,6 @@ Therefore, it is advisable for future studies relying on accurate cell volume me
 \section{Mitochondrial inhibition induces a titratable aspartate limitation}
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{figures/chap2/app/Asn-Asp-Glu-Pro-time_rep1.pdf}
-    \caption[Redox metabolite over time after rotenone.]{
-    Intracellular concentration of redox sensitive metabolites over the time course of rotenone treatment.
-    Related to figure \ref{fig:ch2:NAD_Asp_time}.
-    }
-    \label{fig:ch2:app:Metab_by_day}
-\end{figure}
-
-\begin{figure}[ht]
-    \centering
     \includegraphics[width=0.45\textwidth]{figures/chap2/app/intra-rotenone-time_rep1.pdf}
     \caption[Rotenone concentration over time.]{
     Rotenone in cell metabolite extract decrease over time after initial treatment indicating degradation.
@@ -54,9 +44,15 @@ Therefore, it is advisable for future studies relying on accurate cell volume me
     \label{fig:ch2:app:Rot_by_day}
 \end{figure}
 
-
-
-
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/chap2/app/Asn-Asp-Glu-Pro-time_rep1.pdf}
+    \caption[Redox metabolite over time after rotenone.]{
+    Intracellular concentration of redox sensitive metabolites over the time course of rotenone treatment.
+    Related to figure \ref{fig:ch2:NAD_Asp_time}.
+    }
+    \label{fig:ch2:app:Metab_by_day}
+\end{figure}
 
 
 
@@ -67,37 +63,26 @@ Therefore, it is advisable for future studies relying on accurate cell volume me
 To quantify cellular nucleotide and amino acid abundance, acid hydrolysis was performed directly on cell material.
 Since the hydrolysis was performed in regular plastic tubes with ambient air headspace, there is a risk of oxidation and thus underestimation of the true quantities.
 Therefore, amino acid and nucleobase stability was tested in 6 M HCl with 24 hours incubation at 100°C (figures \ref{fig:app_ch2:nucleobase_hydrolysis_stability} and \ref{fig:app_ch2:AA_acid_hydrolysis_stability}).
-Samples were prepared with 500 µM nucleobase or amino acid mix and in parallel added either water (MQ) or HCl.
+Samples were prepared with 500 µM amino acid or nucleobase mix and in parallel added either water (MQ) or 6 M HCl.
 Water samples were set aside at -20°C.
-Nucleobases and amino acids were then quantified using LCMS and each ion count were normalized to its internal standard yielding a response ratio.
+Amino acids and nucleobases were then quantified using LCMS and each ion count were normalized to its internal standard yielding a response ratio (RR).
 For nucleobases, pyrimidines are stable while purines are prone hydrolysis as has been noted previously \cite{Strecker1861-mh, Wulff1892-og, Hunter1936-iu, Markham1949-qy}.
 For amino acids, asparagine and glutamine are fully deaminated to produce exactly one equivalent of aspartate and glutamate, respectively.
 Tryptophan also breaks down completely while methionine and cystine are broken down but still remain detectable.
 Note that histidine is missing due to poor chromatographic separation.  
-Thus, acid hydrolysis is compatible with quantification of all amino acids except asparagine, glutamine, tryptophan, methionine, cystine/cysteine and histidine.
+Thus, acid hydrolysis is compatible with quantification of all pyrimidine nucleobases and all amino acids except asparagine, glutamine, tryptophan, methionine, cystine/cysteine and histidine.
 
 Another potential concern for quantification is low solubility; particularly, of the nucleobases liberated during hydrolysis.
 Should any compound hit its solubility limit during processing it would precipitate and its true quantity would be underestimated.
 To test the bounds of solubility, increasing amounts of cell material was hydrolyzed in 6 M HCl with 24 hours incubation at 100°C.
 Compounds reaching their solubility limit would be expected to show no increase in peak area with increasing amounts of cell material.
 This was tested using cell material from a confluent 10 cm dish of 143B cells.
-Samples were prepared with 30, 5, 1, 0.2 and 0.05\% of this material, following hydrolysis, drying and reconstitution on 100 µL 80\% LCMS grade methanol.
+Samples were prepared with 30, 5, 1, 0.2 and 0.05\% of this material, following hydrolysis, drying and reconstitution with 100 µL 80\% LCMS grade methanol.
 The resulting quantification (figure \ref{fig:app_ch2:hydrolysis_saturation}) shows that none of the measured nucleosides, nucleobases or amino acids reach their solubility limit.
 However, it does display abundant ion suppression which can be corrected by normalization to an internal standard (figure \ref{fig:app_ch2:hydrolysis_AA_saturation_RR}).
 
 The final quantification relies on a calibration curve to convert the internal standard normalized ion count, known as the response ratio, to a concentration.
-These curves were fitted for all nucleosides, nucleobases and amino acids with internal standards and generally span concentrations of three orders of magnitude, showing excellent curve fit (figure \ref{fig:app_ch2:calibration_curve}).
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.8\textwidth]{figures/chap2/app/nucleobase_hydrolysis_stability.pdf}
-    \caption[Nucleobase stability in HCl.]{
-    Nucleobase stability in 6 M HCl after 24 hours incubation at 100°C in tubes with ambient air headspace.
-    Incubation in HCl was compared with water (MQ).
-    Ion counts counts were normalized to their internal standard (response ratio, RR).
-    }
-    \label{fig:app_ch2:nucleobase_hydrolysis_stability}
-\end{figure}
+These curves were fitted for all nucleosides, nucleobases and amino acids that had internal standards and show excellent curve fit, generally spanning concentrations of three orders of magnitude (figure \ref{fig:app_ch2:calibration_curve}).
 
 \begin{figure}[ht]
     \centering
@@ -105,9 +90,20 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
     \caption[Amino acid stability in HCl.]{
     Amino acid stability in 6 M HCl after 24 hours incubation at 100°C in tubes with ambient air headspace.
     Incubation in HCl was compared with water (MQ).
-    Ion counts counts were normalized to their internal standard (response ratio, RR).
+    Ion counts were normalized to their internal standard (RR, response ratio).
     }
     \label{fig:app_ch2:AA_acid_hydrolysis_stability}
+\end{figure}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/chap2/app/nucleobase_hydrolysis_stability.pdf}
+    \caption[Nucleobase stability in HCl.]{
+    Nucleobase stability in 6 M HCl after 24 hours incubation at 100°C in tubes with ambient air headspace.
+    Incubation in HCl was compared with water (MQ).
+    Ion counts were normalized to their internal standard (RR, response ratio).
+    }
+    \label{fig:app_ch2:nucleobase_hydrolysis_stability}
 \end{figure}
 
 \begin{figure}[ht]
@@ -132,7 +128,7 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
     \centering
     \includegraphics[width=0.49\textwidth]{figures/chap2/app/hydrolysis_AA_saturation_RR.pdf}
     \caption[Hydrolyzed amino acids normalized with internal standards.]{
-    Ion suppression observed in above figure \ref{fig:app_ch2:hydrolysis_saturation} (right panel) can be removed by normalization to the isotopically labelled internal standard for each compound.
+    Ion suppression observed in the above figure \ref{fig:app_ch2:hydrolysis_saturation} (right panel) can be removed by normalization to the isotopically labelled internal standard for each compound.
     }
     \label{fig:app_ch2:hydrolysis_AA_saturation_RR}
 \end{figure}
@@ -167,21 +163,13 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
 
 
 
-
-
-
-
-
-
-
-
 \section{15N Gln tracing in 143B and H1299}
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.95\textwidth]{figures/chap2/app/purine_tracing_overvew.pdf}
     \caption[Purine metabolism \hNi-amide Gln tracing overview.]{
-    Overview of \hNi-amide Gln label incorporation in \textit{de novo} purine synthesis.
-    Label incorporation can be effected by salvage of unlabelled hypoxanthine or adenine and recycling as it appears on the overview.
+    Overview of Gln \hNi-amide label incorporation in \textit{de novo} purine synthesis.
+    Label incorporation can be effected by salvage of unlabelled hypoxanthine or adenine and recycling.
     }
     \label{fig:app_ch2:pur_tr_ov}
 \end{figure}
@@ -192,7 +180,7 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
     \caption[Gln amide to alpha \hNi{} transfer.]{
     Gln \hNi{} on the amide nitrogen can transfer to the alpha nitrogen in H1299 cells but not in 143B cells.
     Upper left diagram shows how Gln amide and alpha nitrogen labels can transfer.
-    Transfer of amide labelled nitrogen can be achieved by glutaminase catalyzed release of labelled ammonia and its subsequent use as a substrate in the conversion of alpha-ketoglutarate (aKG) to Glu alpha-\hNi by glutamate dehydrogenase.
+    Transfer of amide labelled nitrogen can be achieved by glutaminase catalyzed release of labelled ammonia and its subsequent use as a substrate in the conversion of alpha-ketoglutarate (aKG) to Glu alpha-\hNi{} by glutamate dehydrogenase.
     The signature of glutamine synthetase activity is the appearance of doubly labelled Gln.
     Upper right diagram shows how Gln amide and alpha nitrogen labels are transferred to downstream metabolites Glu, Asp and Asn.
     Lower panel shows the nitrogen isotopologue distribution of Gln, Glu, Asp and Asn in 143B and H1299 at steady-state.
@@ -226,17 +214,6 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.45\textwidth]{figures/chap2/app/arg_syn.pdf}
-    \caption[No evidence of arginine synthesis in DMEM.]{
-    No evidence of arginine synthesis in DMEM.
-    Top diagram shows Gln alpha\=/\hNi{} label incorporation into Asp and subsequently Arg.
-    Bottom isotopologue distributions show Gln alpha\=/\hNi{} label incorporation into Gln, Asp and Arg at steady-state for cell lines 143B and H1299 grown in DMEM.
-    }
-    \label{fig:app_ch2:arg_syn}
-\end{figure}
-
-\begin{figure}[ht]
-    \centering
     \includegraphics[width=0.95\textwidth]{figures/chap2/app/sal_frac_conc.pdf}
     \caption[Salvage as a function of Urd/Hpx concentration.]{
     Fraction of purines (average across GDP, GMP, ADP and AMP) and pyrimidines (average across UDP, UMP, CDP and CMP) derived from salvage when 143B or H1299 cells are cultured in increasing concentrations of uridine/hypoxanthine.
@@ -244,6 +221,16 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
     \label{fig:app_ch2:sal_frac_conc}
 \end{figure}
 
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.45\textwidth]{figures/chap2/app/arg_syn.pdf}
+    \caption[No evidence of arginine synthesis in DMEM.]{
+    No evidence of arginine synthesis in DMEM.
+    Top diagram shows Gln alpha\=/\hNi{} label incorporation into Asp and subsequently Arg.
+    Bottom isotopologue distributions show Gln alpha\=/\hNi{} label incorporation into Gln, Asp and Arg at steady-state for cell lines 143B and H1299 grown in DMEM with no salvageable metabolites added (Vec).
+    }
+    \label{fig:app_ch2:arg_syn}
+\end{figure}
 
 
 
@@ -254,7 +241,7 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
     \includegraphics[width=0.6\textwidth]{figures/chap2/app/H1299_Met_rescue_noSer.pdf}
     \caption[ETC inhibitor purine rescue in serine free media.]{
     The small proliferation rescue of hypoxanthine and adenine during 6 mM metformin treatment, is blunted by when repeated in serine free media with 1 mM sodium formate.
-    Serine free media will decrease NADH production in the mitochondria through the folate cycle; instead, formate becomes necessary to generate folate species e.g. 10-formyl–THF for purine synthesis \cite{Ducker2016-mz, Ducker2017-mb, Yang2020-fs}.
+    Serine free media will decrease the mitochondria NADH production by the folate cycle; instead, formate becomes necessary to generate folate species e.g. 10-formyl–THF for purine synthesis \cite{Ducker2016-mz, Ducker2017-mb, Yang2020-fs}.
     Related to figure \ref{fig:ch2:H1299_Met_rescue}.
     }
     \label{fig:app_ch2:H1299_Met_rescue_noSer}
@@ -280,9 +267,9 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
      \end{subfigure}
         \caption[H1299 rotenone titration aspartate to proliferation.]{
         Supplementary data for figure \ref{fig:ch2:H1299_Rot_Asp_vs_prlfr}.
-        (a) proliferation as a function of rotenone concentration.
+        (a) Proliferation as a function of rotenone concentration.
         Rotenone concentration at 50\% proliferation is 40, 70 and 80 nM for Vehicle, Sal. mix and Asp treatments, respectively.
-        (b) proliferation as a function of the \NAD{}/NADH ratio.
+        (b) Proliferation as a function of the \NAD{}/NADH ratio.
         The \NAD{}/NADH ratio was made using internal standard normalized LCMS measurements (response ratio/response ratio).
         Condition with salvage mix (Sal. mix) contains: 1 mM asparagine/uridine, 0.5 mM hypoxanthine, 20 µM adenine and 10 µM adenosine.
         }
@@ -310,11 +297,11 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
      \end{subfigure}
         \caption[H1299 metformin titration aspartate to proliferation.]{
         Aspartate to proliferation relationship for H1299 using metformin to induce aspartate limitation.
-        (a) proliferation as a function of metformin concentration.
+        (a) Proliferation as a function of metformin concentration.
         Metformin concentration at 50\% proliferation is 2.4 and 6.1 mM for Vehicle and Sal. mix treatments, respectively.
-        (b) proliferation as a function of aspartate concentration.
+        (b) Proliferation as a function of aspartate concentration.
         Aspartate concentration at 50\% proliferation is 390 µM for both Vehicle and Sal. mix treatments.
-        (c) proliferation as a function of the \NAD{}/NADH ratio.
+        (c) Proliferation as a function of the \NAD{}/NADH ratio.
         The \NAD{}/NADH ratio was made using internal standard normalized LCMS measurements (response ratio/response ratio).
         Condition with salvage mix (Sal. mix) contains: 1 mM asparagine/uridine, 0.5 mM hypoxanthine, 20 µM adenine and 10 µM adenosine.
         }
@@ -342,11 +329,11 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
      \end{subfigure}
         \caption[HCT116 metformin titration aspartate to proliferation.]{
         Aspartate to proliferation relationship for HCT116 using metformin to induce aspartate limitation.
-        (a) proliferation as a function of metformin concentration.
+        (a) Proliferation as a function of metformin concentration.
         Metformin concentration at 50\% proliferation is 810 and 740 µM for Vehicle and Sal. mix treatments, respectively.
-        (b) proliferation as a function of aspartate concentration.
+        (b) Proliferation as a function of aspartate concentration.
         Aspartate concentration at 50\% proliferation is 290 and 530 µM for Vehicle and Sal. mix treatments, respectively.
-        (c) proliferation as a function of the \NAD{}/NADH ratio.
+        (c) Proliferation as a function of the \NAD{}/NADH ratio.
         The \NAD{}/NADH ratio was made using internal standard normalized LCMS measurements (response ratio/response ratio).
         Condition with salvage mix (Sal. mix) contains: 1 mM asparagine/uridine, 0.5 mM hypoxanthine, 20 µM adenine and 10 µM adenosine.
         }
@@ -357,12 +344,13 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
     \centering
     \includegraphics[width=0.49\textwidth]{figures/chap2/app/143B_Met_Asp_vs_prlfr.pdf}
     \caption[143B metformin titration aspartate to proliferation.]{
-    Aspartate to proliferation relationship for 143B using metformin to induce aspartate limitation.
+    Aspartate to proliferation relationship for 143B grown in media with salvage mix using metformin to induce aspartate limitation.
     Aspartate concentration at 50\% proliferation is 380 µM for Sal. mix treated cells.
     Salvage mix (Sal. mix) contains: 1 mM asparagine/uridine, 0.5 mM hypoxanthine, 20 µM adenine and 10 µM adenosine.
     }
     \label{fig:app_ch2:143B_Met_Asp_vs_prlfr}
 \end{figure}
+
 
 
 
@@ -372,7 +360,7 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
     \centering
     \includegraphics[width=0.7\textwidth]{figures/chap2/app/143B_Anti-time_Asp-Asn.pdf}
     \caption[Antimycin time-series in 143B, effect on tRNA charge.]{
-        tRNA charge as a function of time after antimycin treatment (1 µM spike-in) of 143B cells in DMEM, without pyruvate, with dialyzed FBS and 200 µM uridine.
+        tRNA charge as a function of time after antimycin treatment (1 µM, spike-in) for 143B cells in DMEM, without pyruvate, with dialyzed FBS and 200 µM uridine.
     }
     \label{fig:app_ch2:143B_Anti_time}
 \end{figure}
@@ -387,9 +375,9 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
     \includegraphics[width=0.95\textwidth]{figures/chap2/app/atf4_chVSsp.pdf}
     \caption[ATF4 reporter, media change vs. spike-in.]{
     Mitochondrial inhibitor induced ATF4 reporter, media change vs. spike-in.
-    Left column showing results from an experiment were media change was used to initiate the treatment.
-    Right column showing results from an experiment were the treatment was initiated by a 10x spike-in.
-    Barplots showing results at the time indicated by the red dashed line on the lineplots below.
+    Left column show results from an experiment were media change was used to initiate the treatment.
+    Right column show results from an experiment were the treatment was initiated by a 10x spike-in.
+    Barplots show results at the time indicated by the red dashed line on the lineplots below.
     }
     \label{fig:app_ch2:atf4_chVSsp}
 \end{figure}
@@ -397,9 +385,9 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.95\textwidth]{figures/chap2/app/HT1080_ISR_western.pdf}
-    \caption[Mito inhibitor, ATF4 western.]{
+    \caption[Mitochondrial inhibitor, ATF4 western.]{
     Western blot validation of ATF4 reporter in HT1080 cells.
-    Treatment and rescue conditions similar to figure \ref{fig:ch2:ISR}.
+    Treatment and rescue conditions similar to figures \ref{fig:ch2:143B_ETCinhib_ATF4rep_low} and \ref{fig:ch2:HT1080_ETCinhib_ATF4rep_high}.
     % Wednesday 01/12/22
     }
     \label{fig:app_ch2:HT1080_ISR_western}
@@ -410,7 +398,7 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
     \includegraphics[width=0.95\textwidth]{figures/chap2/app/atf4_ETCtit.pdf}
     \caption[ATF4 reporter, drug titrations.]{
     ATF4 reporter, drug titrations.
-    ATF4 reporter readout at 17.5 h after drug treatments in 143B cells.
+    ATF4 reporter readout at 17.5 h after drug treatments of 143B cells.
     }
     \label{fig:app_ch2:atf4_ETCtit}
 \end{figure}
@@ -442,7 +430,9 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
      \end{subfigure}
         \caption[Mito inhibitor induced ATF4 is rescued by Asn, other clones.]{
         Panels (a), (b) and (c), related to figure \ref{fig:ch2:ISR}, here showing data generated for the other clones.
-        Panel (d), measured 20.5 h after aspartate depletion, Vec/Vec normalization is normalization to the baseline condition (20 mM Asp, no Asn).
+        Panel (d), GOT DKO cells respond to aspartate depletion.
+        Measured 20.5 h after aspartate depletion.
+        Vec/Vec normalization is normalization to the baseline condition (20 mM Asp, no Asn).
         }
         \label{fig:app_ch2:ISR}
 \end{figure}
@@ -531,15 +521,11 @@ These curves were fitted for all nucleosides, nucleobases and amino acids with i
     \end{subfigure}
     \hfill
         \caption[Metabolic changes in HT1080 after antimycin treatment.]{
-        Metabolic changes in HT1080 WT after antimycin (1 µM) treatment.
+        Metabolic changes in HT1080 WT after antimycin treatment (1 µM, media change).
         From same experiment as figure \ref{fig:ch2:ISR_resc}.
         }
         \label{fig:app_ch2:HT1080_Anti_metab}
 \end{figure}
-
-
-
-
 
 
 
