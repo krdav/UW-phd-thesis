@@ -36,7 +36,7 @@ While radiolabeling is highly accurate, it is limited to purified tRNAs undergoi
 Northern blotting uses differential migration of acylated tRNA during electrophoresis to measure acylation levels but has many known limitations such as cross-binding probes, low sensitivity, low throughput on multiple tRNAs, insufficient band separation etc.
 Chemical differentiation of acylated tRNAs combined with DNA microarrays were introduced to circumvent the problems with Northern blotting, but has since been superseded by high-throughput sequencing approaches that enable quantification on all tRNAs in one experiment.
 
-Chemical differentiation of acylated tRNAs is achieved using the Malaprade reaction to attack the 2,3-dihydroxyls on the 3′ ribose of deacylated tRNA, causing ring opening and destabilization.
+Chemical differentiation of acylated tRNAs is achieved using the Malaprade reaction to attack the 2,3-dihydroxyls on the 3’ ribose of deacylated tRNA, causing ring opening and destabilization.
 The destabilized base is then eliminated using high pH and heat, resulting in a one base truncated 3' sequence of uncharged tRNAs compared to those protected by aminoacylation.
 %Aminoacylated tRNAs are protected from the Malaprade reaction due to esterification of one of the terminal ribose hydroxyls.
 This sequence of reactions was characterized and used extensively in the past in an effort to sequence RNA molecules \cite{Whitfeld1953-ca, Whitfeld1954-wl, Khym1961-xf, Neu1964-hu}, and while futile for RNA sequencing, the single base truncation has proven highly useful  to "tag" deacylated tRNAs.
@@ -52,7 +52,7 @@ Several other factors can also lead to errors in tRNA-Seq such as low RNA integr
 Adapter ligation bias is another well documented problem in small RNA sequencing \cite{Fuchs2015-nb, Zhuang2012-nu}, but receives little attention in most tRNA-Seq protocols where it is particularly problematic because adapters often incorporate a barcode for sample multiplexing.
 The problem is further exacerbated when tRNA-Seq is coupled with the Whitfeld reaction, because this creates different sequence contexts for ligation of aminoacylated and deacylated tRNAs.
 One solution is to optimize conditions such that the ligation goes to completion.
-To that end, the tRNA secondary structure provides a useful opportunity as it contains four nucleotides on the 3′ end that do not participate in the basepairing of the acceptor stem.
+To that end, the tRNA secondary structure provides a useful opportunity as it contains four nucleotides on the 3’ end that do not participate in the basepairing of the acceptor stem.
 These are the discriminator base followed by the invariant CCA-end (figure \ref{ch5:fig:Fig1}).
 These free nucleotides can be engaged in basepairing by an oligo splint designed to guide the ligation of the adapter and can improve tRNA specificity and ligation efficiency \cite{Shigematsu2017-tv, Smith2015-ht}.
 
@@ -73,9 +73,9 @@ Finally, we provide an open-source code repository, enabling others to use our r
 \fbox{\includegraphics[width=0.7\linewidth]{figures/chap5/Fig1.pdf}}
 \caption[Charge tRNA-Seq method summary.]{
 Summary illustrating the steps of the charge tRNA-Seq method we used to measure aminoacylation, relative expression and tRNA modification levels.
-First, the Whitfeld reaction (detailed in figure 1 - figure supplement \ref{ch5:figsupp:f1S1}) is used to discriminate between tRNAs with and without an aminoacylation by cleaving off the 3′ base of deacylated tRNA.
+First, the Whitfeld reaction (detailed in figure 1 - figure supplement \ref{ch5:figsupp:f1S1}) is used to discriminate between tRNAs with and without an aminoacylation by cleaving off the 3’ base of deacylated tRNA.
 Second, the tRNA secondary structure exposes the discriminator base (N) followed by the CCA/CC-end, creating a sticky-end for splint assisted ligation to a barcoded adapter.
-Stars (*) on the 3′ end of splint and adapter oligos indicate modifications to block self-ligation.
+Stars (*) on the 3’ end of splint and adapter oligos indicate modifications to block self-ligation.
 Third, using the purified ligation product, RT-PCR is used to generate cDNA.
 Fourth, the cDNA is converted into a dsDNA library and sequenced to determine tRNA charge, expression and modifications.
 }
@@ -121,13 +121,13 @@ However, our attempts to improved ligation efficiency failed as we were never ab
 
 \subsection{Splint assisted ligation improves efficiency}
 Inspired by Smith et al. \cite{Smith2015-ht} and Shigematsu et al. \cite{Shigematsu2017-tv} we turned to splint assisted ligation.
-This approach utilizes that tRNAs have four nucleotides protruding from the 3′ end and therefore available for basepairing: the discriminator base, which can be any of the four RNA nucleotides, followed by the invariant CCA-end.
-The splint oligo is designed to bind both the 3′ end of tRNAs and the 5′ end of an adapter (figure \ref{ch5:fig:Fig1}), thus bringing the two into proximity and increasing ligation efficiency.
+This approach utilizes that tRNAs have four nucleotides protruding from the 3’ end and therefore available for basepairing: the discriminator base, which can be any of the four RNA nucleotides, followed by the invariant CCA-end.
+The splint oligo is designed to bind both the 3’ end of tRNAs and the 5’ end of an adapter (figure \ref{ch5:fig:Fig1}), thus bringing the two into proximity and increasing ligation efficiency.
 However, whereas earlier uses of splint assisted ligation could assume that all tRNAs end on CCA, we have a mix of CCA and CC-ending tRNAs and therefore needed to use two splints.
 As tRNAs compete for ligation it is imperative that CCA-ending tRNAs, with stronger interaction with the splint, is not favoured over CC-ending tRNAs.
 Fortunately, we observed a near complete ligation between all of our nine barcoded adapters and both CCA-ending human tRNA and a CC-ending E. Coli tRNA-Lys oligo (figure 2 - figure supplement \ref{ch5:figsupp:f2S4}, panel A and B).
 The ligation was specific as it was fully dependent on complementarity between the tRNA and the splint (figure 2 - figure supplement \ref{ch5:figsupp:f2S4}, panel C).
-As we are only interested in ligation between tRNA and adapter, we block all other possible ligations through dephosphorylation of the 5' tRNA nucleotide and oligo modifications blocking the 3′ end of adapter and splint oligos.
+As we are only interested in ligation between tRNA and adapter, we block all other possible ligations through dephosphorylation of the 5' tRNA nucleotide and oligo modifications blocking the 3’ end of adapter and splint oligos.
 This affords us the advantage of using a pure DNA splint without any RNA nucleotides as those used in previous publications \cite{Smith2015-ht, Shigematsu2017-tv, Pinkard2020-yd, Warren2021-wt, Thomas2021-fi, Lucas2023-vm}.
 
 Importantly, we validated that tRNA processed using the one-pot Whitfeld reaction could be effectively used as substrate in the ligation reaction (figure \ref{ch5:fig:Fig2}, panel E and figure 2 - figure supplement \ref{ch5:figsupp:f2S5}, panel A).
@@ -158,7 +158,7 @@ We then measured the baseline charge of H1299 cells grown in DMEM using four rep
 \caption[Optimizing the chemistry of charge tRNA-Seq.]{
 Optimizing the chemistry of charge tRNA-Seq.
 \textbf{(A)} Time required to complete periodate oxidation of the E.coli tRNA-Lys-CCA oligo on ice.
-Following oxidation, RNA was processed similar to Evans et al. \cite{Evans2017-st} to cleave off the 3′ adenosine.
+Following oxidation, RNA was processed similar to Evans et al. \cite{Evans2017-st} to cleave off the 3’ adenosine.
 Successful cleavage produce E.coli tRNA-Lys-CC.
 CCA, input oligo.
 CC, product oligo.
@@ -277,7 +277,7 @@ The results showed excellent proportionality between predicted and measured char
 This experiment also confirmed our previous observations that barcode bias is limited to the l4Sp adapter, which is consistently overestimating charge (figure \ref{ch5:fig:Fig5}, panel C).
 Additionally, no bias was found in independently prepared sequencing libraries or any of the different mixing proportions of intact and deacylated RNA (figure 5 - figure supplement \ref{ch5:figsupp:f5S2}).
 
-Inspired by Evans et al. \cite{Evans2017-st}, which used radiolabeling techniques to generate a single accurate tRNA charge reference point, we developed a 50\% charge control using 3′ phosphorylation as protection from periodate oxidation.
+Inspired by Evans et al. \cite{Evans2017-st}, which used radiolabeling techniques to generate a single accurate tRNA charge reference point, we developed a 50\% charge control using 3’ phosphorylation as protection from periodate oxidation.
 This control was spiked into samples before the Whitfeld reaction and showed a mean charge of 50.36\% and a standard deviation of 1.11 percentage points (figure 5 - figure supplement \ref{ch5:figsupp:f5S3}, panel B), thus further validating the measurement accuracy of our method.
 
 \begin{figure}[ht!]
@@ -350,7 +350,7 @@ We later found that ornithine is an even better inducer of cleavage \cite{Uziel1
 In our experience, as well as others \cite{Shigematsu2017-tv}, splint assisted ligation is highly efficient compared to blunt-end ligation.
 In contrast, Behrens et al. \cite{Behrens2021-gb} achieved high efficiency blunt-end ligation, allowing inclusion of non-mature tRNAs without the normal CCA-end.
 While the reason for this discrepancy is not obvious, our results highlight the difficulty of using blunt-end ligations for tRNA-Seq and provide an alternative approach of splint assisted ligation to help mitigate those issues.
-One potential issue with our approach is that the tRNA\textsuperscript{His} sequence is not ideal for splint assisted ligation due to the additional G added to the 5′ end \cite{Heinemann2012-hq} and thus shielding the discriminator base from base pairing with the splint.
+One potential issue with our approach is that the tRNA\textsuperscript{His} sequence is not ideal for splint assisted ligation due to the additional G added to the 5’ end \cite{Heinemann2012-hq} and thus shielding the discriminator base from base pairing with the splint.
 Despite this, reads mapping to tRNA\textsuperscript{His} are surprisingly abundant and both CC and CCA-ending.
 In future versions of this method, we see the possibility of combining our optimizations with the on-bead sample processing developed by Watkins et al. \cite{Watkins2022-er} to eliminate gel purification steps and achieve faster and cleaner processing.
 
@@ -389,16 +389,16 @@ A last wash was performed using 1 mL 100\% IPA and after removing the supernatan
 \subsection{Charge tRNA-Seq using blunt-end ligation}
 For charge tRNA-Seq using blunt-end ligation shown in figure 2 - figure supplement \ref{ch5:figsupp:f2S2} the protocol described by Behrens et al. \cite{Behrens2021-gb} was followed with the exception of using different adapter sequences, a UMI containing RT oligo (Supplementary file 1), more rounds of amplification and gel based size selection for the final sequence library and using paired-end sequencing.
 Briefly, whole cell RNA was extracted, reconstituted in 100 mM sodium acetate (pH=4.5) and concentration adjusted to 1 μg/μL.
-A 20 μL sample was move to a new tube and submitted to periodate oxidation and 3′ base elimination using sodium borate as described by Evans et al. \cite{Evans2017-st}.
+A 20 μL sample was move to a new tube and submitted to periodate oxidation and 3’ base elimination using sodium borate as described by Evans et al. \cite{Evans2017-st}.
 After purification and reconstitution in water, 8 ng of a 50/50 mix of E.coli tRNA-Lys-CCA and E.coli tRNA-Lys-CC oligo was added as a CCA/CC ratio control.
 The true ratio of these oligos is hard to control because each contain a different fraction of truncated oligos that will not contribute to the number of mapped reads; however, the sequenced CCA/CC ratio is an important measure of the sample to sample variance.
-Then the RNA was 3′ dephosphorylated using T4 PNK and after another round of RNA purification the tRNA fraction was isolated on a 10\% Urea-TBE gel using SYBRGold staining and a blue light transilluminator for visualization.
+Then the RNA was 3’ dephosphorylated using T4 PNK and after another round of RNA purification the tRNA fraction was isolated on a 10\% Urea-TBE gel using SYBRGold staining and a blue light transilluminator for visualization.
 After gel elution and reconstitution in water, 100 ng tRNA was transferred to a PCR tube and ligated to 20 pmol pre-adenylated adapter (l1, l2, l3 or l4) in 25\% PEG-8000, 1xT4 RNA ligase buffer using 1 μL T4 RNA ligase 2 (truncated KQ) and 1 μL SuperaseIn.
-Prior to ligation adapters were adenylated using the NEB 5′ DNA Adenylation Kit following the manufacturers instruction.
+Prior to ligation adapters were adenylated using the NEB 5’ DNA Adenylation Kit following the manufacturers instruction.
 After purification, adapter adenylation was verified using differential gel migration.
 Ligation reactions were incubated 6 h at 25°C, pooled by adapter barcode and purified, followed by isolation of the ligation product from unligated tRNA using a 10\% Urea-TBE gel.
 
-After gel elution and reconstitution in water, the RT-PCR reaction was performed as described by Behrens et al. \cite{Behrens2021-gb} using a similar RT oligo but with an extra 9 random nucleotides at the 5′-end to act as a unique molecular identifier (UMI).
+After gel elution and reconstitution in water, the RT-PCR reaction was performed as described by Behrens et al. \cite{Behrens2021-gb} using a similar RT oligo but with an extra 9 random nucleotides at the 5’-end to act as a unique molecular identifier (UMI).
 After the RT-PCR incubation, the remainder of the sample processing follows the charge tRNA-Seq sample processing described below, including cDNA circularization, Illumina P7/P5 sequence attachment and sequencing.
 
 
@@ -491,30 +491,30 @@ The oxidation reaction was performed by adding 10 μL 100 mM sodium acetate (pH=
 Oxidation was quenched using 20 μL 50\% ethylene glycol and incubated 30 min at room temperature in the dark.
 Then buffer exchange was performed using a P-6 gel column pre-equilibrated with 100 mM lysine (pH=8).
 To the eluate 400 μL 1 M lysine (pH=8) and 1 μL SuperaseIn was added followed by 5 h incubation at 45°C and purification using the Monarch RNA Cleanup Kit (using two 50 μg columns).
-The product, a 1 nt. truncated and 3′ phosphorylated oligo named E.coli tRNA-Thr-CCA-Phos, was resolved on a gel to isolate the full length oligo, as described for the other control.
+The product, a 1 nt. truncated and 3’ phosphorylated oligo named E.coli tRNA-Thr-CCA-Phos, was resolved on a gel to isolate the full length oligo, as described for the other control.
 Half of this product was submitted to dephosphorylation using rSAP and purified using the Oligo Clean \& Concentrator kit yielding E.coli tRNA-Thr-CCA.
 Complete phosphorylation of E.coli tRNA-Thr-CCA-Phos and complete dephosphorylation of E.coli tRNA-Thr-CCA was verified using ligation (figure 5 - figure supplement \ref{ch5:figsupp:f5S3}, panel A).
 Then concentrations of both E.coli tRNA-Thr-CCA-Phos and E.coli tRNA-Thr-CCA was measured to generate an equimolar mix adjusted such that 10 ng was spiked into each sample of 10 μg whole cell RNA before periodate oxidation.
-The 3′ phosphorylation protects from periodate oxidation and thus adding it before periodate oxidation afforded an internal control of a 50\% charged tRNA, probing the completeness of the whole Whitfeld reaction and potential adapter ligation bias.
+The 3’ phosphorylation protects from periodate oxidation and thus adding it before periodate oxidation afforded an internal control of a 50\% charged tRNA, probing the completeness of the whole Whitfeld reaction and potential adapter ligation bias.
 
 
 
 \subsection{Oligo design}
-For adapters used for blunt-end ligation the design was similar to McGlincy \& Ingolia \cite{McGlincy2017-ro} and Behrens et al. \cite{Behrens2021-gb}, with a 5′ phosphorylation to enable adenylation and a 3′ dideoxycytidine to prevent self-ligation and concatemer formation.
-For adapters l1, l2, l3 and l4 the barcode sequence was 8 nt. starting at the 5′, for adapters l1N, l2N and l3N the barcode sequence was truncated to 5 nt. to make space for a preceding six random nucleotides to diversify the sequence context engaged in ligation.
+For adapters used for blunt-end ligation the design was similar to McGlincy \& Ingolia \cite{McGlincy2017-ro} and Behrens et al. \cite{Behrens2021-gb}, with a 5’ phosphorylation to enable adenylation and a 3’ dideoxycytidine to prevent self-ligation and concatemer formation.
+For adapters l1, l2, l3 and l4 the barcode sequence was 8 nt. starting at the 5’, for adapters l1N, l2N and l3N the barcode sequence was truncated to 5 nt. to make space for a preceding six random nucleotides to diversify the sequence context engaged in ligation.
 
 The design of adapters used for splint assisted ligation was influenced by Smith et al. \cite{Smith2015-ht} and Shigematsu et al. \cite{Shigematsu2017-tv} but with several important differences listed below.
 First, we do not use ribonucleotides at any positions in our adapters or splint oligos.
 This affords us higher quality oligos due to the higher coupling efficiency of deoxyribose during oligo synthesis as well as robustness against hydrolysis of DNA compared to RNA.
 A primary reason to use ribonucleotides in the adapters and splint oligos is to increase ligation efficiency; however, we achieved $\sim$100\% ligation efficiency on isolated human tRNA using our design without ribonucleotides (figure 2 - figure supplement \ref{ch5:figsupp:f2S4}, panel A).
-Second, instead of ligating the adapter to the 3′ and the splint to the 5′ of the tRNA, we only ligate the adapter and block the splint from ligating using a 3′ C3 spacer, as well as dephosphorylating the 5′ of the tRNA.
-Similar to the blunt-end ligation adapters, a 3′ dideoxycytidine is included on all adapters to block self-ligation and concatemer formation.
+Second, instead of ligating the adapter to the 3’ and the splint to the 5’ of the tRNA, we only ligate the adapter and block the splint from ligating using a 3’ C3 spacer, as well as dephosphorylating the 5’ of the tRNA.
+Similar to the blunt-end ligation adapters, a 3’ dideoxycytidine is included on all adapters to block self-ligation and concatemer formation.
 Third, we use two different lengths splint oligos with overhang compatible with NCCA and NCC-ending tRNA.
 Fourth, our adapters vary in length by the size of their barcodes, from 5 to 8 nt.
-This is to offset the sequencing reading frame of read P2 (P7) as it progresses into the 3′ end of the tRNA, thus increasing the sequence diversity and base calling quality.
+This is to offset the sequencing reading frame of read P2 (P7) as it progresses into the 3’ end of the tRNA, thus increasing the sequence diversity and base calling quality.
 
-The RT-PCR oligo was designed in a similar way as McGlincy \& Ingolia \cite{McGlincy2017-ro} and Behrens et al. \cite{Behrens2021-gb} with a 5′ phosphorylation for subsequent circular ligation of the cDNA and an 18-atom hexa-ethyleneglycol spacer (iSp18) to terminate the polymerase extension and avoiding rolling-circle amplification during the PCR to attach Illumina P7/P5 sequences.
-The RT oligo has a random purine base on the 5′ to increase circular ligation efficiency.
+The RT-PCR oligo was designed in a similar way as McGlincy \& Ingolia \cite{McGlincy2017-ro} and Behrens et al. \cite{Behrens2021-gb} with a 5’ phosphorylation for subsequent circular ligation of the cDNA and an 18-atom hexa-ethyleneglycol spacer (iSp18) to terminate the polymerase extension and avoiding rolling-circle amplification during the PCR to attach Illumina P7/P5 sequences.
+The RT oligo has a random purine base on the 5’ to increase circular ligation efficiency.
 We added an additional 9 random nucleotides following this purine to increase the diversity of the sequence engaged in circular ligation.
 These random nucleotides also provide a unique molecular identifier (UMI) with 524288 possible sequences that enable collapsing of reads derived from the same tRNA molecule.
 The UMI is also used as a general sample quality control by comparing the number of observed UMI sequences with the number expected.
@@ -538,8 +538,8 @@ AdapterRemoval --preserve5p --collapse --minalignmentlength 10 --adapter1 AGATCG
 \end{lstlisting}
 With \verb|<P7_index>| and \verb|<P5_index>| defined by the i7/i5 index sequences for the given sample and \verb|<MIN_LEN>| set to 25 for charge tRNA-Seq using blunt-end ligation and 39 for charge tRNA-Seq using splint assisted ligation.
 Each file with merged reads were then split based on adapter barcode.
-A read was assigned to a particular adapter barcode if its 3′ end had a substring within a hamming distance of one to the barcode sequence, including the region complementary to the splint.
-The adapter sequence was then trimmed off the 3′ end; similarly, the 10 nt. UMI was located, saved and trimmed off the 5′ end, leaving only the tRNA sequence with possible 5′ non-template bases introduced during RT-PCR.
+A read was assigned to a particular adapter barcode if its 3’ end had a substring within a hamming distance of one to the barcode sequence, including the region complementary to the splint.
+The adapter sequence was then trimmed off the 3’ end; similarly, the 10 nt. UMI was located, saved and trimmed off the 5’ end, leaving only the tRNA sequence with possible 5’ non-template bases introduced during RT-PCR.
 Finally, samples with an excess of 2e6 reads were downsampled to 2e6 reads.
 
 Trimmed reads were aligned to a masked reference as described below using the Smith-Waterman algorithm implemented by SWIPE \cite{Rognes2011-iu}:
