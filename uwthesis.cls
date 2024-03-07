@@ -150,6 +150,7 @@
   \@openrightfalse
 \fi
 
+
 \if@natbib
   \usepackage{natbib}
 \fi
